@@ -1,8 +1,8 @@
 FROM spanagiotou/eden-sim-jupyter-demo:latest
 MAINTAINER Sotirios Panagiotou <spanagiotou@erasmusmc.nl>
 
-WORKDIR $HOME
+WORKDIR $WORK_HOME
 
-COPY * ./
+COPY ./ $WORK_HOME
 
 CMD ["start-notebook.sh"]
