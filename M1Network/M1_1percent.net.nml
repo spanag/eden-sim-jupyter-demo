@@ -1,0 +1,1228 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2.1.xsd" id="M1_1percent">
+    <notes>NeuroML 2 file exported from NetPyNE v0.9.6</notes>
+    <expTwoSynapse id="AMPA" gbase="1uS" erev="0mV" tauDecay="2.3ms" tauRise="0.05ms"/>
+    <expTwoSynapse id="NMDA" gbase="1uS" erev="0mV" tauDecay="15ms" tauRise="0.15ms"/>
+    <expTwoSynapse id="GABAA" gbase="1uS" erev="-80mV" tauDecay="9.1ms" tauRise="0.07ms"/>
+    <expTwoSynapse id="GABAB" gbase="1uS" erev="-80mV" tauDecay="9.1ms" tauRise="0.07ms"/>
+    <izhikevich2007Cell id="CELL_IT" C="100 pF" v0="-60 mV" k="0.7 nS_per_mV" vr="-60 mV" vt="-40 mV" vpeak="35 mV" a="0.03 per_ms" b="-2 nS" c="-50 mV" d="100 pA"/>
+    <izhikevich2007Cell id="CELL_PT" C="150.0 pF" v0="-75 mV" k="1.2 nS_per_mV" vr="-75 mV" vt="-45 mV" vpeak="50 mV" a="0.01 per_ms" b="5 nS" c="-56 mV" d="130 pA"/>
+    <izhikevich2007Cell id="CELL_CT" C="100 pF" v0="-60 mV" k="0.7 nS_per_mV" vr="-60 mV" vt="-40 mV" vpeak="35 mV" a="0.03 per_ms" b="-2 nS" c="-50 mV" d="100 pA"/>
+    <izhikevich2007Cell id="CELL_PV" C="20.0 pF" v0="-55 mV" k="1.0 nS_per_mV" vr="-55 mV" vt="-40 mV" vpeak="25 mV" a="0.2 per_ms" b="-2 nS" c="-45 mV" d="-55 pA"/>
+    <izhikevich2007Cell id="CELL_SOM" C="100.0 pF" v0="-56 mV" k="1.0 nS_per_mV" vr="-56 mV" vt="-42 mV" vpeak="40 mV" a="0.03 per_ms" b="8 nS" c="-53 mV" d="20 pA"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_IT_L23_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_IT_L4_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_IT_L5A_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_IT_L5B_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_PT_L5B_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_IT_L6_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_CT_L6_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_PV_L23_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_SOM_L23_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_PV_L5_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_SOM_L5_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_PV_L6_10_1_AMPA" averageRate="10 Hz"/>
+    <spikeGeneratorPoisson id="NetStim_background_E_SOM_L6_10_1_AMPA" averageRate="10 Hz"/>
+    <network id="M1_1percent">
+        <population id="IT_L23" component="CELL_IT" size="18" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.41661987254534116 0.010169169457068361 0.8252065092537432"/>
+            <instance id="0">
+                <location x="23.851469612249296" y="374.26960998650884" z="18.495964033413685"/>
+            </instance>
+            <instance id="1">
+                <location x="2.674305787618667" y="298.526853365468128" z="0.710190650841642"/>
+            </instance>
+            <instance id="2">
+                <location x="11.956622234555748" y="248.572800118808431" z="13.717396835862333"/>
+            </instance>
+            <instance id="3">
+                <location x="11.191788147857462" y="166.659354274589703" z="27.357472109757953"/>
+            </instance>
+            <instance id="4">
+                <location x="22.86931125846009" y="318.905071581852383" z="18.965425489245582"/>
+            </instance>
+            <instance id="5">
+                <location x="14.336900470234244" y="328.759208279950769" z="29.61436254214161"/>
+            </instance>
+            <instance id="6">
+                <location x="2.556409912054332" y="191.337954820404292" z="15.619059690362993"/>
+            </instance>
+            <instance id="7">
+                <location x="21.483902616546512" y="414.839361670115125" z="29.819369288203454"/>
+            </instance>
+            <instance id="8">
+                <location x="12.411072707639292" y="284.627837217383103" z="23.996598333121138"/>
+            </instance>
+            <instance id="9">
+                <location x="12.411585833781496" y="304.485141353801566" z="8.042167765544223"/>
+            </instance>
+            <instance id="10">
+                <location x="13.846879134921618" y="378.737517056000058" z="1.142265731202842"/>
+            </instance>
+            <instance id="11">
+                <location x="9.34945548434056" y="237.60796654675903" z="1.401741632399675"/>
+            </instance>
+            <instance id="12">
+                <location x="15.076990494253815" y="406.537499005897587" z="25.683779475352779"/>
+            </instance>
+            <instance id="13">
+                <location x="27.518601227198122" y="215.960682611805197" z="15.471166708629772"/>
+            </instance>
+            <instance id="14">
+                <location x="18.617359437370354" y="376.759633720908425" z="22.246621292492694"/>
+            </instance>
+            <instance id="15">
+                <location x="26.310567989407442" y="288.88710715100467" z="20.203145081130057"/>
+            </instance>
+            <instance id="16">
+                <location x="21.971749043564369" y="205.017832541135618" z="12.891121464108322"/>
+            </instance>
+            <instance id="17">
+                <location x="1.415126155732403" y="177.701903996825706" z="8.940121869337716"/>
+            </instance>
+        </population>
+        <population id="IT_L4" component="CELL_IT" size="9" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.2986398551995928 0.3684116894884757 0.19366134904507426"/>
+            <instance id="0">
+                <location x="21.481710322787588" y="433.566998525274244" z="15.711259367942981"/>
+            </instance>
+            <instance id="1">
+                <location x="22.221448900592176" y="514.472693307331497" z="22.801775414775641"/>
+            </instance>
+            <instance id="2">
+                <location x="11.963570434142936" y="422.787573585918267" z="17.514392049630548"/>
+            </instance>
+            <instance id="3">
+                <location x="9.890566663842051" y="522.52148174959666" z="5.867796583131934"/>
+            </instance>
+            <instance id="4">
+                <location x="5.198899985943245" y="520.573783949698736" z="26.264512979829561"/>
+            </instance>
+            <instance id="5">
+                <location x="26.00179655104834" y="538.535749672670818" z="25.298958135466336"/>
+            </instance>
+            <instance id="6">
+                <location x="25.927215885387916" y="496.353521794813332" z="13.489710203490754"/>
+            </instance>
+            <instance id="7">
+                <location x="21.177578358636801" y="521.652574775006428" z="20.900202072015915"/>
+            </instance>
+            <instance id="8">
+                <location x="28.12440070134485" y="425.428252250205617" z="1.945699536719895"/>
+            </instance>
+        </population>
+        <population id="IT_L5A" component="CELL_IT" size="10" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.5660081687288613 0.1616878239293682 0.12426688428353017"/>
+            <instance id="0">
+                <location x="10.387266112866982" y="615.619061415288797" z="5.855457806993402"/>
+            </instance>
+            <instance id="1">
+                <location x="2.490611539108071" y="587.913190174984493" z="12.032422488082101"/>
+            </instance>
+            <instance id="2">
+                <location x="18.886811926754469" y="574.524603138089901" z="12.714555633087979"/>
+            </instance>
+            <instance id="3">
+                <location x="9.634704361754771" y="641.844728981762955" z="19.004490976453646"/>
+            </instance>
+            <instance id="4">
+                <location x="6.103365983324273" y="647.220912927710287" z="29.101124410726801"/>
+            </instance>
+            <instance id="5">
+                <location x="10.286387526363511" y="628.695934551955133" z="25.230429769672817"/>
+            </instance>
+            <instance id="6">
+                <location x="10.528088323648999" y="661.881646397201848" z="13.470176681068219"/>
+            </instance>
+            <instance id="7">
+                <location x="2.614320020048339" y="653.586578889496991" z="12.056098186397902"/>
+            </instance>
+            <instance id="8">
+                <location x="21.895533662313703" y="651.253518423705032" z="15.001121502136552"/>
+            </instance>
+            <instance id="9">
+                <location x="27.859856402999757" y="606.638813355439538" z="2.187530637675074"/>
+            </instance>
+        </population>
+        <population id="IT_L5B" component="CELL_IT" size="12" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.4329362680099159 0.5620784880758429 0.1743435607237318"/>
+            <instance id="0">
+                <location x="23.782906454572707" y="958.483054564105714" z="28.733786093365918"/>
+            </instance>
+            <instance id="1">
+                <location x="20.12566736430729" y="992.172970564995694" z="1.283147222995025"/>
+            </instance>
+            <instance id="2">
+                <location x="23.921904861013893" y="934.455856782045203" z="18.601497530797147"/>
+            </instance>
+            <instance id="3">
+                <location x="7.103282153349537" y="885.68233030867259" z="21.396437498881379"/>
+            </instance>
+            <instance id="4">
+                <location x="16.495195330005327" y="720.13293660394072" z="22.457837778502647"/>
+            </instance>
+            <instance id="5">
+                <location x="27.050614699942383" y="909.054920522017824" z="1.55943389712846"/>
+            </instance>
+            <instance id="6">
+                <location x="29.442637791055571" y="920.229349369478996" z="20.510298546750494"/>
+            </instance>
+            <instance id="7">
+                <location x="5.37660073363767" y="725.003057588822458" z="13.369797579159542"/>
+            </instance>
+            <instance id="8">
+                <location x="23.490763608484819" y="861.375925648055045" z="8.476920605526091"/>
+            </instance>
+            <instance id="9">
+                <location x="22.997146778973484" y="782.803793428744257" z="13.182586165335358"/>
+            </instance>
+            <instance id="10">
+                <location x="13.94956156286654" y="767.436955435914683" z="4.136899247733667"/>
+            </instance>
+            <instance id="11">
+                <location x="29.8871782631876" y="914.292925673003083" z="16.596910905419637"/>
+            </instance>
+        </population>
+        <population id="PT_L5B" component="CELL_PT" size="12" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.5532210855693298 0.35490138633659873 0.9580647850995486"/>
+            <instance id="0">
+                <location x="1.810780169486352" y="856.071966051340155" z="5.431437630804386"/>
+            </instance>
+            <instance id="1">
+                <location x="15.001152319600536" y="879.590069456470701" z="28.977258545584686"/>
+            </instance>
+            <instance id="2">
+                <location x="9.742797552667838" y="780.454522121242576" z="19.781724538239249"/>
+            </instance>
+            <instance id="3">
+                <location x="4.793773862814118" y="918.344607798069546" z="2.393584150729332"/>
+            </instance>
+            <instance id="4">
+                <location x="18.336880812808666" y="869.888173357842447" z="21.081961246421102"/>
+            </instance>
+            <instance id="5">
+                <location x="27.506663182865207" y="889.18695605064579" z="26.891089375854683"/>
+            </instance>
+            <instance id="6">
+                <location x="18.675653261906547" y="804.816428627628738" z="27.165204075359462"/>
+            </instance>
+            <instance id="7">
+                <location x="15.908315089552589" y="758.51892583258018" z="27.178882216760215"/>
+            </instance>
+            <instance id="8">
+                <location x="1.274344701954549" y="1006.218470595260555" z="12.940799872637539"/>
+            </instance>
+            <instance id="9">
+                <location x="0.389361292964462" y="940.09685241708155" z="3.475141901645078"/>
+            </instance>
+            <instance id="10">
+                <location x="3.031905660631157" y="835.595048640017581" z="2.888083601629342"/>
+            </instance>
+            <instance id="11">
+                <location x="20.041286507611797" y="995.046282859159078" z="5.327821430906694"/>
+            </instance>
+        </population>
+        <population id="IT_L6" component="CELL_IT" size="11" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.09129409887673512 0.97863999557041 0.412119392939301"/>
+            <instance id="0">
+                <location x="0.804724450967106" y="1117.174670383642706" z="16.080481783468166"/>
+            </instance>
+            <instance id="1">
+                <location x="25.649170869577404" y="1250.663457787790321" z="9.442302747759431"/>
+            </instance>
+            <instance id="2">
+                <location x="8.032098738934822" y="1203.986378964389132" z="26.269242783014374"/>
+            </instance>
+            <instance id="3">
+                <location x="1.936170025277843" y="1172.845233811218122" z="7.434310240802748"/>
+            </instance>
+            <instance id="4">
+                <location x="8.895533839497823" y="1213.012455255838177" z="17.973570530774637"/>
+            </instance>
+            <instance id="5">
+                <location x="26.233849037384182" y="1286.921581848659116" z="15.9536050548885"/>
+            </instance>
+            <instance id="6">
+                <location x="23.686201036049475" y="1264.955647091740957" z="23.327483261626334"/>
+            </instance>
+            <instance id="7">
+                <location x="14.006731409112287" y="1254.265392280122114" z="23.327701735932447"/>
+            </instance>
+            <instance id="8">
+                <location x="5.542277403748064" y="1331.273523179284894" z="8.108854403693961"/>
+            </instance>
+            <instance id="9">
+                <location x="26.172283441719532" y="1195.408934779137098" z="20.975382847018682"/>
+            </instance>
+            <instance id="10">
+                <location x="25.07117789819111" y="1268.650426706962662" z="22.357720673932292"/>
+            </instance>
+        </population>
+        <population id="CT_L6" component="CELL_CT" size="11" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.5039353681100375 0.14814616893018917 0.718967140300885"/>
+            <instance id="0">
+                <location x="16.689682368494179" y="1063.089097685974821" z="3.231529611341765"/>
+            </instance>
+            <instance id="1">
+                <location x="4.113958216245762" y="1295.111226582175277" z="24.23259851424196"/>
+            </instance>
+            <instance id="2">
+                <location x="27.978385196072423" y="1331.381703865741883" z="16.506139601928613"/>
+            </instance>
+            <instance id="3">
+                <location x="27.520678276773385" y="1190.598508385336345" z="4.534780933862836"/>
+            </instance>
+            <instance id="4">
+                <location x="11.849914956407176" y="1132.09492912199471" z="22.36767295460038"/>
+            </instance>
+            <instance id="5">
+                <location x="24.665622831167276" y="1293.601372363837072" z="25.132750101589423"/>
+            </instance>
+            <instance id="6">
+                <location x="27.871385298699284" y="1143.811128133486363" z="17.298505327827645"/>
+            </instance>
+            <instance id="7">
+                <location x="21.273498106451356" y="1121.247520207835578" z="1.071871393110633"/>
+            </instance>
+            <instance id="8">
+                <location x="0.433678831804153" y="1150.553119031700135" z="23.534393468048798"/>
+            </instance>
+            <instance id="9">
+                <location x="22.526993124623086" y="1218.562697378671146" z="21.571205167199668"/>
+            </instance>
+            <instance id="10">
+                <location x="25.272502390371518" y="1170.862028028382383" z="1.019082634938163"/>
+            </instance>
+        </population>
+        <population id="PV_L23" component="CELL_PV" size="2" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.18997137872182035 0.34156042577355217 0.02352121814220054"/>
+            <instance id="0">
+                <location x="12.021670427168331" y="414.867533508602719" z="19.770580371895203"/>
+            </instance>
+            <instance id="1">
+                <location x="16.65198677763064" y="322.573942733329261" z="12.374570504209361"/>
+            </instance>
+        </population>
+        <population id="SOM_L23" component="CELL_SOM" size="2" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.3395177723979207 0.9674824588798714 0.9787984541856568"/>
+            <instance id="0">
+                <location x="28.631101053061172" y="190.744936647418683" z="1.508158156297133"/>
+            </instance>
+            <instance id="1">
+                <location x="14.034481334026324" y="271.843424212922514" z="3.129134710615237"/>
+            </instance>
+        </population>
+        <population id="PV_L5" component="CELL_PV" size="5" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.7445300401410346 0.0034546107550955663 0.9402385030977428"/>
+            <instance id="0">
+                <location x="26.828292792935788" y="627.823358749197041" z="21.176656349288145"/>
+            </instance>
+            <instance id="1">
+                <location x="28.341901100161046" y="933.688454100585432" z="8.289583567928155"/>
+            </instance>
+            <instance id="2">
+                <location x="18.909550283823734" y="452.212283150359895" z="3.702667056652096"/>
+            </instance>
+            <instance id="3">
+                <location x="18.144718027174306" y="643.93210645801571" z="10.397111796681509"/>
+            </instance>
+            <instance id="4">
+                <location x="2.885223486720299" y="962.985038957678512" z="27.625840937805865"/>
+            </instance>
+        </population>
+        <population id="SOM_L5" component="CELL_SOM" size="5" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.8707669687554763 0.7708343385168108 0.17887376462351512"/>
+            <instance id="0">
+                <location x="18.798955870140588" y="715.888566892503604" z="23.181957573820384"/>
+            </instance>
+            <instance id="1">
+                <location x="29.425324236642261" y="833.889991871456118" z="21.801767909945507"/>
+            </instance>
+            <instance id="2">
+                <location x="28.982625603912719" y="979.797703261650781" z="4.722719519696497"/>
+            </instance>
+            <instance id="3">
+                <location x="20.936310591423812" y="938.802428328594601" z="27.984028046954418"/>
+            </instance>
+            <instance id="4">
+                <location x="7.930361391527028" y="915.741142008397446" z="23.075961737643002"/>
+            </instance>
+        </population>
+        <population id="PV_L6" component="CELL_PV" size="2" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.09949963280961138 0.41453246851185777 0.8855364671454795"/>
+            <instance id="0">
+                <location x="20.828003976301289" y="1290.470965099062141" z="15.492552366225851"/>
+            </instance>
+            <instance id="1">
+                <location x="3.075697221077117" y="1202.535052381331298" z="10.650213525944805"/>
+            </instance>
+        </population>
+        <population id="SOM_L6" component="CELL_SOM" size="2" type="populationList">
+            <property tag="radius" value="5"/>
+            <property tag="color" value="0.5780860273663232 0.7365822149440823 0.23262110322840768"/>
+            <instance id="0">
+                <location x="4.805376561171054" y="1328.415163121205978" z="21.935644687168381"/>
+            </instance>
+            <instance id="1">
+                <location x="18.13321252396954" y="1125.607475555127621" z="18.99855120363679"/>
+            </instance>
+        </population>
+        <population id="Pop_NetStim_background_E_IT_L23_10_1_AMPA" component="NetStim_background_E_IT_L23_10_1_AMPA" size="18"/>
+        <population id="Pop_NetStim_background_E_IT_L4_10_1_AMPA" component="NetStim_background_E_IT_L4_10_1_AMPA" size="9"/>
+        <population id="Pop_NetStim_background_E_IT_L5A_10_1_AMPA" component="NetStim_background_E_IT_L5A_10_1_AMPA" size="10"/>
+        <population id="Pop_NetStim_background_E_IT_L5B_10_1_AMPA" component="NetStim_background_E_IT_L5B_10_1_AMPA" size="12"/>
+        <population id="Pop_NetStim_background_E_PT_L5B_10_1_AMPA" component="NetStim_background_E_PT_L5B_10_1_AMPA" size="12"/>
+        <population id="Pop_NetStim_background_E_IT_L6_10_1_AMPA" component="NetStim_background_E_IT_L6_10_1_AMPA" size="11"/>
+        <population id="Pop_NetStim_background_E_CT_L6_10_1_AMPA" component="NetStim_background_E_CT_L6_10_1_AMPA" size="11"/>
+        <population id="Pop_NetStim_background_E_PV_L23_10_1_AMPA" component="NetStim_background_E_PV_L23_10_1_AMPA" size="2"/>
+        <population id="Pop_NetStim_background_E_SOM_L23_10_1_AMPA" component="NetStim_background_E_SOM_L23_10_1_AMPA" size="2"/>
+        <population id="Pop_NetStim_background_E_PV_L5_10_1_AMPA" component="NetStim_background_E_PV_L5_10_1_AMPA" size="5"/>
+        <population id="Pop_NetStim_background_E_SOM_L5_10_1_AMPA" component="NetStim_background_E_SOM_L5_10_1_AMPA" size="5"/>
+        <population id="Pop_NetStim_background_E_PV_L6_10_1_AMPA" component="NetStim_background_E_PV_L6_10_1_AMPA" size="2"/>
+        <population id="Pop_NetStim_background_E_SOM_L6_10_1_AMPA" component="NetStim_background_E_SOM_L6_10_1_AMPA" size="2"/>
+        <projection id="NetConn_SOM_L23_IT_L23_GABAB" presynapticPopulation="SOM_L23" postsynapticPopulation="IT_L23" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/0/CELL_IT" weight="0.00015" delay="3.0403670618784506 ms"/>
+            <connectionWD id="1" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/1/CELL_IT" weight="0.00015" delay="2.291017228037866 ms"/>
+            <connectionWD id="2" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/2/CELL_IT" weight="0.00015" delay="2.2565055046192493 ms"/>
+            <connectionWD id="3" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/3/CELL_IT" weight="0.00015" delay="3.0797583899405216 ms"/>
+            <connectionWD id="4" preCellId="../SOM_L23/0/CELL_SOM" postCellId="../IT_L23/6/CELL_IT" weight="0.00015" delay="2.296539833876748 ms"/>
+            <connectionWD id="5" preCellId="../SOM_L23/0/CELL_SOM" postCellId="../IT_L23/9/CELL_IT" weight="0.00015" delay="3.1507649682785823 ms"/>
+            <connectionWD id="6" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/9/CELL_IT" weight="0.00015" delay="2.330492568979803 ms"/>
+            <connectionWD id="7" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/10/CELL_IT" weight="0.00015" delay="3.0691272107504766 ms"/>
+            <connectionWD id="8" preCellId="../SOM_L23/0/CELL_SOM" postCellId="../IT_L23/11/CELL_IT" weight="0.00015" delay="2.5067481378022802 ms"/>
+            <connectionWD id="9" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/11/CELL_IT" weight="0.00015" delay="2.3459768656529745 ms"/>
+            <connectionWD id="10" preCellId="../SOM_L23/0/CELL_SOM" postCellId="../IT_L23/13/CELL_IT" weight="0.00015" delay="2.2884505344483754 ms"/>
+            <connectionWD id="11" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/13/CELL_IT" weight="0.00015" delay="2.587964969363881 ms"/>
+            <connectionWD id="12" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/15/CELL_IT" weight="0.00015" delay="2.2706863982169674 ms"/>
+            <connectionWD id="13" preCellId="../SOM_L23/0/CELL_SOM" postCellId="../IT_L23/16/CELL_IT" weight="0.00015" delay="2.1943281708981606 ms"/>
+            <connectionWD id="14" preCellId="../SOM_L23/1/CELL_SOM" postCellId="../IT_L23/17/CELL_IT" weight="0.00015" delay="2.9516113453228967 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L23_IT_L23_GABAA" presynapticPopulation="PV_L23" postsynapticPopulation="IT_L23" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/0/CELL_IT" weight="0.00015" delay="2.5255231702386505 ms"/>
+            <connectionWD id="1" preCellId="../PV_L23/0/CELL_PV" postCellId="../IT_L23/1/CELL_IT" weight="0.00015" delay="3.1826168245966358 ms"/>
+            <connectionWD id="2" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/2/CELL_IT" weight="0.00015" delay="2.741621112091882 ms"/>
+            <connectionWD id="3" preCellId="../PV_L23/0/CELL_PV" postCellId="../IT_L23/4/CELL_IT" weight="0.00015" delay="2.9657698320527914 ms"/>
+            <connectionWD id="4" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/4/CELL_IT" weight="0.00015" delay="2.097752293405238 ms"/>
+            <connectionWD id="5" preCellId="../PV_L23/0/CELL_PV" postCellId="../IT_L23/5/CELL_IT" weight="0.00015" delay="2.867000808030239 ms"/>
+            <connectionWD id="6" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/5/CELL_IT" weight="0.00015" delay="2.184615157558655 ms"/>
+            <connectionWD id="7" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/9/CELL_IT" weight="0.00015" delay="2.1907761643923562 ms"/>
+            <connectionWD id="8" preCellId="../PV_L23/0/CELL_PV" postCellId="../IT_L23/10/CELL_IT" weight="0.00015" delay="2.4069058345667744 ms"/>
+            <connectionWD id="9" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/11/CELL_IT" weight="0.00015" delay="2.85982248435804 ms"/>
+            <connectionWD id="10" preCellId="../PV_L23/0/CELL_PV" postCellId="../IT_L23/12/CELL_IT" weight="0.00015" delay="2.1066256906968133 ms"/>
+            <connectionWD id="11" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/12/CELL_IT" weight="0.00015" delay="2.8502643376425336 ms"/>
+            <connectionWD id="12" preCellId="../PV_L23/0/CELL_PV" postCellId="../IT_L23/14/CELL_IT" weight="0.00015" delay="2.387536568389194 ms"/>
+            <connectionWD id="13" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/14/CELL_IT" weight="0.00015" delay="2.551126953093343 ms"/>
+            <connectionWD id="14" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/15/CELL_IT" weight="0.00015" delay="2.3590790529230947 ms"/>
+            <connectionWD id="15" preCellId="../PV_L23/1/CELL_PV" postCellId="../IT_L23/16/CELL_IT" weight="0.00015" delay="3.176775498511904 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5A_IT_L23_AMPA" presynapticPopulation="IT_L5A" postsynapticPopulation="IT_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5A/3/CELL_IT" postCellId="../IT_L23/4/CELL_IT" weight="0.000201" delay="5.2321073414630614 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5A/4/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000144" delay="4.328910950373935 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5A/0/CELL_IT" postCellId="../IT_L23/12/CELL_IT" weight="0.000144" delay="4.100720247784304 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5A/2/CELL_IT" postCellId="../IT_L23/15/CELL_IT" weight="0.000201" delay="4.858320665001939 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_IT_L23_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="IT_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/13/CELL_IT" postCellId="../IT_L23/5/CELL_IT" weight="0.000132" delay="3.1444341228807584 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/8/CELL_IT" postCellId="../IT_L23/5/CELL_IT" weight="0.000234" delay="2.4452915897635354 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/14/CELL_IT" postCellId="../IT_L23/5/CELL_IT" weight="0.000234" delay="2.487508644293006 ms"/>
+            <connectionWD id="3" preCellId="../IT_L23/15/CELL_IT" postCellId="../IT_L23/5/CELL_IT" weight="0.000234" delay="2.4268166089077434 ms"/>
+            <connectionWD id="4" preCellId="../IT_L23/2/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000093" delay="3.6731590503723033 ms"/>
+            <connectionWD id="5" preCellId="../IT_L23/17/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000093" delay="4.388992938314457 ms"/>
+            <connectionWD id="6" preCellId="../IT_L23/0/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000108" delay="2.4218684192627857 ms"/>
+            <connectionWD id="7" preCellId="../IT_L23/1/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000108" delay="3.2136616003617826 ms"/>
+            <connectionWD id="8" preCellId="../IT_L23/12/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000285" delay="2.112726460841483 ms"/>
+            <connectionWD id="9" preCellId="../IT_L23/13/CELL_IT" postCellId="../IT_L23/8/CELL_IT" weight="0.000132" delay="2.7082442039282424 ms"/>
+            <connectionWD id="10" preCellId="../IT_L23/4/CELL_IT" postCellId="../IT_L23/8/CELL_IT" weight="0.000234" delay="2.3618862044134286 ms"/>
+            <connectionWD id="11" preCellId="../IT_L23/5/CELL_IT" postCellId="../IT_L23/8/CELL_IT" weight="0.000234" delay="2.4452915897635354 ms"/>
+            <connectionWD id="12" preCellId="../IT_L23/14/CELL_IT" postCellId="../IT_L23/8/CELL_IT" weight="0.000234" delay="2.923571780728567 ms"/>
+            <connectionWD id="13" preCellId="../IT_L23/15/CELL_IT" postCellId="../IT_L23/8/CELL_IT" weight="0.000234" delay="2.150242349898552 ms"/>
+            <connectionWD id="14" preCellId="../IT_L23/16/CELL_IT" postCellId="../IT_L23/9/CELL_IT" weight="0.000132" delay="3.000432636163113 ms"/>
+            <connectionWD id="15" preCellId="../IT_L23/0/CELL_IT" postCellId="../IT_L23/9/CELL_IT" weight="0.000234" delay="2.714844378842296 ms"/>
+            <connectionWD id="16" preCellId="../IT_L23/4/CELL_IT" postCellId="../IT_L23/9/CELL_IT" weight="0.000234" delay="2.208953575738302 ms"/>
+            <connectionWD id="17" preCellId="../IT_L23/0/CELL_IT" postCellId="../IT_L23/10/CELL_IT" weight="0.000234" delay="2.2052327627268125 ms"/>
+            <connectionWD id="18" preCellId="../IT_L23/0/CELL_IT" postCellId="../IT_L23/13/CELL_IT" weight="0.000213" delay="3.583802820418835 ms"/>
+            <connectionWD id="19" preCellId="../IT_L23/4/CELL_IT" postCellId="../IT_L23/14/CELL_IT" weight="0.000234" delay="2.5810331918651475 ms"/>
+            <connectionWD id="20" preCellId="../IT_L23/10/CELL_IT" postCellId="../IT_L23/14/CELL_IT" weight="0.000234" delay="2.217270183978527 ms"/>
+            <connectionWD id="21" preCellId="../IT_L23/6/CELL_IT" postCellId="../IT_L23/15/CELL_IT" weight="0.000132" delay="3.0050428341743647 ms"/>
+            <connectionWD id="22" preCellId="../IT_L23/10/CELL_IT" postCellId="../IT_L23/15/CELL_IT" weight="0.000234" delay="2.926917300601818 ms"/>
+            <connectionWD id="23" preCellId="../IT_L23/9/CELL_IT" postCellId="../IT_L23/17/CELL_IT" weight="0.000213" delay="3.272623971239689 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L4_IT_L23_AMPA" presynapticPopulation="IT_L4" postsynapticPopulation="IT_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L4/8/CELL_IT" postCellId="../IT_L23/6/CELL_IT" weight="0.000294" delay="4.358791009853677 ms"/>
+            <connectionWD id="1" preCellId="../IT_L4/0/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000285" delay="2.234470286498528 ms"/>
+            <connectionWD id="2" preCellId="../IT_L4/1/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000285" delay="2.998828882813519 ms"/>
+            <connectionWD id="3" preCellId="../IT_L4/7/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000285" delay="3.0718539019928146 ms"/>
+            <connectionWD id="4" preCellId="../IT_L4/8/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000285" delay="2.3054770505203477 ms"/>
+            <connectionWD id="5" preCellId="../IT_L4/3/CELL_IT" postCellId="../IT_L23/9/CELL_IT" weight="0.000174" delay="4.180617553833893 ms"/>
+            <connectionWD id="6" preCellId="../IT_L4/6/CELL_IT" postCellId="../IT_L23/10/CELL_IT" weight="0.000174" delay="3.18877745990246 ms"/>
+            <connectionWD id="7" preCellId="../IT_L4/4/CELL_IT" postCellId="../IT_L23/15/CELL_IT" weight="0.000174" delay="4.327255012084288 ms"/>
+            <connectionWD id="8" preCellId="../IT_L4/8/CELL_IT" postCellId="../IT_L23/15/CELL_IT" weight="0.000174" delay="3.3776831497813653 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_IT_L23_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="IT_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/9/CELL_IT" postCellId="../IT_L23/6/CELL_IT" weight="0.000063" delay="7.918239589333703 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5B/11/CELL_IT" postCellId="../IT_L23/7/CELL_IT" weight="0.000051" delay="6.996992205742018 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_IT_L23_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="IT_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/0/CELL_CT" postCellId="../IT_L23/7/CELL_IT" weight="0.000051" delay="8.488124675213179 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L4_IT_L4_AMPA" presynapticPopulation="IT_L4" postsynapticPopulation="IT_L4" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L4/1/CELL_IT" postCellId="../IT_L4/0/CELL_IT" weight="0.000285" delay="2.8121917310057576 ms"/>
+            <connectionWD id="1" preCellId="../IT_L4/2/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000285" delay="2.9240855843379623 ms"/>
+            <connectionWD id="2" preCellId="../IT_L4/5/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000285" delay="2.24485865954471 ms"/>
+            <connectionWD id="3" preCellId="../IT_L4/6/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000285" delay="2.207063189327527 ms"/>
+            <connectionWD id="4" preCellId="../IT_L4/3/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.00019725" delay="2.2244088436749982 ms"/>
+            <connectionWD id="5" preCellId="../IT_L4/5/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.00019725" delay="2.24485865954471 ms"/>
+            <connectionWD id="6" preCellId="../IT_L4/1/CELL_IT" postCellId="../IT_L4/2/CELL_IT" weight="0.000285" delay="2.9240855843379623 ms"/>
+            <connectionWD id="7" preCellId="../IT_L4/8/CELL_IT" postCellId="../IT_L4/2/CELL_IT" weight="0.000285" delay="2.2259490662284076 ms"/>
+            <connectionWD id="8" preCellId="../IT_L4/0/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.000285" delay="2.902449359057035 ms"/>
+            <connectionWD id="9" preCellId="../IT_L4/1/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.000285" delay="2.2244088436749982 ms"/>
+            <connectionWD id="10" preCellId="../IT_L4/2/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.000285" delay="3.004330272778481 ms"/>
+            <connectionWD id="11" preCellId="../IT_L4/0/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000285" delay="2.8914416292811485 ms"/>
+            <connectionWD id="12" preCellId="../IT_L4/5/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000285" delay="2.2750136386234616 ms"/>
+            <connectionWD id="13" preCellId="../IT_L4/8/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000285" delay="3.008447096912471 ms"/>
+            <connectionWD id="14" preCellId="../IT_L4/1/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.00019725" delay="2.18411437478438 ms"/>
+            <connectionWD id="15" preCellId="../IT_L4/0/CELL_IT" postCellId="../IT_L4/5/CELL_IT" weight="0.000285" delay="3.055025775259152 ms"/>
+            <connectionWD id="16" preCellId="../IT_L4/7/CELL_IT" postCellId="../IT_L4/5/CELL_IT" weight="0.000285" delay="2.18101484212596 ms"/>
+            <connectionWD id="17" preCellId="../IT_L4/4/CELL_IT" postCellId="../IT_L4/5/CELL_IT" weight="0.00019725" delay="2.2750136386234616 ms"/>
+            <connectionWD id="18" preCellId="../IT_L4/7/CELL_IT" postCellId="../IT_L4/5/CELL_IT" weight="0.00019725" delay="2.18101484212596 ms"/>
+            <connectionWD id="19" preCellId="../IT_L4/1/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000285" delay="2.207063189327527 ms"/>
+            <connectionWD id="20" preCellId="../IT_L4/2/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000285" delay="2.749875335914214 ms"/>
+            <connectionWD id="21" preCellId="../IT_L4/8/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000285" delay="2.718921808221537 ms"/>
+            <connectionWD id="22" preCellId="../IT_L4/0/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000285" delay="2.629828969218911 ms"/>
+            <connectionWD id="23" preCellId="../IT_L4/2/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000285" delay="2.749875335914214 ms"/>
+            <connectionWD id="24" preCellId="../IT_L4/0/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.000285" delay="2.882388030624008 ms"/>
+            <connectionWD id="25" preCellId="../IT_L4/1/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.000285" delay="2.075004229731475 ms"/>
+            <connectionWD id="26" preCellId="../IT_L4/2/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.000285" delay="2.993511454974663 ms"/>
+            <connectionWD id="27" preCellId="../IT_L4/8/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.000285" delay="2.9831913217873 ms"/>
+            <connectionWD id="28" preCellId="../IT_L4/3/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.00019725" delay="2.1881820520430026 ms"/>
+            <connectionWD id="29" preCellId="../IT_L4/1/CELL_IT" postCellId="../IT_L4/8/CELL_IT" weight="0.000285" delay="2.916446028098174 ms"/>
+            <connectionWD id="30" preCellId="../IT_L4/2/CELL_IT" postCellId="../IT_L4/8/CELL_IT" weight="0.000285" delay="2.2259490662284076 ms"/>
+            <connectionWD id="31" preCellId="../IT_L4/5/CELL_IT" postCellId="../IT_L4/8/CELL_IT" weight="0.000285" delay="3.15512709728115 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_IT_L4_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="IT_L4" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/9/CELL_IT" postCellId="../IT_L4/0/CELL_IT" weight="0.000051" delay="5.4924923715058664 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5B/3/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.0000615" delay="5.635033831613962 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5B/4/CELL_IT" postCellId="../IT_L4/5/CELL_IT" weight="0.0000615" delay="3.818680448374845 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5B/1/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000051" delay="6.960036128132604 ms"/>
+            <connectionWD id="4" preCellId="../IT_L5B/10/CELL_IT" postCellId="../IT_L4/8/CELL_IT" weight="0.000051" delay="5.423093344849739 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_IT_L4_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="IT_L4" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/15/CELL_IT" postCellId="../IT_L4/0/CELL_IT" weight="0.000108" delay="3.448301276381929 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/11/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000093" delay="4.779887166497973 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/16/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000093" delay="5.096136209270745 ms"/>
+            <connectionWD id="3" preCellId="../IT_L23/4/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000108" delay="3.9560631884922826 ms"/>
+            <connectionWD id="4" preCellId="../IT_L23/12/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000285" delay="3.082097749845797 ms"/>
+            <connectionWD id="5" preCellId="../IT_L23/16/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000129" delay="5.096136209270745 ms"/>
+            <connectionWD id="6" preCellId="../IT_L23/2/CELL_IT" postCellId="../IT_L4/2/CELL_IT" weight="0.000093" delay="3.742561462764721 ms"/>
+            <connectionWD id="7" preCellId="../IT_L23/2/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.000093" delay="4.740689055274164 ms"/>
+            <connectionWD id="8" preCellId="../IT_L23/16/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.000093" delay="5.1781102768904255 ms"/>
+            <connectionWD id="9" preCellId="../IT_L23/6/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.000129" delay="5.314082157954225 ms"/>
+            <connectionWD id="10" preCellId="../IT_L23/16/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.000129" delay="5.1781102768904255 ms"/>
+            <connectionWD id="11" preCellId="../IT_L23/4/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000108" delay="4.0257292430342275 ms"/>
+            <connectionWD id="12" preCellId="../IT_L23/9/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000108" delay="4.169755243366993 ms"/>
+            <connectionWD id="13" preCellId="../IT_L23/2/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000129" delay="4.723740665674539 ms"/>
+            <connectionWD id="14" preCellId="../IT_L23/11/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000129" delay="4.840863219666405 ms"/>
+            <connectionWD id="15" preCellId="../IT_L23/17/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000129" delay="5.433301290801097 ms"/>
+            <connectionWD id="16" preCellId="../IT_L23/2/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000093" delay="4.4817436483738815 ms"/>
+            <connectionWD id="17" preCellId="../IT_L23/15/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000108" delay="4.0757536070509115 ms"/>
+            <connectionWD id="18" preCellId="../IT_L23/7/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000285" delay="2.832523819446804 ms"/>
+            <connectionWD id="19" preCellId="../IT_L23/5/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000108" delay="3.6876668435145357 ms"/>
+            <connectionWD id="20" preCellId="../IT_L23/0/CELL_IT" postCellId="../IT_L4/6/CELL_IT" weight="0.000108" delay="3.222041440476465 ms"/>
+            <connectionWD id="21" preCellId="../IT_L23/4/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.000108" delay="4.027637920628029 ms"/>
+            <connectionWD id="22" preCellId="../IT_L23/2/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.000129" delay="4.7332980453873414 ms"/>
+            <connectionWD id="23" preCellId="../IT_L23/14/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.0001935" delay="3.449218131716147 ms"/>
+            <connectionWD id="24" preCellId="../IT_L23/4/CELL_IT" postCellId="../IT_L4/8/CELL_IT" weight="0.000108" delay="3.080021993121178 ms"/>
+            <connectionWD id="25" preCellId="../IT_L23/9/CELL_IT" postCellId="../IT_L4/8/CELL_IT" weight="0.000108" delay="3.2211181576418912 ms"/>
+            <connectionWD id="26" preCellId="../IT_L23/17/CELL_IT" postCellId="../IT_L4/8/CELL_IT" weight="0.000093" delay="4.492602072322713 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L5_IT_L4_GABAA" presynapticPopulation="PV_L5" postsynapticPopulation="IT_L4" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L5/2/CELL_PV" postCellId="../IT_L4/0/CELL_IT" weight="0.00015" delay="2.2232641787916934 ms"/>
+            <connectionWD id="1" preCellId="../PV_L5/2/CELL_PV" postCellId="../IT_L4/2/CELL_IT" weight="0.00015" delay="2.3323889162269973 ms"/>
+            <connectionWD id="2" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L4/3/CELL_IT" weight="0.00015" delay="3.2177514320714664 ms"/>
+            <connectionWD id="3" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L4/4/CELL_IT" weight="0.00015" delay="3.2504656875392293 ms"/>
+            <connectionWD id="4" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L4/6/CELL_IT" weight="0.00015" delay="3.316974529345725 ms"/>
+            <connectionWD id="5" preCellId="../PV_L5/2/CELL_PV" postCellId="../IT_L4/6/CELL_IT" weight="0.00015" delay="2.4575459313686494 ms"/>
+            <connectionWD id="6" preCellId="../PV_L5/4/CELL_PV" postCellId="../IT_L4/7/CELL_IT" weight="0.00015" delay="6.417625928102817 ms"/>
+            <connectionWD id="7" preCellId="../PV_L5/2/CELL_PV" postCellId="../IT_L4/8/CELL_IT" weight="0.00015" delay="2.2837930080787414 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5A_IT_L4_AMPA" presynapticPopulation="IT_L5A" postsynapticPopulation="IT_L4" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5A/8/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000171" delay="3.3700346908645518 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5A/9/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000171" delay="2.946114813942562 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5A/7/CELL_IT" postCellId="../IT_L4/2/CELL_IT" weight="0.000144" delay="4.310527695231637 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5A/1/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.00019725" delay="2.660971820820449 ms"/>
+            <connectionWD id="4" preCellId="../IT_L5A/2/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.00019725" delay="2.5321780879052604 ms"/>
+            <connectionWD id="5" preCellId="../IT_L5A/6/CELL_IT" postCellId="../IT_L4/3/CELL_IT" weight="0.000171" delay="3.395688292837188 ms"/>
+            <connectionWD id="6" preCellId="../IT_L5A/1/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.00019725" delay="2.6888020656800182 ms"/>
+            <connectionWD id="7" preCellId="../IT_L5A/7/CELL_IT" postCellId="../IT_L4/7/CELL_IT" weight="0.000171" delay="3.335267545301959 ms"/>
+        </projection>
+        <projection id="NetConn_PT_L5B_IT_L4_AMPA" presynapticPopulation="PT_L5B" postsynapticPopulation="IT_L4" synapse="AMPA">
+            <connectionWD id="0" preCellId="../PT_L5B/7/CELL_PT" postCellId="../IT_L4/1/CELL_IT" weight="0.0000615" delay="4.441671114876854 ms"/>
+            <connectionWD id="1" preCellId="../PT_L5B/5/CELL_PT" postCellId="../IT_L4/3/CELL_IT" weight="0.0000615" delay="5.676899179211057 ms"/>
+            <connectionWD id="2" preCellId="../PT_L5B/3/CELL_PT" postCellId="../IT_L4/5/CELL_IT" weight="0.0000615" delay="5.810894974861477 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_IT_L4_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="IT_L4" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/9/CELL_IT" postCellId="../IT_L4/1/CELL_IT" weight="0.000012" delay="8.809501521793884 ms"/>
+            <connectionWD id="1" preCellId="../IT_L6/2/CELL_IT" postCellId="../IT_L4/4/CELL_IT" weight="0.000012" delay="8.83418467750366 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_IT_L4_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="IT_L4" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/3/CELL_CT" postCellId="../IT_L4/5/CELL_IT" weight="0.000012" delay="8.523950485377156 ms"/>
+            <connectionWD id="1" preCellId="../CT_L6/4/CELL_CT" postCellId="../IT_L4/7/CELL_IT" weight="0.000012" delay="8.10515377984888 ms"/>
+            <connectionWD id="2" preCellId="../CT_L6/7/CELL_CT" postCellId="../IT_L4/7/CELL_IT" weight="0.000012" delay="7.999227204288127 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5A_IT_L5A_AMPA" presynapticPopulation="IT_L5A" postsynapticPopulation="IT_L5A" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5A/9/CELL_IT" postCellId="../IT_L5A/0/CELL_IT" weight="0.000198" delay="2.199847430902349 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5A/8/CELL_IT" postCellId="../IT_L5A/3/CELL_IT" weight="0.000198" delay="2.159649685576934 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5A/3/CELL_IT" postCellId="../IT_L5A/4/CELL_IT" weight="0.000198" delay="2.119714540165228 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5A/0/CELL_IT" postCellId="../IT_L5A/8/CELL_IT" weight="0.000198" delay="2.385473463768775 ms"/>
+            <connectionWD id="4" preCellId="../IT_L5A/4/CELL_IT" postCellId="../IT_L5A/8/CELL_IT" weight="0.000198" delay="2.2155143960643695 ms"/>
+            <connectionWD id="5" preCellId="../IT_L5A/5/CELL_IT" postCellId="../IT_L5A/8/CELL_IT" weight="0.000198" delay="2.2735426130914824 ms"/>
+            <connectionWD id="6" preCellId="../IT_L5A/6/CELL_IT" postCellId="../IT_L5A/9/CELL_IT" weight="0.000198" delay="2.5898693829126005 ms"/>
+        </projection>
+        <projection id="NetConn_PT_L5B_IT_L5A_AMPA" presynapticPopulation="PT_L5B" postsynapticPopulation="IT_L5A" synapse="AMPA">
+            <connectionWD id="0" preCellId="../PT_L5B/9/CELL_PT" postCellId="../IT_L5A/0/CELL_IT" weight="0.000072" delay="5.246405101924283 ms"/>
+            <connectionWD id="1" preCellId="../PT_L5B/7/CELL_PT" postCellId="../IT_L5A/6/CELL_IT" weight="0.000072" delay="2.9775294995133526 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L5_IT_L5A_GABAA" presynapticPopulation="PV_L5" postsynapticPopulation="IT_L5A" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L5A/0/CELL_IT" weight="0.00015" delay="2.255732547103725 ms"/>
+            <connectionWD id="1" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L5A/0/CELL_IT" weight="0.00015" delay="2.2970577722861876 ms"/>
+            <connectionWD id="2" preCellId="../PV_L5/4/CELL_PV" postCellId="../IT_L5A/0/CELL_IT" weight="0.00015" delay="5.481283564710104 ms"/>
+            <connectionWD id="3" preCellId="../PV_L5/2/CELL_PV" postCellId="../IT_L5A/1/CELL_IT" weight="0.00015" delay="3.3694415848204686 ms"/>
+            <connectionWD id="4" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L5A/2/CELL_IT" weight="0.00015" delay="2.5454751705230554 ms"/>
+            <connectionWD id="5" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L5A/3/CELL_IT" weight="0.00015" delay="2.2229207502110264 ms"/>
+            <connectionWD id="6" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L5A/3/CELL_IT" weight="0.00015" delay="2.122826891867526 ms"/>
+            <connectionWD id="7" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L5A/4/CELL_IT" weight="0.00015" delay="2.224866737181247 ms"/>
+            <connectionWD id="8" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L5A/5/CELL_IT" weight="0.00015" delay="2.1705371212738234 ms"/>
+            <connectionWD id="9" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L5A/5/CELL_IT" weight="0.00015" delay="2.226698393178882 ms"/>
+            <connectionWD id="10" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L5A/6/CELL_IT" weight="0.00015" delay="2.385363912702199 ms"/>
+            <connectionWD id="11" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L5A/7/CELL_IT" weight="0.00015" delay="2.365136217136339 ms"/>
+            <connectionWD id="12" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L5A/7/CELL_IT" weight="0.00015" delay="2.1836176287918017 ms"/>
+            <connectionWD id="13" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L5A/8/CELL_IT" weight="0.00015" delay="2.0942701418626646 ms"/>
+            <connectionWD id="14" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L5A/9/CELL_IT" weight="0.00015" delay="2.2846815733961763 ms"/>
+            <connectionWD id="15" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L5A/9/CELL_IT" weight="0.00015" delay="2.3940267563126145 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_IT_L5A_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="IT_L5A" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/13/CELL_IT" postCellId="../IT_L5A/1/CELL_IT" weight="0.000129" delay="5.728094595261479 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/17/CELL_IT" postCellId="../IT_L5A/1/CELL_IT" weight="0.000129" delay="6.1022435117855425 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/11/CELL_IT" postCellId="../IT_L5A/2/CELL_IT" weight="0.000129" delay="5.372413986160933 ms"/>
+            <connectionWD id="3" preCellId="../IT_L23/13/CELL_IT" postCellId="../IT_L5A/2/CELL_IT" weight="0.000129" delay="5.586783960518515 ms"/>
+            <connectionWD id="4" preCellId="../IT_L23/15/CELL_IT" postCellId="../IT_L5A/2/CELL_IT" weight="0.0001935" delay="4.858320665001939 ms"/>
+            <connectionWD id="5" preCellId="../IT_L23/6/CELL_IT" postCellId="../IT_L5A/3/CELL_IT" weight="0.000165" delay="6.505750958082158 ms"/>
+            <connectionWD id="6" preCellId="../IT_L23/11/CELL_IT" postCellId="../IT_L5A/3/CELL_IT" weight="0.000165" delay="6.046199429777596 ms"/>
+            <connectionWD id="7" preCellId="../IT_L23/15/CELL_IT" postCellId="../IT_L5A/6/CELL_IT" weight="0.000279" delay="5.733890006887713 ms"/>
+            <connectionWD id="8" preCellId="../IT_L23/2/CELL_IT" postCellId="../IT_L5A/7/CELL_IT" weight="0.000165" delay="6.051249184115711 ms"/>
+            <connectionWD id="9" preCellId="../IT_L23/1/CELL_IT" postCellId="../IT_L5A/7/CELL_IT" weight="0.000279" delay="5.552409631578211 ms"/>
+            <connectionWD id="10" preCellId="../IT_L23/2/CELL_IT" postCellId="../IT_L5A/8/CELL_IT" weight="0.000165" delay="6.028054006638133 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L4_IT_L5A_AMPA" presynapticPopulation="IT_L4" postsynapticPopulation="IT_L5A" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L4/3/CELL_IT" postCellId="../IT_L5A/1/CELL_IT" weight="0.00019725" delay="2.660971820820449 ms"/>
+            <connectionWD id="1" preCellId="../IT_L4/4/CELL_IT" postCellId="../IT_L5A/1/CELL_IT" weight="0.00019725" delay="2.6888020656800182 ms"/>
+            <connectionWD id="2" preCellId="../IT_L4/5/CELL_IT" postCellId="../IT_L5A/1/CELL_IT" weight="0.00019725" delay="2.5627529137471017 ms"/>
+            <connectionWD id="3" preCellId="../IT_L4/3/CELL_IT" postCellId="../IT_L5A/2/CELL_IT" weight="0.00019725" delay="2.5321780879052604 ms"/>
+            <connectionWD id="4" preCellId="../IT_L4/4/CELL_IT" postCellId="../IT_L5A/2/CELL_IT" weight="0.00019725" delay="2.5728569776564125 ms"/>
+            <connectionWD id="5" preCellId="../IT_L4/7/CELL_IT" postCellId="../IT_L5A/2/CELL_IT" weight="0.00019725" delay="2.535509458524803 ms"/>
+            <connectionWD id="6" preCellId="../IT_L4/6/CELL_IT" postCellId="../IT_L5A/4/CELL_IT" weight="0.000162" delay="3.5296297259708296 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L5_IT_L5A_GABAB" presynapticPopulation="SOM_L5" postsynapticPopulation="IT_L5A" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5A/1/CELL_IT" weight="0.00015" delay="3.2949120152905587 ms"/>
+            <connectionWD id="1" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5A/3/CELL_IT" weight="0.00015" delay="2.747256626965134 ms"/>
+            <connectionWD id="2" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../IT_L5A/3/CELL_IT" weight="0.00015" delay="4.739319746359963 ms"/>
+            <connectionWD id="3" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../IT_L5A/5/CELL_IT" weight="0.00015" delay="4.870629612391001 ms"/>
+            <connectionWD id="4" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5A/7/CELL_IT" weight="0.00015" delay="2.6532430553657322 ms"/>
+            <connectionWD id="5" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../IT_L5A/8/CELL_IT" weight="0.00015" delay="3.8291809087973876 ms"/>
+            <connectionWD id="6" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5A/9/CELL_IT" weight="0.00015" delay="3.116170888742076 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_IT_L5A_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="IT_L5A" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/4/CELL_CT" postCellId="../IT_L5A/2/CELL_IT" weight="0.000012" delay="7.5769827775490945 ms"/>
+            <connectionWD id="1" preCellId="../CT_L6/4/CELL_CT" postCellId="../IT_L5A/6/CELL_IT" weight="0.000024" delay="6.702993131149679 ms"/>
+            <connectionWD id="2" preCellId="../CT_L6/6/CELL_CT" postCellId="../IT_L5A/9/CELL_IT" weight="0.000024" delay="7.373848131953553 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_IT_L5A_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="IT_L5A" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/7/CELL_IT" postCellId="../IT_L5A/3/CELL_IT" weight="0.000072" delay="2.834577068514885 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5B/4/CELL_IT" postCellId="../IT_L5A/8/CELL_IT" weight="0.000072" delay="2.6949201767525106 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5B/6/CELL_IT" postCellId="../IT_L5A/9/CELL_IT" weight="0.000072" delay="5.1412935758751495 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_IT_L5A_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="IT_L5A" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/1/CELL_IT" postCellId="../IT_L5A/6/CELL_IT" weight="0.000024" delay="7.889897217525666 ms"/>
+            <connectionWD id="1" preCellId="../IT_L6/9/CELL_IT" postCellId="../IT_L5A/6/CELL_IT" weight="0.000024" delay="7.338093633579936 ms"/>
+            <connectionWD id="2" preCellId="../IT_L6/0/CELL_IT" postCellId="../IT_L5A/8/CELL_IT" weight="0.000024" delay="6.663995144674592 ms"/>
+            <connectionWD id="3" preCellId="../IT_L6/0/CELL_IT" postCellId="../IT_L5A/9/CELL_IT" weight="0.000024" delay="7.114409600022306 ms"/>
+            <connectionWD id="4" preCellId="../IT_L6/4/CELL_IT" postCellId="../IT_L5A/9/CELL_IT" weight="0.000024" delay="8.068754717216308 ms"/>
+            <connectionWD id="5" preCellId="../IT_L6/6/CELL_IT" postCellId="../IT_L5A/9/CELL_IT" weight="0.000024" delay="8.586693939881025 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_IT_L5B_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="IT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/9/CELL_IT" postCellId="../IT_L5B/0/CELL_IT" weight="0.000213" delay="3.7636796769973824 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5B/10/CELL_IT" postCellId="../IT_L5B/1/CELL_IT" weight="0.000213" delay="4.248389750011946 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5B/11/CELL_IT" postCellId="../IT_L5B/3/CELL_IT" weight="0.000213" delay="2.3688776957972237 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5B/9/CELL_IT" postCellId="../IT_L5B/6/CELL_IT" weight="0.000213" delay="3.377716340497985 ms"/>
+            <connectionWD id="4" preCellId="../IT_L5B/1/CELL_IT" postCellId="../IT_L5B/6/CELL_IT" weight="0.000213" delay="2.750491433441015 ms"/>
+            <connectionWD id="5" preCellId="../IT_L5B/10/CELL_IT" postCellId="../IT_L5B/8/CELL_IT" weight="0.000213" delay="2.9452195748279233 ms"/>
+            <connectionWD id="6" preCellId="../IT_L5B/3/CELL_IT" postCellId="../IT_L5B/9/CELL_IT" weight="0.000213" delay="3.0442258202621706 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_IT_L5B_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="IT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/1/CELL_IT" postCellId="../IT_L5B/0/CELL_IT" weight="0.00009" delay="4.928225269689738 ms"/>
+            <connectionWD id="1" preCellId="../IT_L6/2/CELL_IT" postCellId="../IT_L5B/1/CELL_IT" weight="0.00009" delay="4.136246225302674 ms"/>
+            <connectionWD id="2" preCellId="../IT_L6/3/CELL_IT" postCellId="../IT_L5B/3/CELL_IT" weight="0.00009" delay="4.875485579746961 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L5_IT_L5B_GABAB" presynapticPopulation="SOM_L5" postsynapticPopulation="IT_L5B" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../IT_L5B/0/CELL_IT" weight="0.00015" delay="2.325251079373606 ms"/>
+            <connectionWD id="1" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../IT_L5B/0/CELL_IT" weight="0.00015" delay="2.1989955512462886 ms"/>
+            <connectionWD id="2" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../IT_L5B/1/CELL_IT" weight="0.00015" delay="2.804081878215447 ms"/>
+            <connectionWD id="3" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5B/2/CELL_IT" weight="0.00015" delay="4.186752967992218 ms"/>
+            <connectionWD id="4" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../IT_L5B/2/CELL_IT" weight="0.00015" delay="3.007671699540011 ms"/>
+            <connectionWD id="5" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../IT_L5B/2/CELL_IT" weight="0.00015" delay="2.4768767572129238 ms"/>
+            <connectionWD id="6" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../IT_L5B/2/CELL_IT" weight="0.00015" delay="2.1076282194587015 ms"/>
+            <connectionWD id="7" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../IT_L5B/3/CELL_IT" weight="0.00015" delay="2.5639932780012185 ms"/>
+            <connectionWD id="8" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../IT_L5B/3/CELL_IT" weight="0.00015" delay="2.9805315888412407 ms"/>
+            <connectionWD id="9" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../IT_L5B/3/CELL_IT" weight="0.00015" delay="2.5528556627768006 ms"/>
+            <connectionWD id="10" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5B/4/CELL_IT" weight="0.00015" delay="2.0488327107087247 ms"/>
+            <connectionWD id="11" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../IT_L5B/4/CELL_IT" weight="0.00015" delay="3.1449142450136267 ms"/>
+            <connectionWD id="12" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../IT_L5B/4/CELL_IT" weight="0.00015" delay="4.605691105597564 ms"/>
+            <connectionWD id="13" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../IT_L5B/5/CELL_IT" weight="0.00015" delay="2.708398217940299 ms"/>
+            <connectionWD id="14" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../IT_L5B/5/CELL_IT" weight="0.00015" delay="2.4025615619277145 ms"/>
+            <connectionWD id="15" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../IT_L5B/6/CELL_IT" weight="0.00015" delay="2.616266829236396 ms"/>
+            <connectionWD id="16" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../IT_L5B/6/CELL_IT" weight="0.00015" delay="2.217525515076038 ms"/>
+            <connectionWD id="17" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../IT_L5B/6/CELL_IT" weight="0.00015" delay="2.2212475240121075 ms"/>
+            <connectionWD id="18" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5B/7/CELL_IT" weight="0.00015" delay="2.1896080277373593 ms"/>
+            <connectionWD id="19" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5B/8/CELL_IT" weight="0.00015" delay="3.4630387120564863 ms"/>
+            <connectionWD id="20" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../IT_L5B/8/CELL_IT" weight="0.00015" delay="2.7988689372035567 ms"/>
+            <connectionWD id="21" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../IT_L5B/8/CELL_IT" weight="0.00015" delay="2.5840235328338736 ms"/>
+            <connectionWD id="22" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5B/9/CELL_IT" weight="0.00015" delay="2.677883454427694 ms"/>
+            <connectionWD id="23" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../IT_L5B/9/CELL_IT" weight="0.00015" delay="3.3415373848504677 ms"/>
+            <connectionWD id="24" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../IT_L5B/10/CELL_IT" weight="0.00015" delay="2.5516762849002976 ms"/>
+            <connectionWD id="25" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../IT_L5B/10/CELL_IT" weight="0.00015" delay="2.704808687992112 ms"/>
+            <connectionWD id="26" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../IT_L5B/10/CELL_IT" weight="0.00015" delay="3.496297116672525 ms"/>
+            <connectionWD id="27" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../IT_L5B/11/CELL_IT" weight="0.00015" delay="2.284692850155551 ms"/>
+            <connectionWD id="28" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../IT_L5B/11/CELL_IT" weight="0.00015" delay="2.2293855351534346 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L5_IT_L5B_GABAA" presynapticPopulation="PV_L5" postsynapticPopulation="IT_L5B" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L5/4/CELL_PV" postCellId="../IT_L5B/0/CELL_IT" weight="0.00015" delay="2.2140580667418472 ms"/>
+            <connectionWD id="1" preCellId="../PV_L5/1/CELL_PV" postCellId="../IT_L5B/1/CELL_IT" weight="0.00015" delay="2.594729796893821 ms"/>
+            <connectionWD id="2" preCellId="../PV_L5/4/CELL_PV" postCellId="../IT_L5B/2/CELL_IT" weight="0.00015" delay="2.3657724665391924 ms"/>
+            <connectionWD id="3" preCellId="../PV_L5/1/CELL_PV" postCellId="../IT_L5B/3/CELL_IT" weight="0.00015" delay="2.5410597449690435 ms"/>
+            <connectionWD id="4" preCellId="../PV_L5/3/CELL_PV" postCellId="../IT_L5B/3/CELL_IT" weight="0.00015" delay="4.422520778113194 ms"/>
+            <connectionWD id="5" preCellId="../PV_L5/4/CELL_PV" postCellId="../IT_L5B/3/CELL_IT" weight="0.00015" delay="2.7766792291926636 ms"/>
+            <connectionWD id="6" preCellId="../PV_L5/0/CELL_PV" postCellId="../IT_L5B/5/CELL_IT" weight="0.00015" delay="4.819150158841273 ms"/>
+            <connectionWD id="7" preCellId="../PV_L5/1/CELL_PV" postCellId="../IT_L5B/5/CELL_IT" weight="0.00015" delay="2.2556899121446077 ms"/>
+            <connectionWD id="8" preCellId="../PV_L5/4/CELL_PV" postCellId="../IT_L5B/5/CELL_IT" weight="0.00015" delay="2.645901028252993 ms"/>
+            <connectionWD id="9" preCellId="../PV_L5/1/CELL_PV" postCellId="../IT_L5B/8/CELL_IT" weight="0.00015" delay="2.7247530890811587 ms"/>
+            <connectionWD id="10" preCellId="../PV_L5/1/CELL_PV" postCellId="../IT_L5B/10/CELL_IT" weight="0.00015" delay="3.66924968272182 ms"/>
+            <connectionWD id="11" preCellId="../PV_L5/4/CELL_PV" postCellId="../IT_L5B/10/CELL_IT" weight="0.00015" delay="3.972642971442567 ms"/>
+            <connectionWD id="12" preCellId="../PV_L5/1/CELL_PV" postCellId="../IT_L5B/11/CELL_IT" weight="0.00015" delay="2.211562305713461 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_IT_L5B_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="IT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/13/CELL_IT" postCellId="../IT_L5B/1/CELL_IT" weight="0.000066" delay="9.763771450381267 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/8/CELL_IT" postCellId="../IT_L5B/7/CELL_IT" weight="0.000303" delay="6.4055958440080625 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/13/CELL_IT" postCellId="../IT_L5B/8/CELL_IT" weight="0.000066" delay="8.454657069883535 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5A_IT_L5B_AMPA" presynapticPopulation="IT_L5A" postsynapticPopulation="IT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5A/3/CELL_IT" postCellId="../IT_L5B/1/CELL_IT" weight="0.000264" delay="5.50933018081726 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5A/6/CELL_IT" postCellId="../IT_L5B/7/CELL_IT" weight="0.000264" delay="2.6333135440819015 ms"/>
+        </projection>
+        <projection id="NetConn_PT_L5B_IT_L5B_AMPA" presynapticPopulation="PT_L5B" postsynapticPopulation="IT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../PT_L5B/10/CELL_PT" postCellId="../IT_L5B/2/CELL_IT" weight="0.000213" delay="3.0225831423603733 ms"/>
+            <connectionWD id="1" preCellId="../PT_L5B/8/CELL_PT" postCellId="../IT_L5B/3/CELL_IT" weight="0.000213" delay="3.209728706556418 ms"/>
+            <connectionWD id="2" preCellId="../PT_L5B/2/CELL_PT" postCellId="../IT_L5B/6/CELL_IT" weight="0.000213" delay="3.4115812714037475 ms"/>
+            <connectionWD id="3" preCellId="../PT_L5B/1/CELL_PT" postCellId="../IT_L5B/8/CELL_IT" weight="0.000213" delay="2.287070094256891 ms"/>
+            <connectionWD id="4" preCellId="../PT_L5B/7/CELL_PT" postCellId="../IT_L5B/11/CELL_IT" weight="0.000213" delay="3.5675753812415314 ms"/>
+            <connectionWD id="5" preCellId="../PT_L5B/4/CELL_PT" postCellId="../IT_L5B/11/CELL_IT" weight="0.000213" delay="2.461010528721884 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_IT_L5B_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="IT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/2/CELL_CT" postCellId="../IT_L5B/2/CELL_IT" weight="0.00009" delay="5.969521049706991 ms"/>
+            <connectionWD id="1" preCellId="../CT_L6/2/CELL_CT" postCellId="../IT_L5B/3/CELL_IT" weight="0.00009" delay="6.462147650288247 ms"/>
+            <connectionWD id="2" preCellId="../CT_L6/5/CELL_CT" postCellId="../IT_L5B/10/CELL_IT" weight="0.00009" delay="7.266921808450205 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_PT_L5B_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="PT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/9/CELL_IT" postCellId="../PT_L5B/0/CELL_PT" weight="0.000213" delay="2.766626868376687 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5B/2/CELL_IT" postCellId="../PT_L5B/0/CELL_PT" weight="0.000213" delay="2.8250082811085466 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5B/5/CELL_IT" postCellId="../PT_L5B/1/CELL_PT" weight="0.000213" delay="2.4201314199656627 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5B/7/CELL_IT" postCellId="../PT_L5B/8/CELL_PT" weight="0.000213" delay="4.812456596215544 ms"/>
+            <connectionWD id="4" preCellId="../IT_L5B/2/CELL_IT" postCellId="../PT_L5B/8/CELL_PT" weight="0.000213" delay="2.7546408563310094 ms"/>
+            <connectionWD id="5" preCellId="../IT_L5B/9/CELL_IT" postCellId="../PT_L5B/10/CELL_PT" weight="0.000213" delay="2.573716329097359 ms"/>
+            <connectionWD id="6" preCellId="../IT_L5B/1/CELL_IT" postCellId="../PT_L5B/11/CELL_PT" weight="0.000213" delay="2.0496209966817607 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L5_PT_L5B_GABAB" presynapticPopulation="SOM_L5" postsynapticPopulation="PT_L5B" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../PT_L5B/0/CELL_PT" weight="0.00015" delay="3.423202883344796 ms"/>
+            <connectionWD id="1" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../PT_L5B/0/CELL_PT" weight="0.00015" delay="2.390203887218221 ms"/>
+            <connectionWD id="2" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../PT_L5B/2/CELL_PT" weight="0.00015" delay="2.6528658486065044 ms"/>
+            <connectionWD id="3" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PT_L5B/2/CELL_PT" weight="0.00015" delay="3.589548109282957 ms"/>
+            <connectionWD id="4" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../PT_L5B/3/CELL_PT" weight="0.00015" delay="2.6608334406017793 ms"/>
+            <connectionWD id="5" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PT_L5B/3/CELL_PT" weight="0.00015" delay="2.3652361881987503 ms"/>
+            <connectionWD id="6" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../PT_L5B/3/CELL_PT" weight="0.00015" delay="2.2108025042761446 ms"/>
+            <connectionWD id="7" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../PT_L5B/4/CELL_PT" weight="0.00015" delay="2.376741392671846 ms"/>
+            <connectionWD id="8" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../PT_L5B/4/CELL_PT" weight="0.00015" delay="3.1162912449583606 ms"/>
+            <connectionWD id="9" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PT_L5B/4/CELL_PT" weight="0.00015" delay="2.693077924873301 ms"/>
+            <connectionWD id="10" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../PT_L5B/4/CELL_PT" weight="0.00015" delay="2.47061304895777 ms"/>
+            <connectionWD id="11" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../PT_L5B/5/CELL_PT" weight="0.00015" delay="2.9329481548984604 ms"/>
+            <connectionWD id="12" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PT_L5B/5/CELL_PT" weight="0.00015" delay="2.5006055470606126 ms"/>
+            <connectionWD id="13" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../PT_L5B/6/CELL_PT" weight="0.00015" delay="2.3145781227705413 ms"/>
+            <connectionWD id="14" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../PT_L5B/7/CELL_PT" weight="0.00015" delay="4.2279926880267595 ms"/>
+            <connectionWD id="15" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PT_L5B/7/CELL_PT" weight="0.00015" delay="3.803553998936687 ms"/>
+            <connectionWD id="16" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../PT_L5B/9/CELL_PT" weight="0.00015" delay="3.1161921694705024 ms"/>
+            <connectionWD id="17" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PT_L5B/9/CELL_PT" weight="0.00015" delay="2.3200840763421464 ms"/>
+            <connectionWD id="18" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../PT_L5B/9/CELL_PT" weight="0.00015" delay="2.321599043879402 ms"/>
+            <connectionWD id="19" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PT_L5B/11/CELL_PT" weight="0.00015" delay="2.606421960254982 ms"/>
+            <connectionWD id="20" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../PT_L5B/11/CELL_PT" weight="0.00015" delay="2.821643253296353 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L5_PT_L5B_GABAA" presynapticPopulation="PV_L5" postsynapticPopulation="PT_L5B" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L5/1/CELL_PV" postCellId="../PT_L5B/0/CELL_PT" weight="0.00015" delay="2.8207550543941 ms"/>
+            <connectionWD id="1" preCellId="../PV_L5/4/CELL_PV" postCellId="../PT_L5B/0/CELL_PT" weight="0.00015" delay="3.091977615378255 ms"/>
+            <connectionWD id="2" preCellId="../PV_L5/4/CELL_PV" postCellId="../PT_L5B/2/CELL_PT" weight="0.00015" delay="3.8282764030839624 ms"/>
+            <connectionWD id="3" preCellId="../PV_L5/4/CELL_PV" postCellId="../PT_L5B/4/CELL_PT" weight="0.00015" delay="2.9459705312562394 ms"/>
+            <connectionWD id="4" preCellId="../PV_L5/4/CELL_PV" postCellId="../PT_L5B/5/CELL_PT" weight="0.00015" delay="2.7780046396598137 ms"/>
+            <connectionWD id="5" preCellId="../PV_L5/1/CELL_PV" postCellId="../PT_L5B/6/CELL_PT" weight="0.00015" delay="3.3060522327347215 ms"/>
+            <connectionWD id="6" preCellId="../PV_L5/0/CELL_PV" postCellId="../PT_L5B/7/CELL_PT" weight="0.00015" delay="3.3128824731731945 ms"/>
+            <connectionWD id="7" preCellId="../PV_L5/4/CELL_PV" postCellId="../PT_L5B/7/CELL_PT" weight="0.00015" delay="4.048809217654967 ms"/>
+            <connectionWD id="8" preCellId="../PV_L5/1/CELL_PV" postCellId="../PT_L5B/9/CELL_PT" weight="0.00015" delay="2.2907904570672537 ms"/>
+            <connectionWD id="9" preCellId="../PV_L5/4/CELL_PV" postCellId="../PT_L5B/9/CELL_PT" weight="0.00015" delay="2.3336696982260454 ms"/>
+            <connectionWD id="10" preCellId="../PV_L5/1/CELL_PV" postCellId="../PT_L5B/10/CELL_PT" weight="0.00015" delay="3.0144992984663084 ms"/>
+            <connectionWD id="11" preCellId="../PV_L5/4/CELL_PV" postCellId="../PT_L5B/11/CELL_PT" weight="0.00015" delay="2.426550762842722 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_PT_L5B_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="PT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/2/CELL_IT" postCellId="../PT_L5B/1/CELL_PT" weight="0.000066" delay="8.31209099067178 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/2/CELL_IT" postCellId="../PT_L5B/2/CELL_PT" weight="0.000066" delay="7.319208994676545 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/17/CELL_IT" postCellId="../PT_L5B/2/CELL_PT" weight="0.000066" delay="8.029076290072673 ms"/>
+            <connectionWD id="3" preCellId="../IT_L23/16/CELL_IT" postCellId="../PT_L5B/3/CELL_PT" weight="0.000066" delay="9.136107968769899 ms"/>
+            <connectionWD id="4" preCellId="../IT_L23/1/CELL_IT" postCellId="../PT_L5B/3/CELL_PT" weight="0.000303" delay="8.198236641726982 ms"/>
+            <connectionWD id="5" preCellId="../IT_L23/13/CELL_IT" postCellId="../PT_L5B/4/CELL_PT" weight="0.000066" delay="8.54016015215623 ms"/>
+            <connectionWD id="6" preCellId="../IT_L23/17/CELL_IT" postCellId="../PT_L5B/4/CELL_PT" weight="0.000066" delay="8.924995317948273 ms"/>
+            <connectionWD id="7" preCellId="../IT_L23/11/CELL_IT" postCellId="../PT_L5B/6/CELL_PT" weight="0.000066" delay="7.678698560569855 ms"/>
+            <connectionWD id="8" preCellId="../IT_L23/17/CELL_IT" postCellId="../PT_L5B/6/CELL_PT" weight="0.000066" delay="8.27616687493503 ms"/>
+            <connectionWD id="9" preCellId="../IT_L23/8/CELL_IT" postCellId="../PT_L5B/6/CELL_PT" weight="0.000303" delay="7.202359615263501 ms"/>
+            <connectionWD id="10" preCellId="../IT_L23/0/CELL_IT" postCellId="../PT_L5B/6/CELL_PT" weight="0.000303" delay="6.306651922779304 ms"/>
+            <connectionWD id="11" preCellId="../IT_L23/14/CELL_IT" postCellId="../PT_L5B/6/CELL_PT" weight="0.000303" delay="6.280850564088588 ms"/>
+            <connectionWD id="12" preCellId="../IT_L23/2/CELL_IT" postCellId="../PT_L5B/7/CELL_PT" weight="0.000165" delay="7.101390776989803 ms"/>
+            <connectionWD id="13" preCellId="../IT_L23/11/CELL_IT" postCellId="../PT_L5B/7/CELL_PT" weight="0.000165" delay="7.215895964454249 ms"/>
+            <connectionWD id="14" preCellId="../IT_L23/17/CELL_IT" postCellId="../PT_L5B/7/CELL_PT" weight="0.000165" delay="7.81284025033062 ms"/>
+            <connectionWD id="15" preCellId="../IT_L23/9/CELL_IT" postCellId="../PT_L5B/7/CELL_PT" weight="0.000303" delay="6.544503475668134 ms"/>
+            <connectionWD id="16" preCellId="../IT_L23/13/CELL_IT" postCellId="../PT_L5B/10/CELL_PT" weight="0.000066" delay="8.202456608501443 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_PT_L5B_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="PT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/4/CELL_CT" postCellId="../PT_L5B/1/CELL_PT" weight="0.00009" delay="4.526110074270512 ms"/>
+            <connectionWD id="1" preCellId="../CT_L6/7/CELL_CT" postCellId="../PT_L5B/3/CELL_PT" weight="0.00009" delay="4.035753425641848 ms"/>
+            <connectionWD id="2" preCellId="../CT_L6/5/CELL_CT" postCellId="../PT_L5B/6/CELL_PT" weight="0.00009" delay="6.8882587066132706 ms"/>
+            <connectionWD id="3" preCellId="../CT_L6/4/CELL_CT" postCellId="../PT_L5B/9/CELL_PT" weight="0.00009" delay="3.9326544822664307 ms"/>
+            <connectionWD id="4" preCellId="../CT_L6/8/CELL_CT" postCellId="../PT_L5B/11/CELL_PT" weight="0.00009" delay="3.577919948555869 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5A_PT_L5B_AMPA" presynapticPopulation="IT_L5A" postsynapticPopulation="PT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5A/4/CELL_IT" postCellId="../PT_L5B/6/CELL_PT" weight="0.000264" delay="3.581080540759494 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_PT_L5B_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="PT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/3/CELL_IT" postCellId="../PT_L5B/11/CELL_PT" weight="0.00009" delay="3.787308017595115 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L6_IT_L6_GABAB" presynapticPopulation="SOM_L6" postsynapticPopulation="IT_L6" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L6/1/CELL_SOM" postCellId="../IT_L6/0/CELL_IT" weight="0.00015" delay="2.1949112185322677 ms"/>
+            <connectionWD id="1" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../IT_L6/1/CELL_IT" weight="0.00015" delay="2.8146088040428023 ms"/>
+            <connectionWD id="2" preCellId="../SOM_L6/1/CELL_SOM" postCellId="../IT_L6/4/CELL_IT" weight="0.00015" delay="2.8789775747616604 ms"/>
+            <connectionWD id="3" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../IT_L6/5/CELL_IT" weight="0.00015" delay="2.470816473548605 ms"/>
+            <connectionWD id="4" preCellId="../SOM_L6/1/CELL_SOM" postCellId="../IT_L6/5/CELL_IT" weight="0.00015" delay="3.6154607051318832 ms"/>
+            <connectionWD id="5" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../IT_L6/6/CELL_IT" weight="0.00015" delay="2.6622335631906955 ms"/>
+            <connectionWD id="6" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../IT_L6/7/CELL_IT" weight="0.00015" delay="2.7473146104319115 ms"/>
+            <connectionWD id="7" preCellId="../SOM_L6/1/CELL_SOM" postCellId="../IT_L6/7/CELL_IT" weight="0.00015" delay="3.2879685138518786 ms"/>
+            <connectionWD id="8" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../IT_L6/8/CELL_IT" weight="0.00015" delay="2.14138365344572 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L6_IT_L6_GABAA" presynapticPopulation="PV_L6" postsynapticPopulation="IT_L6" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L6/0/CELL_PV" postCellId="../IT_L6/0/CELL_IT" weight="0.00015" delay="3.744502311435638 ms"/>
+            <connectionWD id="1" preCellId="../PV_L6/1/CELL_PV" postCellId="../IT_L6/0/CELL_IT" weight="0.00015" delay="2.8556307582983775 ms"/>
+            <connectionWD id="2" preCellId="../PV_L6/0/CELL_PV" postCellId="../IT_L6/1/CELL_IT" weight="0.00015" delay="2.405522725503212 ms"/>
+            <connectionWD id="3" preCellId="../PV_L6/1/CELL_PV" postCellId="../IT_L6/1/CELL_IT" weight="0.00015" delay="2.531729646340701 ms"/>
+            <connectionWD id="4" preCellId="../PV_L6/1/CELL_PV" postCellId="../IT_L6/2/CELL_IT" weight="0.00015" delay="2.1645072459772234 ms"/>
+            <connectionWD id="5" preCellId="../PV_L6/1/CELL_PV" postCellId="../IT_L6/3/CELL_IT" weight="0.00015" delay="2.2988521177598695 ms"/>
+            <connectionWD id="6" preCellId="../PV_L6/0/CELL_PV" postCellId="../IT_L6/4/CELL_IT" weight="0.00015" delay="2.7841147901826204 ms"/>
+            <connectionWD id="7" preCellId="../PV_L6/1/CELL_PV" postCellId="../IT_L6/4/CELL_IT" weight="0.00015" delay="2.140455696602176 ms"/>
+            <connectionWD id="8" preCellId="../PV_L6/0/CELL_PV" postCellId="../IT_L6/5/CELL_IT" weight="0.00015" delay="2.0648335190039835 ms"/>
+            <connectionWD id="9" preCellId="../PV_L6/0/CELL_PV" postCellId="../IT_L6/6/CELL_IT" weight="0.00015" delay="2.26843749469528 ms"/>
+            <connectionWD id="10" preCellId="../PV_L6/0/CELL_PV" postCellId="../IT_L6/7/CELL_IT" weight="0.00015" delay="2.3766646822080704 ms"/>
+            <connectionWD id="11" preCellId="../PV_L6/0/CELL_PV" postCellId="../IT_L6/8/CELL_IT" weight="0.00015" delay="2.4419299920058277 ms"/>
+            <connectionWD id="12" preCellId="../PV_L6/1/CELL_PV" postCellId="../IT_L6/9/CELL_IT" weight="0.00015" delay="2.262838918091807 ms"/>
+            <connectionWD id="13" preCellId="../PV_L6/0/CELL_PV" postCellId="../IT_L6/10/CELL_IT" weight="0.00015" delay="2.232652306359862 ms"/>
+            <connectionWD id="14" preCellId="../PV_L6/1/CELL_PV" postCellId="../IT_L6/10/CELL_IT" weight="0.00015" delay="2.706548626497556 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_IT_L6_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="IT_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/4/CELL_IT" postCellId="../IT_L6/4/CELL_IT" weight="0.000147" delay="6.9295850070167715 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_IT_L6_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="IT_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/6/CELL_IT" postCellId="../IT_L6/5/CELL_IT" weight="0.000159" delay="2.233102312277612 ms"/>
+            <connectionWD id="1" preCellId="../IT_L6/1/CELL_IT" postCellId="../IT_L6/6/CELL_IT" weight="0.000159" delay="2.2002294093209014 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_IT_L6_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="IT_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/7/CELL_CT" postCellId="../IT_L6/8/CELL_IT" weight="0.000159" delay="4.107318494173381 ms"/>
+            <connectionWD id="1" preCellId="../CT_L6/6/CELL_CT" postCellId="../IT_L6/9/CELL_IT" weight="0.000159" delay="2.517565457314675 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_CT_L6_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="CT_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/8/CELL_IT" postCellId="../CT_L6/1/CELL_CT" weight="0.000147" delay="6.344536951735867 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5B/8/CELL_IT" postCellId="../CT_L6/4/CELL_CT" weight="0.000147" delay="4.71324973417647 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5B/8/CELL_IT" postCellId="../CT_L6/6/CELL_CT" weight="0.000147" delay="4.82606889170084 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5B/3/CELL_IT" postCellId="../CT_L6/9/CELL_CT" weight="0.000147" delay="5.332375431798168 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_CT_L6_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="CT_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/0/CELL_CT" postCellId="../CT_L6/1/CELL_CT" weight="0.000147" delay="4.33309798402345 ms"/>
+            <connectionWD id="1" preCellId="../CT_L6/8/CELL_CT" postCellId="../CT_L6/2/CELL_CT" weight="0.000159" delay="3.8304940397112093 ms"/>
+            <connectionWD id="2" preCellId="../CT_L6/4/CELL_CT" postCellId="../CT_L6/9/CELL_CT" weight="0.000159" delay="2.8712812006715662 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_CT_L6_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="CT_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/5/CELL_IT" postCellId="../CT_L6/1/CELL_CT" weight="0.000159" delay="2.2499803159251366 ms"/>
+            <connectionWD id="1" preCellId="../IT_L6/7/CELL_IT" postCellId="../CT_L6/1/CELL_CT" weight="0.000159" delay="2.4203650769813874 ms"/>
+            <connectionWD id="2" preCellId="../IT_L6/2/CELL_IT" postCellId="../CT_L6/5/CELL_CT" weight="0.000159" delay="2.9115268938064807 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L6_CT_L6_GABAB" presynapticPopulation="SOM_L6" postsynapticPopulation="CT_L6" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../CT_L6/1/CELL_CT" weight="0.00015" delay="2.333902118173454 ms"/>
+            <connectionWD id="1" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../CT_L6/2/CELL_CT" weight="0.00015" delay="2.2398474971003135 ms"/>
+            <connectionWD id="2" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../CT_L6/3/CELL_CT" weight="0.00015" delay="3.4075583580789055 ms"/>
+            <connectionWD id="3" preCellId="../SOM_L6/1/CELL_SOM" postCellId="../CT_L6/4/CELL_CT" weight="0.00015" delay="2.0963939123999062 ms"/>
+            <connectionWD id="4" preCellId="../SOM_L6/1/CELL_SOM" postCellId="../CT_L6/6/CELL_CT" weight="0.00015" delay="2.2071461156198517 ms"/>
+            <connectionWD id="5" preCellId="../SOM_L6/1/CELL_SOM" postCellId="../CT_L6/7/CELL_CT" weight="0.00015" delay="2.1871460534446423 ms"/>
+            <connectionWD id="6" preCellId="../SOM_L6/1/CELL_SOM" postCellId="../CT_L6/8/CELL_CT" weight="0.00015" delay="2.3092139205191105 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L6_CT_L6_GABAA" presynapticPopulation="PV_L6" postsynapticPopulation="CT_L6" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L6/0/CELL_PV" postCellId="../CT_L6/1/CELL_CT" weight="0.00015" delay="2.1942369066295964 ms"/>
+            <connectionWD id="1" preCellId="../PV_L6/1/CELL_PV" postCellId="../CT_L6/1/CELL_CT" weight="0.00015" delay="2.9357300464091884 ms"/>
+            <connectionWD id="2" preCellId="../PV_L6/0/CELL_PV" postCellId="../CT_L6/2/CELL_CT" weight="0.00015" delay="2.415432769182686 ms"/>
+            <connectionWD id="3" preCellId="../PV_L6/0/CELL_PV" postCellId="../CT_L6/3/CELL_CT" weight="0.00015" delay="3.0069444996667465 ms"/>
+            <connectionWD id="4" preCellId="../PV_L6/1/CELL_PV" postCellId="../CT_L6/3/CELL_CT" weight="0.00015" delay="2.2788255184107027 ms"/>
+            <connectionWD id="5" preCellId="../PV_L6/1/CELL_PV" postCellId="../CT_L6/4/CELL_CT" weight="0.00015" delay="2.719450951567909 ms"/>
+            <connectionWD id="6" preCellId="../PV_L6/1/CELL_PV" postCellId="../CT_L6/5/CELL_CT" weight="0.00015" delay="2.9470450564081014 ms"/>
+            <connectionWD id="7" preCellId="../PV_L6/1/CELL_PV" postCellId="../CT_L6/6/CELL_CT" weight="0.00015" delay="2.640899774550775 ms"/>
+            <connectionWD id="8" preCellId="../PV_L6/0/CELL_PV" postCellId="../CT_L6/8/CELL_CT" weight="0.00015" delay="3.416248684184259 ms"/>
+            <connectionWD id="9" preCellId="../PV_L6/1/CELL_PV" postCellId="../CT_L6/9/CELL_CT" weight="0.00015" delay="2.2746827943130796 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_PV_L23_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="PV_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/7/CELL_IT" postCellId="../PV_L23/0/CELL_PV" weight="0.000234" delay="2.138026370792942 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/9/CELL_IT" postCellId="../PV_L23/0/CELL_PV" weight="0.000234" delay="3.1100441520095243 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/17/CELL_IT" postCellId="../PV_L23/0/CELL_PV" weight="0.000234" delay="4.376496022182133 ms"/>
+            <connectionWD id="3" preCellId="../IT_L23/9/CELL_IT" postCellId="../PV_L23/1/CELL_PV" weight="0.000234" delay="2.1907761643923562 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L23_PV_L23_GABAA" presynapticPopulation="PV_L23" postsynapticPopulation="PV_L23" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L23/1/CELL_PV" postCellId="../PV_L23/0/CELL_PV" weight="0.00015" delay="2.9270516538824527 ms"/>
+        </projection>
+        <projection id="NetConn_PT_L5B_PV_L23_AMPA" presynapticPopulation="PT_L5B" postsynapticPopulation="PV_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../PT_L5B/9/CELL_PT" postCellId="../PV_L23/1/CELL_PV" weight="0.00010875" delay="8.178011142765882 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L23_PV_L23_GABAB" presynapticPopulation="SOM_L23" postsynapticPopulation="PV_L23" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L23/0/CELL_SOM" postCellId="../PV_L23/1/CELL_PV" weight="0.00015" delay="3.3281741204276543 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_SOM_L23_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="SOM_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/3/CELL_IT" postCellId="../SOM_L23/0/CELL_SOM" weight="0.000234" delay="2.394009129933371 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/5/CELL_IT" postCellId="../SOM_L23/1/CELL_SOM" weight="0.000234" delay="2.6277710750414034 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/13/CELL_IT" postCellId="../SOM_L23/1/CELL_SOM" weight="0.000234" delay="2.587964969363881 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L23_SOM_L23_GABAA" presynapticPopulation="PV_L23" postsynapticPopulation="SOM_L23" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L23/0/CELL_PV" postCellId="../SOM_L23/0/CELL_SOM" weight="0.00015" delay="4.254779982053636 ms"/>
+            <connectionWD id="1" preCellId="../PV_L23/1/CELL_PV" postCellId="../SOM_L23/1/CELL_SOM" weight="0.00015" delay="2.5163249874943205 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_PV_L5_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="PV_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/9/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.000033" delay="5.239258542604073 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/14/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.000033" delay="4.512002354231169 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/7/CELL_IT" postCellId="../PV_L5/2/CELL_PV" weight="0.000033" delay="2.456666693043521 ms"/>
+            <connectionWD id="3" preCellId="../IT_L23/17/CELL_IT" postCellId="../PV_L5/2/CELL_PV" weight="0.000033" delay="4.751171279137408 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L4_PV_L5_AMPA" presynapticPopulation="IT_L4" postsynapticPopulation="PV_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L4/1/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.00032325" delay="3.1345588296222973 ms"/>
+            <connectionWD id="1" preCellId="../IT_L4/3/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.00032325" delay="3.077484712346444 ms"/>
+            <connectionWD id="2" preCellId="../IT_L4/4/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.00032325" delay="3.0952711177131125 ms"/>
+            <connectionWD id="3" preCellId="../IT_L4/5/CELL_IT" postCellId="../PV_L5/1/CELL_PV" weight="0.00032325" delay="5.955255424484928 ms"/>
+            <connectionWD id="4" preCellId="../IT_L4/7/CELL_IT" postCellId="../PV_L5/1/CELL_PV" weight="0.00032325" delay="6.122910635352208 ms"/>
+            <connectionWD id="5" preCellId="../IT_L4/7/CELL_IT" postCellId="../PV_L5/2/CELL_PV" weight="0.00032325" delay="2.7157411028345906 ms"/>
+            <connectionWD id="6" preCellId="../IT_L4/2/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="4.213453561360257 ms"/>
+            <connectionWD id="7" preCellId="../IT_L4/4/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="3.2504656875392293 ms"/>
+            <connectionWD id="8" preCellId="../IT_L4/2/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="7.403683552688759 ms"/>
+            <connectionWD id="9" preCellId="../IT_L4/5/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="6.2508468510211275 ms"/>
+            <connectionWD id="10" preCellId="../IT_L4/7/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="6.417625928102817 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5A_PV_L5_AMPA" presynapticPopulation="IT_L5A" postsynapticPopulation="PV_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5A/0/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.00032325" delay="2.255732547103725 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5A/8/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.00032325" delay="2.247273477280128 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5A/7/CELL_IT" postCellId="../PV_L5/1/CELL_PV" weight="0.00032325" delay="4.8130615982834986 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5A/9/CELL_IT" postCellId="../PV_L5/1/CELL_PV" weight="0.00032325" delay="5.271069166627063 ms"/>
+            <connectionWD id="4" preCellId="../IT_L5A/6/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="2.1973937080691055 ms"/>
+            <connectionWD id="5" preCellId="../IT_L5A/9/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="2.3940267563126145 ms"/>
+            <connectionWD id="6" preCellId="../IT_L5A/0/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="5.481283564710104 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_PV_L5_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="PV_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/5/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.00032325" delay="4.819150158841273 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5B/7/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.00032325" delay="2.9982492675992294 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5B/9/CELL_IT" postCellId="../PV_L5/0/CELL_PV" weight="0.00032325" delay="3.552337526807481 ms"/>
+            <connectionWD id="3" preCellId="../IT_L5B/3/CELL_IT" postCellId="../PV_L5/1/CELL_PV" weight="0.00032325" delay="2.5410597449690435 ms"/>
+            <connectionWD id="4" preCellId="../IT_L5B/11/CELL_IT" postCellId="../PV_L5/1/CELL_PV" weight="0.00032325" delay="2.211562305713461 ms"/>
+            <connectionWD id="5" preCellId="../IT_L5B/0/CELL_IT" postCellId="../PV_L5/2/CELL_PV" weight="0.00032325" delay="7.069126162451142 ms"/>
+            <connectionWD id="6" preCellId="../IT_L5B/4/CELL_IT" postCellId="../PV_L5/2/CELL_PV" weight="0.00032325" delay="4.685871591972382 ms"/>
+            <connectionWD id="7" preCellId="../IT_L5B/4/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="2.7716701725002184 ms"/>
+            <connectionWD id="8" preCellId="../IT_L5B/6/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="4.767130029068186 ms"/>
+            <connectionWD id="9" preCellId="../IT_L5B/9/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="3.3898435298387275 ms"/>
+            <connectionWD id="10" preCellId="../IT_L5B/10/CELL_IT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="3.237345437619247 ms"/>
+            <connectionWD id="11" preCellId="../IT_L5B/0/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="2.2140580667418472 ms"/>
+            <connectionWD id="12" preCellId="../IT_L5B/2/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="2.3657724665391924 ms"/>
+            <connectionWD id="13" preCellId="../IT_L5B/7/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="4.384216122524899 ms"/>
+            <connectionWD id="14" preCellId="../IT_L5B/10/CELL_IT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="3.972642971442567 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L5_PV_L5_GABAB" presynapticPopulation="SOM_L5" postsynapticPopulation="PV_L5" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L5/0/CELL_SOM" postCellId="../PV_L5/0/CELL_PV" weight="0.00015" delay="2.8845322136442957 ms"/>
+            <connectionWD id="1" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../PV_L5/1/CELL_PV" weight="0.00015" delay="2.4625144219616812 ms"/>
+            <connectionWD id="2" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PV_L5/1/CELL_PV" weight="0.00015" delay="2.2165332876315533 ms"/>
+            <connectionWD id="3" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PV_L5/3/CELL_PV" weight="0.00015" delay="4.954075140078492 ms"/>
+            <connectionWD id="4" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../PV_L5/4/CELL_PV" weight="0.00015" delay="3.319235686169982 ms"/>
+            <connectionWD id="5" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../PV_L5/4/CELL_PV" weight="0.00015" delay="2.3857840132713073 ms"/>
+            <connectionWD id="6" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../PV_L5/4/CELL_PV" weight="0.00015" delay="2.301789446552499 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L5_PV_L5_GABAA" presynapticPopulation="PV_L5" postsynapticPopulation="PV_L5" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L5/3/CELL_PV" postCellId="../PV_L5/0/CELL_PV" weight="0.00015" delay="2.212389925425047 ms"/>
+            <connectionWD id="1" preCellId="../PV_L5/4/CELL_PV" postCellId="../PV_L5/1/CELL_PV" weight="0.00015" delay="2.4336154019955543 ms"/>
+            <connectionWD id="2" preCellId="../PV_L5/0/CELL_PV" postCellId="../PV_L5/3/CELL_PV" weight="0.00015" delay="2.212389925425047 ms"/>
+            <connectionWD id="3" preCellId="../PV_L5/1/CELL_PV" postCellId="../PV_L5/4/CELL_PV" weight="0.00015" delay="2.4336154019955543 ms"/>
+        </projection>
+        <projection id="NetConn_PT_L5B_PV_L5_AMPA" presynapticPopulation="PT_L5B" postsynapticPopulation="PV_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../PT_L5B/7/CELL_PT" postCellId="../PV_L5/1/CELL_PV" weight="0.00032325" delay="3.7662322411892344 ms"/>
+            <connectionWD id="1" preCellId="../PT_L5B/3/CELL_PT" postCellId="../PV_L5/2/CELL_PV" weight="0.00032325" delay="6.663478454153083 ms"/>
+            <connectionWD id="2" preCellId="../PT_L5B/9/CELL_PT" postCellId="../PV_L5/2/CELL_PV" weight="0.00032325" delay="6.882360106511275 ms"/>
+            <connectionWD id="3" preCellId="../PT_L5B/2/CELL_PT" postCellId="../PV_L5/3/CELL_PV" weight="0.00032325" delay="3.3710227278383034 ms"/>
+            <connectionWD id="4" preCellId="../PT_L5B/1/CELL_PT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="2.8428133244759133 ms"/>
+            <connectionWD id="5" preCellId="../PT_L5B/2/CELL_PT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="3.8282764030839624 ms"/>
+            <connectionWD id="6" preCellId="../PT_L5B/3/CELL_PT" postCellId="../PV_L5/4/CELL_PV" weight="0.00032325" delay="2.513135210370799 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_PV_L5_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="PV_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/9/CELL_IT" postCellId="../PV_L5/2/CELL_PV" weight="0.000074358" delay="9.43432819423466 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_PV_L5_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="PV_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/6/CELL_CT" postCellId="../PV_L5/4/CELL_PV" weight="0.000074358" delay="3.828360923601047 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L23_SOM_L5_AMPA" presynapticPopulation="IT_L23" postsynapticPopulation="SOM_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L23/1/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000303" delay="6.182771623781864 ms"/>
+            <connectionWD id="1" preCellId="../IT_L23/4/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000303" delay="5.9702675285787645 ms"/>
+            <connectionWD id="2" preCellId="../IT_L23/5/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000303" delay="5.872085046481221 ms"/>
+            <connectionWD id="3" preCellId="../IT_L23/6/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000303" delay="7.2485651596299165 ms"/>
+            <connectionWD id="4" preCellId="../IT_L23/12/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000303" delay="5.0938357316068 ms"/>
+            <connectionWD id="5" preCellId="../IT_L23/13/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000303" delay="7.0006337397603415 ms"/>
+            <connectionWD id="6" preCellId="../IT_L23/15/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000303" delay="6.270779135730012 ms"/>
+            <connectionWD id="7" preCellId="../IT_L23/17/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000303" delay="7.386556520993343 ms"/>
+            <connectionWD id="8" preCellId="../IT_L23/7/CELL_IT" postCellId="../SOM_L5/1/CELL_SOM" weight="0.000303" delay="6.192025510196113 ms"/>
+            <connectionWD id="9" preCellId="../IT_L23/11/CELL_IT" postCellId="../SOM_L5/1/CELL_SOM" weight="0.000303" delay="7.9696855470251275 ms"/>
+            <connectionWD id="10" preCellId="../IT_L23/14/CELL_IT" postCellId="../SOM_L5/1/CELL_SOM" weight="0.000303" delay="6.572583234239507 ms"/>
+            <connectionWD id="11" preCellId="../IT_L23/2/CELL_IT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.000303" delay="9.314783988519512 ms"/>
+            <connectionWD id="12" preCellId="../IT_L23/7/CELL_IT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.000303" delay="7.655652043839883 ms"/>
+            <connectionWD id="13" preCellId="../IT_L23/8/CELL_IT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.000303" delay="8.956344165047568 ms"/>
+            <connectionWD id="14" preCellId="../IT_L23/9/CELL_IT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.000303" delay="8.755239998447596 ms"/>
+            <connectionWD id="15" preCellId="../IT_L23/14/CELL_IT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.000303" delay="8.033816695852394 ms"/>
+            <connectionWD id="16" preCellId="../IT_L23/15/CELL_IT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.000303" delay="8.91089165944183 ms"/>
+            <connectionWD id="17" preCellId="../IT_L23/2/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000303" delay="8.904354504424866 ms"/>
+            <connectionWD id="18" preCellId="../IT_L23/3/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000303" delay="9.72204814216775 ms"/>
+            <connectionWD id="19" preCellId="../IT_L23/6/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000303" delay="9.477926533126139 ms"/>
+            <connectionWD id="20" preCellId="../IT_L23/8/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000303" delay="8.542422906937603 ms"/>
+            <connectionWD id="21" preCellId="../IT_L23/11/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000303" delay="9.017938061822832 ms"/>
+            <connectionWD id="22" preCellId="../IT_L23/13/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000303" delay="9.229800049792399 ms"/>
+            <connectionWD id="23" preCellId="../IT_L23/14/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000303" delay="7.620768615955817 ms"/>
+            <connectionWD id="24" preCellId="../IT_L23/15/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000303" delay="8.499841147933367 ms"/>
+            <connectionWD id="25" preCellId="../IT_L23/0/CELL_IT" postCellId="../SOM_L5/4/CELL_SOM" weight="0.000303" delay="7.417249099460702 ms"/>
+            <connectionWD id="26" preCellId="../IT_L23/1/CELL_IT" postCellId="../SOM_L5/4/CELL_SOM" weight="0.000303" delay="8.176417504847093 ms"/>
+            <connectionWD id="27" preCellId="../IT_L23/2/CELL_IT" postCellId="../SOM_L5/4/CELL_SOM" weight="0.000303" delay="8.67246123955097 ms"/>
+            <connectionWD id="28" preCellId="../IT_L23/5/CELL_IT" postCellId="../SOM_L5/4/CELL_SOM" weight="0.000303" delay="7.870533067376709 ms"/>
+            <connectionWD id="29" preCellId="../IT_L23/16/CELL_IT" postCellId="../SOM_L5/4/CELL_SOM" weight="0.000303" delay="9.10934957755412 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5A_SOM_L5_AMPA" presynapticPopulation="IT_L5A" postsynapticPopulation="SOM_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5A/9/CELL_IT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.00003675" delay="3.116170888742076 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_SOM_L5_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="SOM_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/3/CELL_CT" postCellId="../SOM_L5/0/CELL_SOM" weight="0.000074358" delay="6.75156094552631 ms"/>
+            <connectionWD id="1" preCellId="../CT_L6/10/CELL_CT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.000074358" delay="4.336612262512033 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L5_SOM_L5_GABAB" presynapticPopulation="SOM_L5" postsynapticPopulation="SOM_L5" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../SOM_L5/0/CELL_SOM" weight="0.00015" delay="3.1848696521234823 ms"/>
+            <connectionWD id="1" preCellId="../SOM_L5/3/CELL_SOM" postCellId="../SOM_L5/2/CELL_SOM" weight="0.00015" delay="2.4781677766764876 ms"/>
+            <connectionWD id="2" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../SOM_L5/2/CELL_SOM" weight="0.00015" delay="2.698804863175014 ms"/>
+            <connectionWD id="3" preCellId="../SOM_L5/2/CELL_SOM" postCellId="../SOM_L5/3/CELL_SOM" weight="0.00015" delay="2.4781677766764876 ms"/>
+            <connectionWD id="4" preCellId="../SOM_L5/4/CELL_SOM" postCellId="../SOM_L5/3/CELL_SOM" weight="0.00015" delay="2.2692706363919033 ms"/>
+            <connectionWD id="5" preCellId="../SOM_L5/1/CELL_SOM" postCellId="../SOM_L5/4/CELL_SOM" weight="0.00015" delay="2.846360902710158 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L5_SOM_L5_GABAA" presynapticPopulation="PV_L5" postsynapticPopulation="SOM_L5" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L5/3/CELL_PV" postCellId="../SOM_L5/0/CELL_SOM" weight="0.00015" delay="2.7308633597985614 ms"/>
+            <connectionWD id="1" preCellId="../PV_L5/4/CELL_PV" postCellId="../SOM_L5/1/CELL_SOM" weight="0.00015" delay="3.319235686169982 ms"/>
+            <connectionWD id="2" preCellId="../PV_L5/4/CELL_PV" postCellId="../SOM_L5/2/CELL_SOM" weight="0.00015" delay="2.3857840132713073 ms"/>
+            <connectionWD id="3" preCellId="../PV_L5/1/CELL_PV" postCellId="../SOM_L5/3/CELL_SOM" weight="0.00015" delay="2.2165332876315533 ms"/>
+            <connectionWD id="4" preCellId="../PV_L5/4/CELL_PV" postCellId="../SOM_L5/3/CELL_SOM" weight="0.00015" delay="2.301789446552499 ms"/>
+            <connectionWD id="5" preCellId="../PV_L5/4/CELL_PV" postCellId="../SOM_L5/4/CELL_SOM" weight="0.00015" delay="2.4772987131942514 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_SOM_L5_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="SOM_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/3/CELL_IT" postCellId="../SOM_L5/1/CELL_SOM" weight="0.00003675" delay="2.5639932780012185 ms"/>
+            <connectionWD id="1" preCellId="../IT_L5B/7/CELL_IT" postCellId="../SOM_L5/1/CELL_SOM" weight="0.00003675" delay="3.118293507235636 ms"/>
+            <connectionWD id="2" preCellId="../IT_L5B/9/CELL_IT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.00003675" delay="3.9726630683337962 ms"/>
+        </projection>
+        <projection id="NetConn_PT_L5B_SOM_L5_AMPA" presynapticPopulation="PT_L5B" postsynapticPopulation="SOM_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../PT_L5B/4/CELL_PT" postCellId="../SOM_L5/1/CELL_SOM" weight="0.00003675" delay="2.376741392671846 ms"/>
+            <connectionWD id="1" preCellId="../PT_L5B/11/CELL_PT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.00003675" delay="2.176870820911629 ms"/>
+            <connectionWD id="2" preCellId="../PT_L5B/4/CELL_PT" postCellId="../SOM_L5/4/CELL_SOM" weight="0.00003675" delay="2.47061304895777 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_SOM_L5_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="SOM_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/7/CELL_IT" postCellId="../SOM_L5/1/CELL_SOM" weight="0.000074358" delay="6.206608357662604 ms"/>
+            <connectionWD id="1" preCellId="../IT_L6/3/CELL_IT" postCellId="../SOM_L5/2/CELL_SOM" weight="0.000074358" delay="3.9495182106072257 ms"/>
+            <connectionWD id="2" preCellId="../IT_L6/5/CELL_IT" postCellId="../SOM_L5/4/CELL_SOM" weight="0.000074358" delay="5.716996967240202 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L4_SOM_L5_AMPA" presynapticPopulation="IT_L4" postsynapticPopulation="SOM_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L4/7/CELL_IT" postCellId="../SOM_L5/3/CELL_SOM" weight="0.00003675" delay="6.172100659384416 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5A_PV_L6_AMPA" presynapticPopulation="IT_L5A" postsynapticPopulation="PV_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5A/7/CELL_IT" postCellId="../PV_L6/0/CELL_PV" weight="0.00013125" delay="8.3715403859516 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L5B_PV_L6_AMPA" presynapticPopulation="IT_L5B" postsynapticPopulation="PV_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L5B/3/CELL_IT" postCellId="../PV_L6/1/CELL_PV" weight="0.00013125" delay="5.170604835909336 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_PV_L6_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="PV_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/1/CELL_CT" postCellId="../PV_L6/1/CELL_PV" weight="0.000159" delay="2.9357300464091884 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L6_PV_L6_GABAA" presynapticPopulation="PV_L6" postsynapticPopulation="PV_L6" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L6/0/CELL_PV" postCellId="../PV_L6/1/CELL_PV" weight="0.00015" delay="2.8984051082933604 ms"/>
+        </projection>
+        <projection id="NetConn_IT_L6_SOM_L6_AMPA" presynapticPopulation="IT_L6" postsynapticPopulation="SOM_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../IT_L6/4/CELL_IT" postCellId="../SOM_L6/0/CELL_SOM" weight="0.000159" delay="3.155431192275924 ms"/>
+        </projection>
+        <projection id="NetConn_CT_L6_SOM_L6_AMPA" presynapticPopulation="CT_L6" postsynapticPopulation="SOM_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../CT_L6/10/CELL_CT" postCellId="../SOM_L6/0/CELL_SOM" weight="0.000159" delay="3.602479210017111 ms"/>
+        </projection>
+        <projection id="NetConn_PV_L6_SOM_L6_GABAA" presynapticPopulation="PV_L6" postsynapticPopulation="SOM_L6" synapse="GABAA">
+            <connectionWD id="0" preCellId="../PV_L6/0/CELL_PV" postCellId="../SOM_L6/0/CELL_SOM" weight="0.00015" delay="2.4168932946790984 ms"/>
+            <connectionWD id="1" preCellId="../PV_L6/1/CELL_PV" postCellId="../SOM_L6/1/CELL_SOM" weight="0.00015" delay="2.7883067667747805 ms"/>
+        </projection>
+        <projection id="NetConn_PT_L5B_SOM_L6_AMPA" presynapticPopulation="PT_L5B" postsynapticPopulation="SOM_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../PT_L5B/1/CELL_PT" postCellId="../SOM_L6/1/CELL_SOM" weight="0.00013125" delay="4.462396160345681 ms"/>
+            <connectionWD id="1" preCellId="../PT_L5B/3/CELL_PT" postCellId="../SOM_L6/1/CELL_SOM" weight="0.00013125" delay="4.0835441417330856 ms"/>
+        </projection>
+        <projection id="NetConn_SOM_L6_SOM_L6_GABAB" presynapticPopulation="SOM_L6" postsynapticPopulation="SOM_L6" synapse="GABAB">
+            <connectionWD id="0" preCellId="../SOM_L6/0/CELL_SOM" postCellId="../SOM_L6/1/CELL_SOM" weight="0.00015" delay="4.032663667837902 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_IT_L23_10_1_AMPA__IT_L23" presynapticPopulation="Pop_NetStim_background_E_IT_L23_10_1_AMPA" postsynapticPopulation="IT_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[0]" postCellId="../IT_L23/0/CELL_IT" weight="0.025" delay="7.562338046009272 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[1]" postCellId="../IT_L23/1/CELL_IT" weight="0.025" delay="8.734109451855797 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[2]" postCellId="../IT_L23/2/CELL_IT" weight="0.025" delay="6.836909086655397 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[3]" postCellId="../IT_L23/3/CELL_IT" weight="0.025" delay="6.817157650880559 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[4]" postCellId="../IT_L23/4/CELL_IT" weight="0.025" delay="3.663272922028259 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[5]" postCellId="../IT_L23/5/CELL_IT" weight="0.025" delay="7.592776517381846 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[6]" postCellId="../IT_L23/6/CELL_IT" weight="0.025" delay="7.645621161994782 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[7]" postCellId="../IT_L23/7/CELL_IT" weight="0.025" delay="6.908305196979469 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[8]" postCellId="../IT_L23/8/CELL_IT" weight="0.025" delay="6.123423077884217 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[9]" postCellId="../IT_L23/9/CELL_IT" weight="0.025" delay="8.10802975773032 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[10]" postCellId="../IT_L23/10/CELL_IT" weight="0.025" delay="7.9893463060748005 ms"/>
+            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[11]" postCellId="../IT_L23/11/CELL_IT" weight="0.025" delay="8.8244591116628 ms"/>
+            <connectionWD id="12" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[12]" postCellId="../IT_L23/12/CELL_IT" weight="0.025" delay="7.018397500615637 ms"/>
+            <connectionWD id="13" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[13]" postCellId="../IT_L23/13/CELL_IT" weight="0.025" delay="6.762361448261527 ms"/>
+            <connectionWD id="14" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[14]" postCellId="../IT_L23/14/CELL_IT" weight="0.025" delay="5.898325085835005 ms"/>
+            <connectionWD id="15" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[15]" postCellId="../IT_L23/15/CELL_IT" weight="0.025" delay="10.54573356819855 ms"/>
+            <connectionWD id="16" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[16]" postCellId="../IT_L23/16/CELL_IT" weight="0.025" delay="5.678741743305338 ms"/>
+            <connectionWD id="17" preCellId="../Pop_NetStim_background_E_IT_L23_10_1_AMPA[17]" postCellId="../IT_L23/17/CELL_IT" weight="0.025" delay="8.799567909499503 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_IT_L4_10_1_AMPA__IT_L4" presynapticPopulation="Pop_NetStim_background_E_IT_L4_10_1_AMPA" postsynapticPopulation="IT_L4" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[0]" postCellId="../IT_L4/0/CELL_IT" weight="0.025" delay="6.319171651181868 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[1]" postCellId="../IT_L4/1/CELL_IT" weight="0.025" delay="6.740778003636151 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[2]" postCellId="../IT_L4/2/CELL_IT" weight="0.025" delay="5.90088183464654 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[3]" postCellId="../IT_L4/3/CELL_IT" weight="0.025" delay="4.5620499743957765 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[4]" postCellId="../IT_L4/4/CELL_IT" weight="0.025" delay="7.853361526509092 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[5]" postCellId="../IT_L4/5/CELL_IT" weight="0.025" delay="5.065265597293793 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[6]" postCellId="../IT_L4/6/CELL_IT" weight="0.025" delay="7.8435145803704955 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[7]" postCellId="../IT_L4/7/CELL_IT" weight="0.025" delay="9.269098629055678 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L4_10_1_AMPA[8]" postCellId="../IT_L4/8/CELL_IT" weight="0.025" delay="4.5202143628849925 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_IT_L5A_10_1_AMPA__IT_L5A" presynapticPopulation="Pop_NetStim_background_E_IT_L5A_10_1_AMPA" postsynapticPopulation="IT_L5A" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[0]" postCellId="../IT_L5A/0/CELL_IT" weight="0.025" delay="7.610790348583449 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[1]" postCellId="../IT_L5A/1/CELL_IT" weight="0.025" delay="4.830339007622413 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[2]" postCellId="../IT_L5A/2/CELL_IT" weight="0.025" delay="7.207201441858446 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[3]" postCellId="../IT_L5A/3/CELL_IT" weight="0.025" delay="7.244341037931222 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[4]" postCellId="../IT_L5A/4/CELL_IT" weight="0.025" delay="8.99609143741744 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[5]" postCellId="../IT_L5A/5/CELL_IT" weight="0.025" delay="6.467658532859983 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[6]" postCellId="../IT_L5A/6/CELL_IT" weight="0.025" delay="7.481557180719578 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[7]" postCellId="../IT_L5A/7/CELL_IT" weight="0.025" delay="6.487379424689982 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[8]" postCellId="../IT_L5A/8/CELL_IT" weight="0.025" delay="10.53714973791565 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L5A_10_1_AMPA[9]" postCellId="../IT_L5A/9/CELL_IT" weight="0.025" delay="8.661951601468434 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_IT_L5B_10_1_AMPA__IT_L5B" presynapticPopulation="Pop_NetStim_background_E_IT_L5B_10_1_AMPA" postsynapticPopulation="IT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[0]" postCellId="../IT_L5B/0/CELL_IT" weight="0.025" delay="6.416110468469217 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[1]" postCellId="../IT_L5B/1/CELL_IT" weight="0.025" delay="6.255903034283907 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[2]" postCellId="../IT_L5B/2/CELL_IT" weight="0.025" delay="7.741554286040881 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[3]" postCellId="../IT_L5B/3/CELL_IT" weight="0.025" delay="6.82718503823298 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[4]" postCellId="../IT_L5B/4/CELL_IT" weight="0.025" delay="8.264218694835577 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[5]" postCellId="../IT_L5B/5/CELL_IT" weight="0.025" delay="9.670294614383657 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[6]" postCellId="../IT_L5B/6/CELL_IT" weight="0.025" delay="5.975326363222022 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[7]" postCellId="../IT_L5B/7/CELL_IT" weight="0.025" delay="7.3687123098854395 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[8]" postCellId="../IT_L5B/8/CELL_IT" weight="0.025" delay="7.167504973250215 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[9]" postCellId="../IT_L5B/9/CELL_IT" weight="0.025" delay="8.906460221553141 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[10]" postCellId="../IT_L5B/10/CELL_IT" weight="0.025" delay="8.532504969340074 ms"/>
+            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_IT_L5B_10_1_AMPA[11]" postCellId="../IT_L5B/11/CELL_IT" weight="0.025" delay="7.776687142522792 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_PT_L5B_10_1_AMPA__PT_L5B" presynapticPopulation="Pop_NetStim_background_E_PT_L5B_10_1_AMPA" postsynapticPopulation="PT_L5B" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[0]" postCellId="../PT_L5B/0/CELL_PT" weight="0.0375" delay="10.999201315406108 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[1]" postCellId="../PT_L5B/1/CELL_PT" weight="0.0375" delay="8.561198711298593 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[2]" postCellId="../PT_L5B/2/CELL_PT" weight="0.0375" delay="8.488674568930287 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[3]" postCellId="../PT_L5B/3/CELL_PT" weight="0.0375" delay="5.124570882075748 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[4]" postCellId="../PT_L5B/4/CELL_PT" weight="0.0375" delay="10.47479235556968 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[5]" postCellId="../PT_L5B/5/CELL_PT" weight="0.0375" delay="8.649411375207904 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[6]" postCellId="../PT_L5B/6/CELL_PT" weight="0.0375" delay="5.148566985445466 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[7]" postCellId="../PT_L5B/7/CELL_PT" weight="0.0375" delay="6.6250179376129985 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[8]" postCellId="../PT_L5B/8/CELL_PT" weight="0.0375" delay="6.799701145271605 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[9]" postCellId="../PT_L5B/9/CELL_PT" weight="0.0375" delay="8.522517630465849 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[10]" postCellId="../PT_L5B/10/CELL_PT" weight="0.0375" delay="7.472481679353447 ms"/>
+            <connectionWD id="11" preCellId="../Pop_NetStim_background_E_PT_L5B_10_1_AMPA[11]" postCellId="../PT_L5B/11/CELL_PT" weight="0.0375" delay="7.275920791633774 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_IT_L6_10_1_AMPA__IT_L6" presynapticPopulation="Pop_NetStim_background_E_IT_L6_10_1_AMPA" postsynapticPopulation="IT_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[0]" postCellId="../IT_L6/0/CELL_IT" weight="0.025" delay="8.619911998625394 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[1]" postCellId="../IT_L6/1/CELL_IT" weight="0.025" delay="8.42029400465458 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[2]" postCellId="../IT_L6/2/CELL_IT" weight="0.025" delay="6.917019378164842 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[3]" postCellId="../IT_L6/3/CELL_IT" weight="0.025" delay="5.770922158655065 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[4]" postCellId="../IT_L6/4/CELL_IT" weight="0.025" delay="7.079305866899056 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[5]" postCellId="../IT_L6/5/CELL_IT" weight="0.025" delay="8.49928583565465 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[6]" postCellId="../IT_L6/6/CELL_IT" weight="0.025" delay="7.979229500772434 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[7]" postCellId="../IT_L6/7/CELL_IT" weight="0.025" delay="3.83771927976108 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[8]" postCellId="../IT_L6/8/CELL_IT" weight="0.025" delay="6.477166604570742 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[9]" postCellId="../IT_L6/9/CELL_IT" weight="0.025" delay="9.148011072950318 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_IT_L6_10_1_AMPA[10]" postCellId="../IT_L6/10/CELL_IT" weight="0.025" delay="7.266073764457949 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_CT_L6_10_1_AMPA__CT_L6" presynapticPopulation="Pop_NetStim_background_E_CT_L6_10_1_AMPA" postsynapticPopulation="CT_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[0]" postCellId="../CT_L6/0/CELL_CT" weight="0.025" delay="8.509519264729857 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[1]" postCellId="../CT_L6/1/CELL_CT" weight="0.025" delay="5.18590456052891 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[2]" postCellId="../CT_L6/2/CELL_CT" weight="0.025" delay="6.733314223070173 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[3]" postCellId="../CT_L6/3/CELL_CT" weight="0.025" delay="8.700221718048972 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[4]" postCellId="../CT_L6/4/CELL_CT" weight="0.025" delay="6.612152232363102 ms"/>
+            <connectionWD id="5" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[5]" postCellId="../CT_L6/5/CELL_CT" weight="0.025" delay="6.6438857642506175 ms"/>
+            <connectionWD id="6" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[6]" postCellId="../CT_L6/6/CELL_CT" weight="0.025" delay="7.357250723963171 ms"/>
+            <connectionWD id="7" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[7]" postCellId="../CT_L6/7/CELL_CT" weight="0.025" delay="10.831941388988778 ms"/>
+            <connectionWD id="8" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[8]" postCellId="../CT_L6/8/CELL_CT" weight="0.025" delay="8.122277324513979 ms"/>
+            <connectionWD id="9" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[9]" postCellId="../CT_L6/9/CELL_CT" weight="0.025" delay="6.709305882551103 ms"/>
+            <connectionWD id="10" preCellId="../Pop_NetStim_background_E_CT_L6_10_1_AMPA[10]" postCellId="../CT_L6/10/CELL_CT" weight="0.025" delay="7.237234810153478 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_PV_L23_10_1_AMPA__PV_L23" presynapticPopulation="Pop_NetStim_background_E_PV_L23_10_1_AMPA" postsynapticPopulation="PV_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_PV_L23_10_1_AMPA[0]" postCellId="../PV_L23/0/CELL_PV" weight="0.0125" delay="4.62801415786144 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_PV_L23_10_1_AMPA[1]" postCellId="../PV_L23/1/CELL_PV" weight="0.0125" delay="6.3933771366807095 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_SOM_L23_10_1_AMPA__SOM_L23" presynapticPopulation="Pop_NetStim_background_E_SOM_L23_10_1_AMPA" postsynapticPopulation="SOM_L23" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_SOM_L23_10_1_AMPA[0]" postCellId="../SOM_L23/0/CELL_SOM" weight="0.0075" delay="4.437277598652584 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_SOM_L23_10_1_AMPA[1]" postCellId="../SOM_L23/1/CELL_SOM" weight="0.0075" delay="6.1531357901947485 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_PV_L5_10_1_AMPA__PV_L5" presynapticPopulation="Pop_NetStim_background_E_PV_L5_10_1_AMPA" postsynapticPopulation="PV_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_PV_L5_10_1_AMPA[0]" postCellId="../PV_L5/0/CELL_PV" weight="0.0125" delay="9.438005410093881 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_PV_L5_10_1_AMPA[1]" postCellId="../PV_L5/1/CELL_PV" weight="0.0125" delay="7.549640173741559 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_PV_L5_10_1_AMPA[2]" postCellId="../PV_L5/2/CELL_PV" weight="0.0125" delay="8.00166092493546 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_PV_L5_10_1_AMPA[3]" postCellId="../PV_L5/3/CELL_PV" weight="0.0125" delay="9.55612149653482 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_PV_L5_10_1_AMPA[4]" postCellId="../PV_L5/4/CELL_PV" weight="0.0125" delay="8.831216259878836 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_SOM_L5_10_1_AMPA__SOM_L5" presynapticPopulation="Pop_NetStim_background_E_SOM_L5_10_1_AMPA" postsynapticPopulation="SOM_L5" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_SOM_L5_10_1_AMPA[0]" postCellId="../SOM_L5/0/CELL_SOM" weight="0.0075" delay="6.111839107631226 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_SOM_L5_10_1_AMPA[1]" postCellId="../SOM_L5/1/CELL_SOM" weight="0.0075" delay="7.060484073900859 ms"/>
+            <connectionWD id="2" preCellId="../Pop_NetStim_background_E_SOM_L5_10_1_AMPA[2]" postCellId="../SOM_L5/2/CELL_SOM" weight="0.0075" delay="8.278777311668225 ms"/>
+            <connectionWD id="3" preCellId="../Pop_NetStim_background_E_SOM_L5_10_1_AMPA[3]" postCellId="../SOM_L5/3/CELL_SOM" weight="0.0075" delay="5.85181395877182 ms"/>
+            <connectionWD id="4" preCellId="../Pop_NetStim_background_E_SOM_L5_10_1_AMPA[4]" postCellId="../SOM_L5/4/CELL_SOM" weight="0.0075" delay="8.40479995122875 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_PV_L6_10_1_AMPA__PV_L6" presynapticPopulation="Pop_NetStim_background_E_PV_L6_10_1_AMPA" postsynapticPopulation="PV_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_PV_L6_10_1_AMPA[0]" postCellId="../PV_L6/0/CELL_PV" weight="0.0125" delay="7.935360462418177 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_PV_L6_10_1_AMPA[1]" postCellId="../PV_L6/1/CELL_PV" weight="0.0125" delay="8.75331781107727 ms"/>
+        </projection>
+        <projection id="NetConn_NetStim_background_E_SOM_L6_10_1_AMPA__SOM_L6" presynapticPopulation="Pop_NetStim_background_E_SOM_L6_10_1_AMPA" postsynapticPopulation="SOM_L6" synapse="AMPA">
+            <connectionWD id="0" preCellId="../Pop_NetStim_background_E_SOM_L6_10_1_AMPA[0]" postCellId="../SOM_L6/0/CELL_SOM" weight="0.0075" delay="8.047064471843406 ms"/>
+            <connectionWD id="1" preCellId="../Pop_NetStim_background_E_SOM_L6_10_1_AMPA[1]" postCellId="../SOM_L6/1/CELL_SOM" weight="0.0075" delay="6.535607703595039 ms"/>
+        </projection>
+    </network>
+</neuroml>

@@ -1,0 +1,31 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.3.5 (libNeuroML v0.2.36)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="Sim_M1_5percent"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="M1_5percent.net.nml"/>
+   
+    <Simulation id="Sim_M1_5percent" length="100.0ms" step="0.05ms" target="M1_5percent" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <OutputFile id="Volts_file__IT_L23" fileName="Sim_M1_5percent.IT_L23.v.dat">
+            <OutputColumn id="v_IT_L23_0_CELL_IT_v" quantity="IT_L23/0/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_1_CELL_IT_v" quantity="IT_L23/1/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_2_CELL_IT_v" quantity="IT_L23/2/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_3_CELL_IT_v" quantity="IT_L23/3/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_4_CELL_IT_v" quantity="IT_L23/4/CELL_IT/v"/>
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>

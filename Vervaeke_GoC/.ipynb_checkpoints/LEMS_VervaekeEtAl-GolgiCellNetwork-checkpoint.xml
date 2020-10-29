@@ -1,0 +1,80 @@
+<Lems xmlns="http://www.neuroml.org/lems/0.7.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/lems/0.7.2  https://raw.githubusercontent.com/LEMS/LEMS/development/Schemas/LEMS/LEMS_v0.7.2.xsd">
+
+    <Target component="sim1" reportFile="simulator.props" timesFile="time.dat"/>
+
+        <!--Include standard NeuroML 2 ComponentType definitions-->
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+    
+
+        <!--Include the generated NeuroML 2 files-->
+
+
+        <!--   Channel/synapse files-->
+    <Include file="ApicalSyn.synapse.nml"/>
+    
+        <!--   Cell files-->
+    <!-- <Include file="Golgi_040408_C1.cell.nml"/> -->
+        <!--   Network file-->
+    <Include file="VervaekeEtAl-GolgiCellNetwork.net.nml"/>
+    
+
+        <!--Note: this could be: Simulation id="sim1" ... , but Component type="Simulation" ... 
+        is used to allow validation of this file according to the LEMS schema specified above...-->
+    <Component type="Simulation" id="sim1" length="100ms" step="0.0025ms" target="network_VervaekeEtAl_GolgiCellNetwork">
+        
+        <OutputFile id="Var_0_0_0_OF" fileName="CellGroup_1_0.0.dat">
+            <OutputColumn id="CellGroup_1/0/Golgi_NeuroML_/0/v" quantity="CellGroup_1/0/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/1/Golgi_NeuroML_/0/v" quantity="CellGroup_1/1/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/2/Golgi_NeuroML_/0/v" quantity="CellGroup_1/2/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/3/Golgi_NeuroML_/0/v" quantity="CellGroup_1/3/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/4/Golgi_NeuroML_/0/v" quantity="CellGroup_1/4/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/5/Golgi_NeuroML_/0/v" quantity="CellGroup_1/5/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/6/Golgi_NeuroML_/0/v" quantity="CellGroup_1/6/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/7/Golgi_NeuroML_/0/v" quantity="CellGroup_1/7/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/8/Golgi_NeuroML_/0/v" quantity="CellGroup_1/8/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/9/Golgi_NeuroML_/0/v" quantity="CellGroup_1/9/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/10/Golgi_NeuroML_/0/v" quantity="CellGroup_1/10/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/11/Golgi_NeuroML_/0/v" quantity="CellGroup_1/11/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/12/Golgi_NeuroML_/0/v" quantity="CellGroup_1/12/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/13/Golgi_NeuroML_/0/v" quantity="CellGroup_1/13/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/14/Golgi_NeuroML_/0/v" quantity="CellGroup_1/14/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/15/Golgi_NeuroML_/0/v" quantity="CellGroup_1/15/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/16/Golgi_NeuroML_/0/v" quantity="CellGroup_1/16/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/17/Golgi_NeuroML_/0/v" quantity="CellGroup_1/17/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/18/Golgi_NeuroML_/0/v" quantity="CellGroup_1/18/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/19/Golgi_NeuroML_/0/v" quantity="CellGroup_1/19/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/20/Golgi_NeuroML_/0/v" quantity="CellGroup_1/20/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/21/Golgi_NeuroML_/0/v" quantity="CellGroup_1/21/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/22/Golgi_NeuroML_/0/v" quantity="CellGroup_1/22/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/23/Golgi_NeuroML_/0/v" quantity="CellGroup_1/23/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/24/Golgi_NeuroML_/0/v" quantity="CellGroup_1/24/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/25/Golgi_NeuroML_/0/v" quantity="CellGroup_1/25/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/26/Golgi_NeuroML_/0/v" quantity="CellGroup_1/26/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/27/Golgi_NeuroML_/0/v" quantity="CellGroup_1/27/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/28/Golgi_NeuroML_/0/v" quantity="CellGroup_1/28/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/29/Golgi_NeuroML_/0/v" quantity="CellGroup_1/29/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/30/Golgi_NeuroML_/0/v" quantity="CellGroup_1/30/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/31/Golgi_NeuroML_/0/v" quantity="CellGroup_1/31/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/32/Golgi_NeuroML_/0/v" quantity="CellGroup_1/32/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/33/Golgi_NeuroML_/0/v" quantity="CellGroup_1/33/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/34/Golgi_NeuroML_/0/v" quantity="CellGroup_1/34/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/35/Golgi_NeuroML_/0/v" quantity="CellGroup_1/35/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/36/Golgi_NeuroML_/0/v" quantity="CellGroup_1/36/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/37/Golgi_NeuroML_/0/v" quantity="CellGroup_1/37/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/38/Golgi_NeuroML_/0/v" quantity="CellGroup_1/38/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/39/Golgi_NeuroML_/0/v" quantity="CellGroup_1/39/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/40/Golgi_NeuroML_/0/v" quantity="CellGroup_1/40/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/41/Golgi_NeuroML_/0/v" quantity="CellGroup_1/41/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/42/Golgi_NeuroML_/0/v" quantity="CellGroup_1/42/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/43/Golgi_NeuroML_/0/v" quantity="CellGroup_1/43/Golgi_NeuroML_/0/v"/>
+            <OutputColumn id="CellGroup_1/44/Golgi_NeuroML_/0/v" quantity="CellGroup_1/44/Golgi_NeuroML_/0/v"/>
+            
+        </OutputFile>
+    </Component>
+
+
+</Lems>

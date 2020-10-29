@@ -1,0 +1,1155 @@
+<Lems>
+    
+    <!-- 
+
+        This LEMS file has been automatically generated using PyNeuroML v0.5.3 (libNeuroML v0.2.51)
+
+     -->
+    
+    <!-- Specify which component to run -->
+    <Target component="Sim_M1_p_5percent"/>
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+    
+    <Include file="M1_p_5percent.net.nml"/>
+   
+    <Simulation id="Sim_M1_p_5percent" length="1000.0ms" step="0.05ms" target="M1_p_5percent" seed="12345">  <!-- Note seed: ensures same random numbers used every run -->
+        
+        <Display id="DispPop__IT_L23" title="Membrane potentials of cells in IT_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L23[0]: v" quantity="IT_L23/0/CELL_IT/v" scale="1mV" color="#d54f33" timeScale="1ms"/>
+            <Line id="IT_L23[1]: v" quantity="IT_L23/1/CELL_IT/v" scale="1mV" color="#0534e4" timeScale="1ms"/>
+            <Line id="IT_L23[2]: v" quantity="IT_L23/2/CELL_IT/v" scale="1mV" color="#98e752" timeScale="1ms"/>
+            <Line id="IT_L23[3]: v" quantity="IT_L23/3/CELL_IT/v" scale="1mV" color="#bca074" timeScale="1ms"/>
+            <Line id="IT_L23[4]: v" quantity="IT_L23/4/CELL_IT/v" scale="1mV" color="#632794" timeScale="1ms"/>
+            <Line id="IT_L23[5]: v" quantity="IT_L23/5/CELL_IT/v" scale="1mV" color="#8a5d88" timeScale="1ms"/>
+            <Line id="IT_L23[6]: v" quantity="IT_L23/6/CELL_IT/v" scale="1mV" color="#df5954" timeScale="1ms"/>
+            <Line id="IT_L23[7]: v" quantity="IT_L23/7/CELL_IT/v" scale="1mV" color="#52c8bf" timeScale="1ms"/>
+            <Line id="IT_L23[8]: v" quantity="IT_L23/8/CELL_IT/v" scale="1mV" color="#bf0239" timeScale="1ms"/>
+            <Line id="IT_L23[9]: v" quantity="IT_L23/9/CELL_IT/v" scale="1mV" color="#3f9fe8" timeScale="1ms"/>
+            <Line id="IT_L23[10]: v" quantity="IT_L23/10/CELL_IT/v" scale="1mV" color="#dda9d2" timeScale="1ms"/>
+            <Line id="IT_L23[11]: v" quantity="IT_L23/11/CELL_IT/v" scale="1mV" color="#85ad96" timeScale="1ms"/>
+            <Line id="IT_L23[12]: v" quantity="IT_L23/12/CELL_IT/v" scale="1mV" color="#59438f" timeScale="1ms"/>
+            <Line id="IT_L23[13]: v" quantity="IT_L23/13/CELL_IT/v" scale="1mV" color="#5fa56f" timeScale="1ms"/>
+            <Line id="IT_L23[14]: v" quantity="IT_L23/14/CELL_IT/v" scale="1mV" color="#b5b5a2" timeScale="1ms"/>
+            <Line id="IT_L23[15]: v" quantity="IT_L23/15/CELL_IT/v" scale="1mV" color="#2ebe19" timeScale="1ms"/>
+            <Line id="IT_L23[16]: v" quantity="IT_L23/16/CELL_IT/v" scale="1mV" color="#d30150" timeScale="1ms"/>
+            <Line id="IT_L23[17]: v" quantity="IT_L23/17/CELL_IT/v" scale="1mV" color="#55490a" timeScale="1ms"/>
+            <Line id="IT_L23[18]: v" quantity="IT_L23/18/CELL_IT/v" scale="1mV" color="#4bd9d0" timeScale="1ms"/>
+            <Line id="IT_L23[19]: v" quantity="IT_L23/19/CELL_IT/v" scale="1mV" color="#69535e" timeScale="1ms"/>
+            <Line id="IT_L23[20]: v" quantity="IT_L23/20/CELL_IT/v" scale="1mV" color="#27dae9" timeScale="1ms"/>
+            <Line id="IT_L23[21]: v" quantity="IT_L23/21/CELL_IT/v" scale="1mV" color="#6143ed" timeScale="1ms"/>
+            <Line id="IT_L23[22]: v" quantity="IT_L23/22/CELL_IT/v" scale="1mV" color="#aee102" timeScale="1ms"/>
+            <Line id="IT_L23[23]: v" quantity="IT_L23/23/CELL_IT/v" scale="1mV" color="#a4e245" timeScale="1ms"/>
+            <Line id="IT_L23[24]: v" quantity="IT_L23/24/CELL_IT/v" scale="1mV" color="#0c0af9" timeScale="1ms"/>
+            <Line id="IT_L23[25]: v" quantity="IT_L23/25/CELL_IT/v" scale="1mV" color="#eaece2" timeScale="1ms"/>
+            <Line id="IT_L23[26]: v" quantity="IT_L23/26/CELL_IT/v" scale="1mV" color="#add546" timeScale="1ms"/>
+            <Line id="IT_L23[27]: v" quantity="IT_L23/27/CELL_IT/v" scale="1mV" color="#0dc1e8" timeScale="1ms"/>
+            <Line id="IT_L23[28]: v" quantity="IT_L23/28/CELL_IT/v" scale="1mV" color="#d4b998" timeScale="1ms"/>
+            <Line id="IT_L23[29]: v" quantity="IT_L23/29/CELL_IT/v" scale="1mV" color="#01c4cd" timeScale="1ms"/>
+            <Line id="IT_L23[30]: v" quantity="IT_L23/30/CELL_IT/v" scale="1mV" color="#036aae" timeScale="1ms"/>
+            <Line id="IT_L23[31]: v" quantity="IT_L23/31/CELL_IT/v" scale="1mV" color="#53de83" timeScale="1ms"/>
+            <Line id="IT_L23[32]: v" quantity="IT_L23/32/CELL_IT/v" scale="1mV" color="#5b9557" timeScale="1ms"/>
+            <Line id="IT_L23[33]: v" quantity="IT_L23/33/CELL_IT/v" scale="1mV" color="#92b9f4" timeScale="1ms"/>
+            <Line id="IT_L23[34]: v" quantity="IT_L23/34/CELL_IT/v" scale="1mV" color="#32f19d" timeScale="1ms"/>
+            <Line id="IT_L23[35]: v" quantity="IT_L23/35/CELL_IT/v" scale="1mV" color="#d43d99" timeScale="1ms"/>
+            <Line id="IT_L23[36]: v" quantity="IT_L23/36/CELL_IT/v" scale="1mV" color="#36379e" timeScale="1ms"/>
+            <Line id="IT_L23[37]: v" quantity="IT_L23/37/CELL_IT/v" scale="1mV" color="#5d01b7" timeScale="1ms"/>
+            <Line id="IT_L23[38]: v" quantity="IT_L23/38/CELL_IT/v" scale="1mV" color="#c0004f" timeScale="1ms"/>
+            <Line id="IT_L23[39]: v" quantity="IT_L23/39/CELL_IT/v" scale="1mV" color="#771a1c" timeScale="1ms"/>
+            <Line id="IT_L23[40]: v" quantity="IT_L23/40/CELL_IT/v" scale="1mV" color="#a8e7b4" timeScale="1ms"/>
+            <Line id="IT_L23[41]: v" quantity="IT_L23/41/CELL_IT/v" scale="1mV" color="#149bc7" timeScale="1ms"/>
+            <Line id="IT_L23[42]: v" quantity="IT_L23/42/CELL_IT/v" scale="1mV" color="#76f116" timeScale="1ms"/>
+            <Line id="IT_L23[43]: v" quantity="IT_L23/43/CELL_IT/v" scale="1mV" color="#3d56b9" timeScale="1ms"/>
+            <Line id="IT_L23[44]: v" quantity="IT_L23/44/CELL_IT/v" scale="1mV" color="#ff9a67" timeScale="1ms"/>
+            <Line id="IT_L23[45]: v" quantity="IT_L23/45/CELL_IT/v" scale="1mV" color="#6ec96a" timeScale="1ms"/>
+            <Line id="IT_L23[46]: v" quantity="IT_L23/46/CELL_IT/v" scale="1mV" color="#5f24e5" timeScale="1ms"/>
+            <Line id="IT_L23[47]: v" quantity="IT_L23/47/CELL_IT/v" scale="1mV" color="#83f5a5" timeScale="1ms"/>
+            <Line id="IT_L23[48]: v" quantity="IT_L23/48/CELL_IT/v" scale="1mV" color="#de0aae" timeScale="1ms"/>
+            <Line id="IT_L23[49]: v" quantity="IT_L23/49/CELL_IT/v" scale="1mV" color="#427e32" timeScale="1ms"/>
+            <Line id="IT_L23[50]: v" quantity="IT_L23/50/CELL_IT/v" scale="1mV" color="#1544a0" timeScale="1ms"/>
+            <Line id="IT_L23[51]: v" quantity="IT_L23/51/CELL_IT/v" scale="1mV" color="#5409ee" timeScale="1ms"/>
+            <Line id="IT_L23[52]: v" quantity="IT_L23/52/CELL_IT/v" scale="1mV" color="#9a477d" timeScale="1ms"/>
+            <Line id="IT_L23[53]: v" quantity="IT_L23/53/CELL_IT/v" scale="1mV" color="#04ca61" timeScale="1ms"/>
+            <Line id="IT_L23[54]: v" quantity="IT_L23/54/CELL_IT/v" scale="1mV" color="#4cf083" timeScale="1ms"/>
+            <Line id="IT_L23[55]: v" quantity="IT_L23/55/CELL_IT/v" scale="1mV" color="#754e4b" timeScale="1ms"/>
+            <Line id="IT_L23[56]: v" quantity="IT_L23/56/CELL_IT/v" scale="1mV" color="#b30f75" timeScale="1ms"/>
+            <Line id="IT_L23[57]: v" quantity="IT_L23/57/CELL_IT/v" scale="1mV" color="#af1648" timeScale="1ms"/>
+            <Line id="IT_L23[58]: v" quantity="IT_L23/58/CELL_IT/v" scale="1mV" color="#505fca" timeScale="1ms"/>
+            <Line id="IT_L23[59]: v" quantity="IT_L23/59/CELL_IT/v" scale="1mV" color="#c5a380" timeScale="1ms"/>
+            <Line id="IT_L23[60]: v" quantity="IT_L23/60/CELL_IT/v" scale="1mV" color="#a5c3f7" timeScale="1ms"/>
+            <Line id="IT_L23[61]: v" quantity="IT_L23/61/CELL_IT/v" scale="1mV" color="#06933f" timeScale="1ms"/>
+            <Line id="IT_L23[62]: v" quantity="IT_L23/62/CELL_IT/v" scale="1mV" color="#19405e" timeScale="1ms"/>
+            <Line id="IT_L23[63]: v" quantity="IT_L23/63/CELL_IT/v" scale="1mV" color="#1f2cf7" timeScale="1ms"/>
+            <Line id="IT_L23[64]: v" quantity="IT_L23/64/CELL_IT/v" scale="1mV" color="#e3e5f3" timeScale="1ms"/>
+            <Line id="IT_L23[65]: v" quantity="IT_L23/65/CELL_IT/v" scale="1mV" color="#283960" timeScale="1ms"/>
+            <Line id="IT_L23[66]: v" quantity="IT_L23/66/CELL_IT/v" scale="1mV" color="#c6b519" timeScale="1ms"/>
+            <Line id="IT_L23[67]: v" quantity="IT_L23/67/CELL_IT/v" scale="1mV" color="#5be56f" timeScale="1ms"/>
+            <Line id="IT_L23[68]: v" quantity="IT_L23/68/CELL_IT/v" scale="1mV" color="#05febe" timeScale="1ms"/>
+            <Line id="IT_L23[69]: v" quantity="IT_L23/69/CELL_IT/v" scale="1mV" color="#bc4a07" timeScale="1ms"/>
+            <Line id="IT_L23[70]: v" quantity="IT_L23/70/CELL_IT/v" scale="1mV" color="#6e4273" timeScale="1ms"/>
+            <Line id="IT_L23[71]: v" quantity="IT_L23/71/CELL_IT/v" scale="1mV" color="#3e35e3" timeScale="1ms"/>
+            <Line id="IT_L23[72]: v" quantity="IT_L23/72/CELL_IT/v" scale="1mV" color="#f6284e" timeScale="1ms"/>
+            <Line id="IT_L23[73]: v" quantity="IT_L23/73/CELL_IT/v" scale="1mV" color="#1f8036" timeScale="1ms"/>
+            <Line id="IT_L23[74]: v" quantity="IT_L23/74/CELL_IT/v" scale="1mV" color="#07131e" timeScale="1ms"/>
+            <Line id="IT_L23[75]: v" quantity="IT_L23/75/CELL_IT/v" scale="1mV" color="#fbcc00" timeScale="1ms"/>
+            <Line id="IT_L23[76]: v" quantity="IT_L23/76/CELL_IT/v" scale="1mV" color="#a6ca1f" timeScale="1ms"/>
+            <Line id="IT_L23[77]: v" quantity="IT_L23/77/CELL_IT/v" scale="1mV" color="#d776d3" timeScale="1ms"/>
+            <Line id="IT_L23[78]: v" quantity="IT_L23/78/CELL_IT/v" scale="1mV" color="#673768" timeScale="1ms"/>
+            <Line id="IT_L23[79]: v" quantity="IT_L23/79/CELL_IT/v" scale="1mV" color="#ba83d6" timeScale="1ms"/>
+            <Line id="IT_L23[80]: v" quantity="IT_L23/80/CELL_IT/v" scale="1mV" color="#3d1f96" timeScale="1ms"/>
+            <Line id="IT_L23[81]: v" quantity="IT_L23/81/CELL_IT/v" scale="1mV" color="#4ca02a" timeScale="1ms"/>
+            <Line id="IT_L23[82]: v" quantity="IT_L23/82/CELL_IT/v" scale="1mV" color="#28fbd3" timeScale="1ms"/>
+            <Line id="IT_L23[83]: v" quantity="IT_L23/83/CELL_IT/v" scale="1mV" color="#fd629f" timeScale="1ms"/>
+            <Line id="IT_L23[84]: v" quantity="IT_L23/84/CELL_IT/v" scale="1mV" color="#54748c" timeScale="1ms"/>
+            <Line id="IT_L23[85]: v" quantity="IT_L23/85/CELL_IT/v" scale="1mV" color="#abcdf4" timeScale="1ms"/>
+            <Line id="IT_L23[86]: v" quantity="IT_L23/86/CELL_IT/v" scale="1mV" color="#7616c7" timeScale="1ms"/>
+            <Line id="IT_L23[87]: v" quantity="IT_L23/87/CELL_IT/v" scale="1mV" color="#6810ad" timeScale="1ms"/>
+            <Line id="IT_L23[88]: v" quantity="IT_L23/88/CELL_IT/v" scale="1mV" color="#53bbe9" timeScale="1ms"/>
+            <Line id="IT_L23[89]: v" quantity="IT_L23/89/CELL_IT/v" scale="1mV" color="#5354af" timeScale="1ms"/>
+            <Line id="IT_L23[90]: v" quantity="IT_L23/90/CELL_IT/v" scale="1mV" color="#939b7d" timeScale="1ms"/>
+            <Line id="IT_L23[91]: v" quantity="IT_L23/91/CELL_IT/v" scale="1mV" color="#4cdfbe" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_L4" title="Membrane potentials of cells in IT_L4" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L4[0]: v" quantity="IT_L4/0/CELL_IT/v" scale="1mV" color="#2e6290" timeScale="1ms"/>
+            <Line id="IT_L4[1]: v" quantity="IT_L4/1/CELL_IT/v" scale="1mV" color="#01b4b5" timeScale="1ms"/>
+            <Line id="IT_L4[2]: v" quantity="IT_L4/2/CELL_IT/v" scale="1mV" color="#4b077f" timeScale="1ms"/>
+            <Line id="IT_L4[3]: v" quantity="IT_L4/3/CELL_IT/v" scale="1mV" color="#01a175" timeScale="1ms"/>
+            <Line id="IT_L4[4]: v" quantity="IT_L4/4/CELL_IT/v" scale="1mV" color="#fdfc6d" timeScale="1ms"/>
+            <Line id="IT_L4[5]: v" quantity="IT_L4/5/CELL_IT/v" scale="1mV" color="#5ea53f" timeScale="1ms"/>
+            <Line id="IT_L4[6]: v" quantity="IT_L4/6/CELL_IT/v" scale="1mV" color="#31164d" timeScale="1ms"/>
+            <Line id="IT_L4[7]: v" quantity="IT_L4/7/CELL_IT/v" scale="1mV" color="#874f89" timeScale="1ms"/>
+            <Line id="IT_L4[8]: v" quantity="IT_L4/8/CELL_IT/v" scale="1mV" color="#cff156" timeScale="1ms"/>
+            <Line id="IT_L4[9]: v" quantity="IT_L4/9/CELL_IT/v" scale="1mV" color="#21da04" timeScale="1ms"/>
+            <Line id="IT_L4[10]: v" quantity="IT_L4/10/CELL_IT/v" scale="1mV" color="#ebf688" timeScale="1ms"/>
+            <Line id="IT_L4[11]: v" quantity="IT_L4/11/CELL_IT/v" scale="1mV" color="#d55c16" timeScale="1ms"/>
+            <Line id="IT_L4[12]: v" quantity="IT_L4/12/CELL_IT/v" scale="1mV" color="#5d26ec" timeScale="1ms"/>
+            <Line id="IT_L4[13]: v" quantity="IT_L4/13/CELL_IT/v" scale="1mV" color="#7c8d98" timeScale="1ms"/>
+            <Line id="IT_L4[14]: v" quantity="IT_L4/14/CELL_IT/v" scale="1mV" color="#5e5f55" timeScale="1ms"/>
+            <Line id="IT_L4[15]: v" quantity="IT_L4/15/CELL_IT/v" scale="1mV" color="#0df715" timeScale="1ms"/>
+            <Line id="IT_L4[16]: v" quantity="IT_L4/16/CELL_IT/v" scale="1mV" color="#beee88" timeScale="1ms"/>
+            <Line id="IT_L4[17]: v" quantity="IT_L4/17/CELL_IT/v" scale="1mV" color="#a932d1" timeScale="1ms"/>
+            <Line id="IT_L4[18]: v" quantity="IT_L4/18/CELL_IT/v" scale="1mV" color="#5a1782" timeScale="1ms"/>
+            <Line id="IT_L4[19]: v" quantity="IT_L4/19/CELL_IT/v" scale="1mV" color="#ca1ff7" timeScale="1ms"/>
+            <Line id="IT_L4[20]: v" quantity="IT_L4/20/CELL_IT/v" scale="1mV" color="#5b0f75" timeScale="1ms"/>
+            <Line id="IT_L4[21]: v" quantity="IT_L4/21/CELL_IT/v" scale="1mV" color="#5b20b3" timeScale="1ms"/>
+            <Line id="IT_L4[22]: v" quantity="IT_L4/22/CELL_IT/v" scale="1mV" color="#7f7523" timeScale="1ms"/>
+            <Line id="IT_L4[23]: v" quantity="IT_L4/23/CELL_IT/v" scale="1mV" color="#d39598" timeScale="1ms"/>
+            <Line id="IT_L4[24]: v" quantity="IT_L4/24/CELL_IT/v" scale="1mV" color="#d5c6d0" timeScale="1ms"/>
+            <Line id="IT_L4[25]: v" quantity="IT_L4/25/CELL_IT/v" scale="1mV" color="#a661af" timeScale="1ms"/>
+            <Line id="IT_L4[26]: v" quantity="IT_L4/26/CELL_IT/v" scale="1mV" color="#3d83b6" timeScale="1ms"/>
+            <Line id="IT_L4[27]: v" quantity="IT_L4/27/CELL_IT/v" scale="1mV" color="#22aa5b" timeScale="1ms"/>
+            <Line id="IT_L4[28]: v" quantity="IT_L4/28/CELL_IT/v" scale="1mV" color="#ebc70e" timeScale="1ms"/>
+            <Line id="IT_L4[29]: v" quantity="IT_L4/29/CELL_IT/v" scale="1mV" color="#63df7d" timeScale="1ms"/>
+            <Line id="IT_L4[30]: v" quantity="IT_L4/30/CELL_IT/v" scale="1mV" color="#675e0c" timeScale="1ms"/>
+            <Line id="IT_L4[31]: v" quantity="IT_L4/31/CELL_IT/v" scale="1mV" color="#452218" timeScale="1ms"/>
+            <Line id="IT_L4[32]: v" quantity="IT_L4/32/CELL_IT/v" scale="1mV" color="#776b45" timeScale="1ms"/>
+            <Line id="IT_L4[33]: v" quantity="IT_L4/33/CELL_IT/v" scale="1mV" color="#a91b84" timeScale="1ms"/>
+            <Line id="IT_L4[34]: v" quantity="IT_L4/34/CELL_IT/v" scale="1mV" color="#95a908" timeScale="1ms"/>
+            <Line id="IT_L4[35]: v" quantity="IT_L4/35/CELL_IT/v" scale="1mV" color="#402f4d" timeScale="1ms"/>
+            <Line id="IT_L4[36]: v" quantity="IT_L4/36/CELL_IT/v" scale="1mV" color="#1e4fcb" timeScale="1ms"/>
+            <Line id="IT_L4[37]: v" quantity="IT_L4/37/CELL_IT/v" scale="1mV" color="#85165a" timeScale="1ms"/>
+            <Line id="IT_L4[38]: v" quantity="IT_L4/38/CELL_IT/v" scale="1mV" color="#da8f7d" timeScale="1ms"/>
+            <Line id="IT_L4[39]: v" quantity="IT_L4/39/CELL_IT/v" scale="1mV" color="#168c69" timeScale="1ms"/>
+            <Line id="IT_L4[40]: v" quantity="IT_L4/40/CELL_IT/v" scale="1mV" color="#ba5900" timeScale="1ms"/>
+            <Line id="IT_L4[41]: v" quantity="IT_L4/41/CELL_IT/v" scale="1mV" color="#3712f1" timeScale="1ms"/>
+            <Line id="IT_L4[42]: v" quantity="IT_L4/42/CELL_IT/v" scale="1mV" color="#22cadd" timeScale="1ms"/>
+            <Line id="IT_L4[43]: v" quantity="IT_L4/43/CELL_IT/v" scale="1mV" color="#4ff5f4" timeScale="1ms"/>
+            <Line id="IT_L4[44]: v" quantity="IT_L4/44/CELL_IT/v" scale="1mV" color="#be1033" timeScale="1ms"/>
+            <Line id="IT_L4[45]: v" quantity="IT_L4/45/CELL_IT/v" scale="1mV" color="#12166b" timeScale="1ms"/>
+            <Line id="IT_L4[46]: v" quantity="IT_L4/46/CELL_IT/v" scale="1mV" color="#8cc3a0" timeScale="1ms"/>
+            <Line id="IT_L4[47]: v" quantity="IT_L4/47/CELL_IT/v" scale="1mV" color="#e35f91" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_L5A" title="Membrane potentials of cells in IT_L5A" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L5A[0]: v" quantity="IT_L5A/0/CELL_IT/v" scale="1mV" color="#bcc452" timeScale="1ms"/>
+            <Line id="IT_L5A[1]: v" quantity="IT_L5A/1/CELL_IT/v" scale="1mV" color="#cdb798" timeScale="1ms"/>
+            <Line id="IT_L5A[2]: v" quantity="IT_L5A/2/CELL_IT/v" scale="1mV" color="#9d5071" timeScale="1ms"/>
+            <Line id="IT_L5A[3]: v" quantity="IT_L5A/3/CELL_IT/v" scale="1mV" color="#e5f9c6" timeScale="1ms"/>
+            <Line id="IT_L5A[4]: v" quantity="IT_L5A/4/CELL_IT/v" scale="1mV" color="#8757aa" timeScale="1ms"/>
+            <Line id="IT_L5A[5]: v" quantity="IT_L5A/5/CELL_IT/v" scale="1mV" color="#9faaa1" timeScale="1ms"/>
+            <Line id="IT_L5A[6]: v" quantity="IT_L5A/6/CELL_IT/v" scale="1mV" color="#fc29fc" timeScale="1ms"/>
+            <Line id="IT_L5A[7]: v" quantity="IT_L5A/7/CELL_IT/v" scale="1mV" color="#f5f7b3" timeScale="1ms"/>
+            <Line id="IT_L5A[8]: v" quantity="IT_L5A/8/CELL_IT/v" scale="1mV" color="#19c95a" timeScale="1ms"/>
+            <Line id="IT_L5A[9]: v" quantity="IT_L5A/9/CELL_IT/v" scale="1mV" color="#87bf0d" timeScale="1ms"/>
+            <Line id="IT_L5A[10]: v" quantity="IT_L5A/10/CELL_IT/v" scale="1mV" color="#e42034" timeScale="1ms"/>
+            <Line id="IT_L5A[11]: v" quantity="IT_L5A/11/CELL_IT/v" scale="1mV" color="#0f0750" timeScale="1ms"/>
+            <Line id="IT_L5A[12]: v" quantity="IT_L5A/12/CELL_IT/v" scale="1mV" color="#707406" timeScale="1ms"/>
+            <Line id="IT_L5A[13]: v" quantity="IT_L5A/13/CELL_IT/v" scale="1mV" color="#b0ad35" timeScale="1ms"/>
+            <Line id="IT_L5A[14]: v" quantity="IT_L5A/14/CELL_IT/v" scale="1mV" color="#45aaf9" timeScale="1ms"/>
+            <Line id="IT_L5A[15]: v" quantity="IT_L5A/15/CELL_IT/v" scale="1mV" color="#010abc" timeScale="1ms"/>
+            <Line id="IT_L5A[16]: v" quantity="IT_L5A/16/CELL_IT/v" scale="1mV" color="#2a91c4" timeScale="1ms"/>
+            <Line id="IT_L5A[17]: v" quantity="IT_L5A/17/CELL_IT/v" scale="1mV" color="#0fab75" timeScale="1ms"/>
+            <Line id="IT_L5A[18]: v" quantity="IT_L5A/18/CELL_IT/v" scale="1mV" color="#38dcf7" timeScale="1ms"/>
+            <Line id="IT_L5A[19]: v" quantity="IT_L5A/19/CELL_IT/v" scale="1mV" color="#603b15" timeScale="1ms"/>
+            <Line id="IT_L5A[20]: v" quantity="IT_L5A/20/CELL_IT/v" scale="1mV" color="#cb3c47" timeScale="1ms"/>
+            <Line id="IT_L5A[21]: v" quantity="IT_L5A/21/CELL_IT/v" scale="1mV" color="#fb267b" timeScale="1ms"/>
+            <Line id="IT_L5A[22]: v" quantity="IT_L5A/22/CELL_IT/v" scale="1mV" color="#5d1987" timeScale="1ms"/>
+            <Line id="IT_L5A[23]: v" quantity="IT_L5A/23/CELL_IT/v" scale="1mV" color="#8b9545" timeScale="1ms"/>
+            <Line id="IT_L5A[24]: v" quantity="IT_L5A/24/CELL_IT/v" scale="1mV" color="#b2c123" timeScale="1ms"/>
+            <Line id="IT_L5A[25]: v" quantity="IT_L5A/25/CELL_IT/v" scale="1mV" color="#6ac783" timeScale="1ms"/>
+            <Line id="IT_L5A[26]: v" quantity="IT_L5A/26/CELL_IT/v" scale="1mV" color="#99ad14" timeScale="1ms"/>
+            <Line id="IT_L5A[27]: v" quantity="IT_L5A/27/CELL_IT/v" scale="1mV" color="#a16fb4" timeScale="1ms"/>
+            <Line id="IT_L5A[28]: v" quantity="IT_L5A/28/CELL_IT/v" scale="1mV" color="#c6cc69" timeScale="1ms"/>
+            <Line id="IT_L5A[29]: v" quantity="IT_L5A/29/CELL_IT/v" scale="1mV" color="#26a5cd" timeScale="1ms"/>
+            <Line id="IT_L5A[30]: v" quantity="IT_L5A/30/CELL_IT/v" scale="1mV" color="#9a0824" timeScale="1ms"/>
+            <Line id="IT_L5A[31]: v" quantity="IT_L5A/31/CELL_IT/v" scale="1mV" color="#bc9fa6" timeScale="1ms"/>
+            <Line id="IT_L5A[32]: v" quantity="IT_L5A/32/CELL_IT/v" scale="1mV" color="#14b607" timeScale="1ms"/>
+            <Line id="IT_L5A[33]: v" quantity="IT_L5A/33/CELL_IT/v" scale="1mV" color="#d6a8f8" timeScale="1ms"/>
+            <Line id="IT_L5A[34]: v" quantity="IT_L5A/34/CELL_IT/v" scale="1mV" color="#61234e" timeScale="1ms"/>
+            <Line id="IT_L5A[35]: v" quantity="IT_L5A/35/CELL_IT/v" scale="1mV" color="#52307d" timeScale="1ms"/>
+            <Line id="IT_L5A[36]: v" quantity="IT_L5A/36/CELL_IT/v" scale="1mV" color="#29e922" timeScale="1ms"/>
+            <Line id="IT_L5A[37]: v" quantity="IT_L5A/37/CELL_IT/v" scale="1mV" color="#4922ed" timeScale="1ms"/>
+            <Line id="IT_L5A[38]: v" quantity="IT_L5A/38/CELL_IT/v" scale="1mV" color="#9cef2c" timeScale="1ms"/>
+            <Line id="IT_L5A[39]: v" quantity="IT_L5A/39/CELL_IT/v" scale="1mV" color="#76e8f7" timeScale="1ms"/>
+            <Line id="IT_L5A[40]: v" quantity="IT_L5A/40/CELL_IT/v" scale="1mV" color="#aa6902" timeScale="1ms"/>
+            <Line id="IT_L5A[41]: v" quantity="IT_L5A/41/CELL_IT/v" scale="1mV" color="#d93cc5" timeScale="1ms"/>
+            <Line id="IT_L5A[42]: v" quantity="IT_L5A/42/CELL_IT/v" scale="1mV" color="#66dd0e" timeScale="1ms"/>
+            <Line id="IT_L5A[43]: v" quantity="IT_L5A/43/CELL_IT/v" scale="1mV" color="#071826" timeScale="1ms"/>
+            <Line id="IT_L5A[44]: v" quantity="IT_L5A/44/CELL_IT/v" scale="1mV" color="#4cbff9" timeScale="1ms"/>
+            <Line id="IT_L5A[45]: v" quantity="IT_L5A/45/CELL_IT/v" scale="1mV" color="#3a3281" timeScale="1ms"/>
+            <Line id="IT_L5A[46]: v" quantity="IT_L5A/46/CELL_IT/v" scale="1mV" color="#102432" timeScale="1ms"/>
+            <Line id="IT_L5A[47]: v" quantity="IT_L5A/47/CELL_IT/v" scale="1mV" color="#ae9b10" timeScale="1ms"/>
+            <Line id="IT_L5A[48]: v" quantity="IT_L5A/48/CELL_IT/v" scale="1mV" color="#c8c63b" timeScale="1ms"/>
+            <Line id="IT_L5A[49]: v" quantity="IT_L5A/49/CELL_IT/v" scale="1mV" color="#a381a5" timeScale="1ms"/>
+            <Line id="IT_L5A[50]: v" quantity="IT_L5A/50/CELL_IT/v" scale="1mV" color="#14e554" timeScale="1ms"/>
+            <Line id="IT_L5A[51]: v" quantity="IT_L5A/51/CELL_IT/v" scale="1mV" color="#7b9340" timeScale="1ms"/>
+            <Line id="IT_L5A[52]: v" quantity="IT_L5A/52/CELL_IT/v" scale="1mV" color="#3300df" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_L5B" title="Membrane potentials of cells in IT_L5B" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L5B[0]: v" quantity="IT_L5B/0/CELL_IT/v" scale="1mV" color="#f82266" timeScale="1ms"/>
+            <Line id="IT_L5B[1]: v" quantity="IT_L5B/1/CELL_IT/v" scale="1mV" color="#4c0a24" timeScale="1ms"/>
+            <Line id="IT_L5B[2]: v" quantity="IT_L5B/2/CELL_IT/v" scale="1mV" color="#699a9f" timeScale="1ms"/>
+            <Line id="IT_L5B[3]: v" quantity="IT_L5B/3/CELL_IT/v" scale="1mV" color="#84afe3" timeScale="1ms"/>
+            <Line id="IT_L5B[4]: v" quantity="IT_L5B/4/CELL_IT/v" scale="1mV" color="#b7c0e1" timeScale="1ms"/>
+            <Line id="IT_L5B[5]: v" quantity="IT_L5B/5/CELL_IT/v" scale="1mV" color="#5117f7" timeScale="1ms"/>
+            <Line id="IT_L5B[6]: v" quantity="IT_L5B/6/CELL_IT/v" scale="1mV" color="#9176dc" timeScale="1ms"/>
+            <Line id="IT_L5B[7]: v" quantity="IT_L5B/7/CELL_IT/v" scale="1mV" color="#13766c" timeScale="1ms"/>
+            <Line id="IT_L5B[8]: v" quantity="IT_L5B/8/CELL_IT/v" scale="1mV" color="#2efd08" timeScale="1ms"/>
+            <Line id="IT_L5B[9]: v" quantity="IT_L5B/9/CELL_IT/v" scale="1mV" color="#301ee5" timeScale="1ms"/>
+            <Line id="IT_L5B[10]: v" quantity="IT_L5B/10/CELL_IT/v" scale="1mV" color="#6a26de" timeScale="1ms"/>
+            <Line id="IT_L5B[11]: v" quantity="IT_L5B/11/CELL_IT/v" scale="1mV" color="#d1fd61" timeScale="1ms"/>
+            <Line id="IT_L5B[12]: v" quantity="IT_L5B/12/CELL_IT/v" scale="1mV" color="#07ca1c" timeScale="1ms"/>
+            <Line id="IT_L5B[13]: v" quantity="IT_L5B/13/CELL_IT/v" scale="1mV" color="#4d9ec2" timeScale="1ms"/>
+            <Line id="IT_L5B[14]: v" quantity="IT_L5B/14/CELL_IT/v" scale="1mV" color="#a6955a" timeScale="1ms"/>
+            <Line id="IT_L5B[15]: v" quantity="IT_L5B/15/CELL_IT/v" scale="1mV" color="#53d1f4" timeScale="1ms"/>
+            <Line id="IT_L5B[16]: v" quantity="IT_L5B/16/CELL_IT/v" scale="1mV" color="#ea3a1b" timeScale="1ms"/>
+            <Line id="IT_L5B[17]: v" quantity="IT_L5B/17/CELL_IT/v" scale="1mV" color="#d444a9" timeScale="1ms"/>
+            <Line id="IT_L5B[18]: v" quantity="IT_L5B/18/CELL_IT/v" scale="1mV" color="#e1151a" timeScale="1ms"/>
+            <Line id="IT_L5B[19]: v" quantity="IT_L5B/19/CELL_IT/v" scale="1mV" color="#0c9458" timeScale="1ms"/>
+            <Line id="IT_L5B[20]: v" quantity="IT_L5B/20/CELL_IT/v" scale="1mV" color="#be5631" timeScale="1ms"/>
+            <Line id="IT_L5B[21]: v" quantity="IT_L5B/21/CELL_IT/v" scale="1mV" color="#0e0126" timeScale="1ms"/>
+            <Line id="IT_L5B[22]: v" quantity="IT_L5B/22/CELL_IT/v" scale="1mV" color="#c6e0d1" timeScale="1ms"/>
+            <Line id="IT_L5B[23]: v" quantity="IT_L5B/23/CELL_IT/v" scale="1mV" color="#b50190" timeScale="1ms"/>
+            <Line id="IT_L5B[24]: v" quantity="IT_L5B/24/CELL_IT/v" scale="1mV" color="#08b946" timeScale="1ms"/>
+            <Line id="IT_L5B[25]: v" quantity="IT_L5B/25/CELL_IT/v" scale="1mV" color="#a37319" timeScale="1ms"/>
+            <Line id="IT_L5B[26]: v" quantity="IT_L5B/26/CELL_IT/v" scale="1mV" color="#f0c34b" timeScale="1ms"/>
+            <Line id="IT_L5B[27]: v" quantity="IT_L5B/27/CELL_IT/v" scale="1mV" color="#e012c8" timeScale="1ms"/>
+            <Line id="IT_L5B[28]: v" quantity="IT_L5B/28/CELL_IT/v" scale="1mV" color="#176b1a" timeScale="1ms"/>
+            <Line id="IT_L5B[29]: v" quantity="IT_L5B/29/CELL_IT/v" scale="1mV" color="#a3559d" timeScale="1ms"/>
+            <Line id="IT_L5B[30]: v" quantity="IT_L5B/30/CELL_IT/v" scale="1mV" color="#a05ea4" timeScale="1ms"/>
+            <Line id="IT_L5B[31]: v" quantity="IT_L5B/31/CELL_IT/v" scale="1mV" color="#c769a6" timeScale="1ms"/>
+            <Line id="IT_L5B[32]: v" quantity="IT_L5B/32/CELL_IT/v" scale="1mV" color="#98d0e5" timeScale="1ms"/>
+            <Line id="IT_L5B[33]: v" quantity="IT_L5B/33/CELL_IT/v" scale="1mV" color="#403c50" timeScale="1ms"/>
+            <Line id="IT_L5B[34]: v" quantity="IT_L5B/34/CELL_IT/v" scale="1mV" color="#c26a5d" timeScale="1ms"/>
+            <Line id="IT_L5B[35]: v" quantity="IT_L5B/35/CELL_IT/v" scale="1mV" color="#1d0a3f" timeScale="1ms"/>
+            <Line id="IT_L5B[36]: v" quantity="IT_L5B/36/CELL_IT/v" scale="1mV" color="#383b0d" timeScale="1ms"/>
+            <Line id="IT_L5B[37]: v" quantity="IT_L5B/37/CELL_IT/v" scale="1mV" color="#f8ebbd" timeScale="1ms"/>
+            <Line id="IT_L5B[38]: v" quantity="IT_L5B/38/CELL_IT/v" scale="1mV" color="#3cc5e0" timeScale="1ms"/>
+            <Line id="IT_L5B[39]: v" quantity="IT_L5B/39/CELL_IT/v" scale="1mV" color="#315c4e" timeScale="1ms"/>
+            <Line id="IT_L5B[40]: v" quantity="IT_L5B/40/CELL_IT/v" scale="1mV" color="#59257b" timeScale="1ms"/>
+            <Line id="IT_L5B[41]: v" quantity="IT_L5B/41/CELL_IT/v" scale="1mV" color="#11077a" timeScale="1ms"/>
+            <Line id="IT_L5B[42]: v" quantity="IT_L5B/42/CELL_IT/v" scale="1mV" color="#1a38d4" timeScale="1ms"/>
+            <Line id="IT_L5B[43]: v" quantity="IT_L5B/43/CELL_IT/v" scale="1mV" color="#9e21b4" timeScale="1ms"/>
+            <Line id="IT_L5B[44]: v" quantity="IT_L5B/44/CELL_IT/v" scale="1mV" color="#6ed7d8" timeScale="1ms"/>
+            <Line id="IT_L5B[45]: v" quantity="IT_L5B/45/CELL_IT/v" scale="1mV" color="#3162a2" timeScale="1ms"/>
+            <Line id="IT_L5B[46]: v" quantity="IT_L5B/46/CELL_IT/v" scale="1mV" color="#ebbf97" timeScale="1ms"/>
+            <Line id="IT_L5B[47]: v" quantity="IT_L5B/47/CELL_IT/v" scale="1mV" color="#ff9f0e" timeScale="1ms"/>
+            <Line id="IT_L5B[48]: v" quantity="IT_L5B/48/CELL_IT/v" scale="1mV" color="#f02d7c" timeScale="1ms"/>
+            <Line id="IT_L5B[49]: v" quantity="IT_L5B/49/CELL_IT/v" scale="1mV" color="#1e26fc" timeScale="1ms"/>
+            <Line id="IT_L5B[50]: v" quantity="IT_L5B/50/CELL_IT/v" scale="1mV" color="#d8c21d" timeScale="1ms"/>
+            <Line id="IT_L5B[51]: v" quantity="IT_L5B/51/CELL_IT/v" scale="1mV" color="#70aad6" timeScale="1ms"/>
+            <Line id="IT_L5B[52]: v" quantity="IT_L5B/52/CELL_IT/v" scale="1mV" color="#71b982" timeScale="1ms"/>
+            <Line id="IT_L5B[53]: v" quantity="IT_L5B/53/CELL_IT/v" scale="1mV" color="#a8b721" timeScale="1ms"/>
+            <Line id="IT_L5B[54]: v" quantity="IT_L5B/54/CELL_IT/v" scale="1mV" color="#5302bf" timeScale="1ms"/>
+            <Line id="IT_L5B[55]: v" quantity="IT_L5B/55/CELL_IT/v" scale="1mV" color="#c432e1" timeScale="1ms"/>
+            <Line id="IT_L5B[56]: v" quantity="IT_L5B/56/CELL_IT/v" scale="1mV" color="#7bbef7" timeScale="1ms"/>
+            <Line id="IT_L5B[57]: v" quantity="IT_L5B/57/CELL_IT/v" scale="1mV" color="#f17192" timeScale="1ms"/>
+            <Line id="IT_L5B[58]: v" quantity="IT_L5B/58/CELL_IT/v" scale="1mV" color="#5c5fee" timeScale="1ms"/>
+            <Line id="IT_L5B[59]: v" quantity="IT_L5B/59/CELL_IT/v" scale="1mV" color="#6abc6b" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__PT_L5B" title="Membrane potentials of cells in PT_L5B" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PT_L5B[0]: v" quantity="PT_L5B/0/CELL_PT/v" scale="1mV" color="#6d818b" timeScale="1ms"/>
+            <Line id="PT_L5B[1]: v" quantity="PT_L5B/1/CELL_PT/v" scale="1mV" color="#519bab" timeScale="1ms"/>
+            <Line id="PT_L5B[2]: v" quantity="PT_L5B/2/CELL_PT/v" scale="1mV" color="#e930e3" timeScale="1ms"/>
+            <Line id="PT_L5B[3]: v" quantity="PT_L5B/3/CELL_PT/v" scale="1mV" color="#076630" timeScale="1ms"/>
+            <Line id="PT_L5B[4]: v" quantity="PT_L5B/4/CELL_PT/v" scale="1mV" color="#63cc70" timeScale="1ms"/>
+            <Line id="PT_L5B[5]: v" quantity="PT_L5B/5/CELL_PT/v" scale="1mV" color="#257c20" timeScale="1ms"/>
+            <Line id="PT_L5B[6]: v" quantity="PT_L5B/6/CELL_PT/v" scale="1mV" color="#23b622" timeScale="1ms"/>
+            <Line id="PT_L5B[7]: v" quantity="PT_L5B/7/CELL_PT/v" scale="1mV" color="#3e9f69" timeScale="1ms"/>
+            <Line id="PT_L5B[8]: v" quantity="PT_L5B/8/CELL_PT/v" scale="1mV" color="#305d87" timeScale="1ms"/>
+            <Line id="PT_L5B[9]: v" quantity="PT_L5B/9/CELL_PT/v" scale="1mV" color="#87cf45" timeScale="1ms"/>
+            <Line id="PT_L5B[10]: v" quantity="PT_L5B/10/CELL_PT/v" scale="1mV" color="#78afad" timeScale="1ms"/>
+            <Line id="PT_L5B[11]: v" quantity="PT_L5B/11/CELL_PT/v" scale="1mV" color="#6d5bbc" timeScale="1ms"/>
+            <Line id="PT_L5B[12]: v" quantity="PT_L5B/12/CELL_PT/v" scale="1mV" color="#8e24a8" timeScale="1ms"/>
+            <Line id="PT_L5B[13]: v" quantity="PT_L5B/13/CELL_PT/v" scale="1mV" color="#735dc3" timeScale="1ms"/>
+            <Line id="PT_L5B[14]: v" quantity="PT_L5B/14/CELL_PT/v" scale="1mV" color="#fecea5" timeScale="1ms"/>
+            <Line id="PT_L5B[15]: v" quantity="PT_L5B/15/CELL_PT/v" scale="1mV" color="#bd80a6" timeScale="1ms"/>
+            <Line id="PT_L5B[16]: v" quantity="PT_L5B/16/CELL_PT/v" scale="1mV" color="#e4ba3a" timeScale="1ms"/>
+            <Line id="PT_L5B[17]: v" quantity="PT_L5B/17/CELL_PT/v" scale="1mV" color="#ce9d9f" timeScale="1ms"/>
+            <Line id="PT_L5B[18]: v" quantity="PT_L5B/18/CELL_PT/v" scale="1mV" color="#7f8e65" timeScale="1ms"/>
+            <Line id="PT_L5B[19]: v" quantity="PT_L5B/19/CELL_PT/v" scale="1mV" color="#e6b541" timeScale="1ms"/>
+            <Line id="PT_L5B[20]: v" quantity="PT_L5B/20/CELL_PT/v" scale="1mV" color="#37865a" timeScale="1ms"/>
+            <Line id="PT_L5B[21]: v" quantity="PT_L5B/21/CELL_PT/v" scale="1mV" color="#0f6cf9" timeScale="1ms"/>
+            <Line id="PT_L5B[22]: v" quantity="PT_L5B/22/CELL_PT/v" scale="1mV" color="#bc67d0" timeScale="1ms"/>
+            <Line id="PT_L5B[23]: v" quantity="PT_L5B/23/CELL_PT/v" scale="1mV" color="#7a4857" timeScale="1ms"/>
+            <Line id="PT_L5B[24]: v" quantity="PT_L5B/24/CELL_PT/v" scale="1mV" color="#cca51a" timeScale="1ms"/>
+            <Line id="PT_L5B[25]: v" quantity="PT_L5B/25/CELL_PT/v" scale="1mV" color="#fc86ca" timeScale="1ms"/>
+            <Line id="PT_L5B[26]: v" quantity="PT_L5B/26/CELL_PT/v" scale="1mV" color="#2a32b8" timeScale="1ms"/>
+            <Line id="PT_L5B[27]: v" quantity="PT_L5B/27/CELL_PT/v" scale="1mV" color="#d7d00b" timeScale="1ms"/>
+            <Line id="PT_L5B[28]: v" quantity="PT_L5B/28/CELL_PT/v" scale="1mV" color="#ee5d90" timeScale="1ms"/>
+            <Line id="PT_L5B[29]: v" quantity="PT_L5B/29/CELL_PT/v" scale="1mV" color="#38d8a4" timeScale="1ms"/>
+            <Line id="PT_L5B[30]: v" quantity="PT_L5B/30/CELL_PT/v" scale="1mV" color="#a7cfbd" timeScale="1ms"/>
+            <Line id="PT_L5B[31]: v" quantity="PT_L5B/31/CELL_PT/v" scale="1mV" color="#7f99ef" timeScale="1ms"/>
+            <Line id="PT_L5B[32]: v" quantity="PT_L5B/32/CELL_PT/v" scale="1mV" color="#e37015" timeScale="1ms"/>
+            <Line id="PT_L5B[33]: v" quantity="PT_L5B/33/CELL_PT/v" scale="1mV" color="#9b8129" timeScale="1ms"/>
+            <Line id="PT_L5B[34]: v" quantity="PT_L5B/34/CELL_PT/v" scale="1mV" color="#d96988" timeScale="1ms"/>
+            <Line id="PT_L5B[35]: v" quantity="PT_L5B/35/CELL_PT/v" scale="1mV" color="#3fcc72" timeScale="1ms"/>
+            <Line id="PT_L5B[36]: v" quantity="PT_L5B/36/CELL_PT/v" scale="1mV" color="#57a8f8" timeScale="1ms"/>
+            <Line id="PT_L5B[37]: v" quantity="PT_L5B/37/CELL_PT/v" scale="1mV" color="#6f9906" timeScale="1ms"/>
+            <Line id="PT_L5B[38]: v" quantity="PT_L5B/38/CELL_PT/v" scale="1mV" color="#c50a58" timeScale="1ms"/>
+            <Line id="PT_L5B[39]: v" quantity="PT_L5B/39/CELL_PT/v" scale="1mV" color="#86420d" timeScale="1ms"/>
+            <Line id="PT_L5B[40]: v" quantity="PT_L5B/40/CELL_PT/v" scale="1mV" color="#5a1d2a" timeScale="1ms"/>
+            <Line id="PT_L5B[41]: v" quantity="PT_L5B/41/CELL_PT/v" scale="1mV" color="#02dde5" timeScale="1ms"/>
+            <Line id="PT_L5B[42]: v" quantity="PT_L5B/42/CELL_PT/v" scale="1mV" color="#8d74df" timeScale="1ms"/>
+            <Line id="PT_L5B[43]: v" quantity="PT_L5B/43/CELL_PT/v" scale="1mV" color="#0c299e" timeScale="1ms"/>
+            <Line id="PT_L5B[44]: v" quantity="PT_L5B/44/CELL_PT/v" scale="1mV" color="#f568d9" timeScale="1ms"/>
+            <Line id="PT_L5B[45]: v" quantity="PT_L5B/45/CELL_PT/v" scale="1mV" color="#aa2326" timeScale="1ms"/>
+            <Line id="PT_L5B[46]: v" quantity="PT_L5B/46/CELL_PT/v" scale="1mV" color="#673a9d" timeScale="1ms"/>
+            <Line id="PT_L5B[47]: v" quantity="PT_L5B/47/CELL_PT/v" scale="1mV" color="#9abbc5" timeScale="1ms"/>
+            <Line id="PT_L5B[48]: v" quantity="PT_L5B/48/CELL_PT/v" scale="1mV" color="#0e6642" timeScale="1ms"/>
+            <Line id="PT_L5B[49]: v" quantity="PT_L5B/49/CELL_PT/v" scale="1mV" color="#cb9f43" timeScale="1ms"/>
+            <Line id="PT_L5B[50]: v" quantity="PT_L5B/50/CELL_PT/v" scale="1mV" color="#bbeaa3" timeScale="1ms"/>
+            <Line id="PT_L5B[51]: v" quantity="PT_L5B/51/CELL_PT/v" scale="1mV" color="#6e44e7" timeScale="1ms"/>
+            <Line id="PT_L5B[52]: v" quantity="PT_L5B/52/CELL_PT/v" scale="1mV" color="#803801" timeScale="1ms"/>
+            <Line id="PT_L5B[53]: v" quantity="PT_L5B/53/CELL_PT/v" scale="1mV" color="#75fd11" timeScale="1ms"/>
+            <Line id="PT_L5B[54]: v" quantity="PT_L5B/54/CELL_PT/v" scale="1mV" color="#2f3f6f" timeScale="1ms"/>
+            <Line id="PT_L5B[55]: v" quantity="PT_L5B/55/CELL_PT/v" scale="1mV" color="#687666" timeScale="1ms"/>
+            <Line id="PT_L5B[56]: v" quantity="PT_L5B/56/CELL_PT/v" scale="1mV" color="#80a6ab" timeScale="1ms"/>
+            <Line id="PT_L5B[57]: v" quantity="PT_L5B/57/CELL_PT/v" scale="1mV" color="#02feb6" timeScale="1ms"/>
+            <Line id="PT_L5B[58]: v" quantity="PT_L5B/58/CELL_PT/v" scale="1mV" color="#08790c" timeScale="1ms"/>
+            <Line id="PT_L5B[59]: v" quantity="PT_L5B/59/CELL_PT/v" scale="1mV" color="#4d7bc9" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__IT_L6" title="Membrane potentials of cells in IT_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="IT_L6[0]: v" quantity="IT_L6/0/CELL_IT/v" scale="1mV" color="#4440e3" timeScale="1ms"/>
+            <Line id="IT_L6[1]: v" quantity="IT_L6/1/CELL_IT/v" scale="1mV" color="#a822a5" timeScale="1ms"/>
+            <Line id="IT_L6[2]: v" quantity="IT_L6/2/CELL_IT/v" scale="1mV" color="#6d2736" timeScale="1ms"/>
+            <Line id="IT_L6[3]: v" quantity="IT_L6/3/CELL_IT/v" scale="1mV" color="#41be2b" timeScale="1ms"/>
+            <Line id="IT_L6[4]: v" quantity="IT_L6/4/CELL_IT/v" scale="1mV" color="#9cee8c" timeScale="1ms"/>
+            <Line id="IT_L6[5]: v" quantity="IT_L6/5/CELL_IT/v" scale="1mV" color="#925688" timeScale="1ms"/>
+            <Line id="IT_L6[6]: v" quantity="IT_L6/6/CELL_IT/v" scale="1mV" color="#0ed874" timeScale="1ms"/>
+            <Line id="IT_L6[7]: v" quantity="IT_L6/7/CELL_IT/v" scale="1mV" color="#6b941c" timeScale="1ms"/>
+            <Line id="IT_L6[8]: v" quantity="IT_L6/8/CELL_IT/v" scale="1mV" color="#db8313" timeScale="1ms"/>
+            <Line id="IT_L6[9]: v" quantity="IT_L6/9/CELL_IT/v" scale="1mV" color="#c96179" timeScale="1ms"/>
+            <Line id="IT_L6[10]: v" quantity="IT_L6/10/CELL_IT/v" scale="1mV" color="#cd9719" timeScale="1ms"/>
+            <Line id="IT_L6[11]: v" quantity="IT_L6/11/CELL_IT/v" scale="1mV" color="#e15c79" timeScale="1ms"/>
+            <Line id="IT_L6[12]: v" quantity="IT_L6/12/CELL_IT/v" scale="1mV" color="#8f5992" timeScale="1ms"/>
+            <Line id="IT_L6[13]: v" quantity="IT_L6/13/CELL_IT/v" scale="1mV" color="#909fde" timeScale="1ms"/>
+            <Line id="IT_L6[14]: v" quantity="IT_L6/14/CELL_IT/v" scale="1mV" color="#2571f7" timeScale="1ms"/>
+            <Line id="IT_L6[15]: v" quantity="IT_L6/15/CELL_IT/v" scale="1mV" color="#f45ff3" timeScale="1ms"/>
+            <Line id="IT_L6[16]: v" quantity="IT_L6/16/CELL_IT/v" scale="1mV" color="#f7106f" timeScale="1ms"/>
+            <Line id="IT_L6[17]: v" quantity="IT_L6/17/CELL_IT/v" scale="1mV" color="#513c3c" timeScale="1ms"/>
+            <Line id="IT_L6[18]: v" quantity="IT_L6/18/CELL_IT/v" scale="1mV" color="#d81022" timeScale="1ms"/>
+            <Line id="IT_L6[19]: v" quantity="IT_L6/19/CELL_IT/v" scale="1mV" color="#18529c" timeScale="1ms"/>
+            <Line id="IT_L6[20]: v" quantity="IT_L6/20/CELL_IT/v" scale="1mV" color="#32580c" timeScale="1ms"/>
+            <Line id="IT_L6[21]: v" quantity="IT_L6/21/CELL_IT/v" scale="1mV" color="#3d0c49" timeScale="1ms"/>
+            <Line id="IT_L6[22]: v" quantity="IT_L6/22/CELL_IT/v" scale="1mV" color="#886000" timeScale="1ms"/>
+            <Line id="IT_L6[23]: v" quantity="IT_L6/23/CELL_IT/v" scale="1mV" color="#a12280" timeScale="1ms"/>
+            <Line id="IT_L6[24]: v" quantity="IT_L6/24/CELL_IT/v" scale="1mV" color="#d3506f" timeScale="1ms"/>
+            <Line id="IT_L6[25]: v" quantity="IT_L6/25/CELL_IT/v" scale="1mV" color="#c8e458" timeScale="1ms"/>
+            <Line id="IT_L6[26]: v" quantity="IT_L6/26/CELL_IT/v" scale="1mV" color="#f42002" timeScale="1ms"/>
+            <Line id="IT_L6[27]: v" quantity="IT_L6/27/CELL_IT/v" scale="1mV" color="#2f7629" timeScale="1ms"/>
+            <Line id="IT_L6[28]: v" quantity="IT_L6/28/CELL_IT/v" scale="1mV" color="#c78eb3" timeScale="1ms"/>
+            <Line id="IT_L6[29]: v" quantity="IT_L6/29/CELL_IT/v" scale="1mV" color="#3e0a2c" timeScale="1ms"/>
+            <Line id="IT_L6[30]: v" quantity="IT_L6/30/CELL_IT/v" scale="1mV" color="#dc9ef0" timeScale="1ms"/>
+            <Line id="IT_L6[31]: v" quantity="IT_L6/31/CELL_IT/v" scale="1mV" color="#75b242" timeScale="1ms"/>
+            <Line id="IT_L6[32]: v" quantity="IT_L6/32/CELL_IT/v" scale="1mV" color="#03bc32" timeScale="1ms"/>
+            <Line id="IT_L6[33]: v" quantity="IT_L6/33/CELL_IT/v" scale="1mV" color="#eaee29" timeScale="1ms"/>
+            <Line id="IT_L6[34]: v" quantity="IT_L6/34/CELL_IT/v" scale="1mV" color="#4fa0a5" timeScale="1ms"/>
+            <Line id="IT_L6[35]: v" quantity="IT_L6/35/CELL_IT/v" scale="1mV" color="#07554e" timeScale="1ms"/>
+            <Line id="IT_L6[36]: v" quantity="IT_L6/36/CELL_IT/v" scale="1mV" color="#b63f76" timeScale="1ms"/>
+            <Line id="IT_L6[37]: v" quantity="IT_L6/37/CELL_IT/v" scale="1mV" color="#51fbe4" timeScale="1ms"/>
+            <Line id="IT_L6[38]: v" quantity="IT_L6/38/CELL_IT/v" scale="1mV" color="#8a2b54" timeScale="1ms"/>
+            <Line id="IT_L6[39]: v" quantity="IT_L6/39/CELL_IT/v" scale="1mV" color="#49f489" timeScale="1ms"/>
+            <Line id="IT_L6[40]: v" quantity="IT_L6/40/CELL_IT/v" scale="1mV" color="#c6473f" timeScale="1ms"/>
+            <Line id="IT_L6[41]: v" quantity="IT_L6/41/CELL_IT/v" scale="1mV" color="#521ff1" timeScale="1ms"/>
+            <Line id="IT_L6[42]: v" quantity="IT_L6/42/CELL_IT/v" scale="1mV" color="#9fbe30" timeScale="1ms"/>
+            <Line id="IT_L6[43]: v" quantity="IT_L6/43/CELL_IT/v" scale="1mV" color="#a51f4e" timeScale="1ms"/>
+            <Line id="IT_L6[44]: v" quantity="IT_L6/44/CELL_IT/v" scale="1mV" color="#a1e34f" timeScale="1ms"/>
+            <Line id="IT_L6[45]: v" quantity="IT_L6/45/CELL_IT/v" scale="1mV" color="#dc1cc8" timeScale="1ms"/>
+            <Line id="IT_L6[46]: v" quantity="IT_L6/46/CELL_IT/v" scale="1mV" color="#141366" timeScale="1ms"/>
+            <Line id="IT_L6[47]: v" quantity="IT_L6/47/CELL_IT/v" scale="1mV" color="#b5572b" timeScale="1ms"/>
+            <Line id="IT_L6[48]: v" quantity="IT_L6/48/CELL_IT/v" scale="1mV" color="#7d95d1" timeScale="1ms"/>
+            <Line id="IT_L6[49]: v" quantity="IT_L6/49/CELL_IT/v" scale="1mV" color="#ea64d5" timeScale="1ms"/>
+            <Line id="IT_L6[50]: v" quantity="IT_L6/50/CELL_IT/v" scale="1mV" color="#0db0a9" timeScale="1ms"/>
+            <Line id="IT_L6[51]: v" quantity="IT_L6/51/CELL_IT/v" scale="1mV" color="#b19cbd" timeScale="1ms"/>
+            <Line id="IT_L6[52]: v" quantity="IT_L6/52/CELL_IT/v" scale="1mV" color="#c8c9aa" timeScale="1ms"/>
+            <Line id="IT_L6[53]: v" quantity="IT_L6/53/CELL_IT/v" scale="1mV" color="#fee245" timeScale="1ms"/>
+            <Line id="IT_L6[54]: v" quantity="IT_L6/54/CELL_IT/v" scale="1mV" color="#463471" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__CT_L6" title="Membrane potentials of cells in CT_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="CT_L6[0]: v" quantity="CT_L6/0/CELL_CT/v" scale="1mV" color="#bf8131" timeScale="1ms"/>
+            <Line id="CT_L6[1]: v" quantity="CT_L6/1/CELL_CT/v" scale="1mV" color="#98ebd3" timeScale="1ms"/>
+            <Line id="CT_L6[2]: v" quantity="CT_L6/2/CELL_CT/v" scale="1mV" color="#43bb5d" timeScale="1ms"/>
+            <Line id="CT_L6[3]: v" quantity="CT_L6/3/CELL_CT/v" scale="1mV" color="#ff6f63" timeScale="1ms"/>
+            <Line id="CT_L6[4]: v" quantity="CT_L6/4/CELL_CT/v" scale="1mV" color="#e72109" timeScale="1ms"/>
+            <Line id="CT_L6[5]: v" quantity="CT_L6/5/CELL_CT/v" scale="1mV" color="#05b500" timeScale="1ms"/>
+            <Line id="CT_L6[6]: v" quantity="CT_L6/6/CELL_CT/v" scale="1mV" color="#eebb43" timeScale="1ms"/>
+            <Line id="CT_L6[7]: v" quantity="CT_L6/7/CELL_CT/v" scale="1mV" color="#bc35c8" timeScale="1ms"/>
+            <Line id="CT_L6[8]: v" quantity="CT_L6/8/CELL_CT/v" scale="1mV" color="#7625e4" timeScale="1ms"/>
+            <Line id="CT_L6[9]: v" quantity="CT_L6/9/CELL_CT/v" scale="1mV" color="#d1a402" timeScale="1ms"/>
+            <Line id="CT_L6[10]: v" quantity="CT_L6/10/CELL_CT/v" scale="1mV" color="#f18f5e" timeScale="1ms"/>
+            <Line id="CT_L6[11]: v" quantity="CT_L6/11/CELL_CT/v" scale="1mV" color="#736b3f" timeScale="1ms"/>
+            <Line id="CT_L6[12]: v" quantity="CT_L6/12/CELL_CT/v" scale="1mV" color="#ae1bea" timeScale="1ms"/>
+            <Line id="CT_L6[13]: v" quantity="CT_L6/13/CELL_CT/v" scale="1mV" color="#fbb171" timeScale="1ms"/>
+            <Line id="CT_L6[14]: v" quantity="CT_L6/14/CELL_CT/v" scale="1mV" color="#97497a" timeScale="1ms"/>
+            <Line id="CT_L6[15]: v" quantity="CT_L6/15/CELL_CT/v" scale="1mV" color="#750a73" timeScale="1ms"/>
+            <Line id="CT_L6[16]: v" quantity="CT_L6/16/CELL_CT/v" scale="1mV" color="#d4b2f5" timeScale="1ms"/>
+            <Line id="CT_L6[17]: v" quantity="CT_L6/17/CELL_CT/v" scale="1mV" color="#a3a7dd" timeScale="1ms"/>
+            <Line id="CT_L6[18]: v" quantity="CT_L6/18/CELL_CT/v" scale="1mV" color="#31e972" timeScale="1ms"/>
+            <Line id="CT_L6[19]: v" quantity="CT_L6/19/CELL_CT/v" scale="1mV" color="#4cc510" timeScale="1ms"/>
+            <Line id="CT_L6[20]: v" quantity="CT_L6/20/CELL_CT/v" scale="1mV" color="#5f15dd" timeScale="1ms"/>
+            <Line id="CT_L6[21]: v" quantity="CT_L6/21/CELL_CT/v" scale="1mV" color="#17b285" timeScale="1ms"/>
+            <Line id="CT_L6[22]: v" quantity="CT_L6/22/CELL_CT/v" scale="1mV" color="#3ef29f" timeScale="1ms"/>
+            <Line id="CT_L6[23]: v" quantity="CT_L6/23/CELL_CT/v" scale="1mV" color="#c62346" timeScale="1ms"/>
+            <Line id="CT_L6[24]: v" quantity="CT_L6/24/CELL_CT/v" scale="1mV" color="#4014cd" timeScale="1ms"/>
+            <Line id="CT_L6[25]: v" quantity="CT_L6/25/CELL_CT/v" scale="1mV" color="#bdb356" timeScale="1ms"/>
+            <Line id="CT_L6[26]: v" quantity="CT_L6/26/CELL_CT/v" scale="1mV" color="#20d887" timeScale="1ms"/>
+            <Line id="CT_L6[27]: v" quantity="CT_L6/27/CELL_CT/v" scale="1mV" color="#669be0" timeScale="1ms"/>
+            <Line id="CT_L6[28]: v" quantity="CT_L6/28/CELL_CT/v" scale="1mV" color="#6e1df6" timeScale="1ms"/>
+            <Line id="CT_L6[29]: v" quantity="CT_L6/29/CELL_CT/v" scale="1mV" color="#009647" timeScale="1ms"/>
+            <Line id="CT_L6[30]: v" quantity="CT_L6/30/CELL_CT/v" scale="1mV" color="#30f8aa" timeScale="1ms"/>
+            <Line id="CT_L6[31]: v" quantity="CT_L6/31/CELL_CT/v" scale="1mV" color="#ac934a" timeScale="1ms"/>
+            <Line id="CT_L6[32]: v" quantity="CT_L6/32/CELL_CT/v" scale="1mV" color="#858c05" timeScale="1ms"/>
+            <Line id="CT_L6[33]: v" quantity="CT_L6/33/CELL_CT/v" scale="1mV" color="#7f7d1b" timeScale="1ms"/>
+            <Line id="CT_L6[34]: v" quantity="CT_L6/34/CELL_CT/v" scale="1mV" color="#8dc47f" timeScale="1ms"/>
+            <Line id="CT_L6[35]: v" quantity="CT_L6/35/CELL_CT/v" scale="1mV" color="#9efec5" timeScale="1ms"/>
+            <Line id="CT_L6[36]: v" quantity="CT_L6/36/CELL_CT/v" scale="1mV" color="#b18401" timeScale="1ms"/>
+            <Line id="CT_L6[37]: v" quantity="CT_L6/37/CELL_CT/v" scale="1mV" color="#a146a6" timeScale="1ms"/>
+            <Line id="CT_L6[38]: v" quantity="CT_L6/38/CELL_CT/v" scale="1mV" color="#c88d33" timeScale="1ms"/>
+            <Line id="CT_L6[39]: v" quantity="CT_L6/39/CELL_CT/v" scale="1mV" color="#0af815" timeScale="1ms"/>
+            <Line id="CT_L6[40]: v" quantity="CT_L6/40/CELL_CT/v" scale="1mV" color="#3dfbbf" timeScale="1ms"/>
+            <Line id="CT_L6[41]: v" quantity="CT_L6/41/CELL_CT/v" scale="1mV" color="#e05862" timeScale="1ms"/>
+            <Line id="CT_L6[42]: v" quantity="CT_L6/42/CELL_CT/v" scale="1mV" color="#e16932" timeScale="1ms"/>
+            <Line id="CT_L6[43]: v" quantity="CT_L6/43/CELL_CT/v" scale="1mV" color="#a18c96" timeScale="1ms"/>
+            <Line id="CT_L6[44]: v" quantity="CT_L6/44/CELL_CT/v" scale="1mV" color="#78ab1e" timeScale="1ms"/>
+            <Line id="CT_L6[45]: v" quantity="CT_L6/45/CELL_CT/v" scale="1mV" color="#829e4d" timeScale="1ms"/>
+            <Line id="CT_L6[46]: v" quantity="CT_L6/46/CELL_CT/v" scale="1mV" color="#32e8f9" timeScale="1ms"/>
+            <Line id="CT_L6[47]: v" quantity="CT_L6/47/CELL_CT/v" scale="1mV" color="#57a887" timeScale="1ms"/>
+            <Line id="CT_L6[48]: v" quantity="CT_L6/48/CELL_CT/v" scale="1mV" color="#947397" timeScale="1ms"/>
+            <Line id="CT_L6[49]: v" quantity="CT_L6/49/CELL_CT/v" scale="1mV" color="#1f2575" timeScale="1ms"/>
+            <Line id="CT_L6[50]: v" quantity="CT_L6/50/CELL_CT/v" scale="1mV" color="#41e16b" timeScale="1ms"/>
+            <Line id="CT_L6[51]: v" quantity="CT_L6/51/CELL_CT/v" scale="1mV" color="#482aa5" timeScale="1ms"/>
+            <Line id="CT_L6[52]: v" quantity="CT_L6/52/CELL_CT/v" scale="1mV" color="#64d187" timeScale="1ms"/>
+            <Line id="CT_L6[53]: v" quantity="CT_L6/53/CELL_CT/v" scale="1mV" color="#89446b" timeScale="1ms"/>
+            <Line id="CT_L6[54]: v" quantity="CT_L6/54/CELL_CT/v" scale="1mV" color="#6c0704" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__PV_L23" title="Membrane potentials of cells in PV_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PV_L23[0]: v" quantity="PV_L23/0/CELL_PV/v" scale="1mV" color="#82aad0" timeScale="1ms"/>
+            <Line id="PV_L23[1]: v" quantity="PV_L23/1/CELL_PV/v" scale="1mV" color="#b786b1" timeScale="1ms"/>
+            <Line id="PV_L23[2]: v" quantity="PV_L23/2/CELL_PV/v" scale="1mV" color="#1825a1" timeScale="1ms"/>
+            <Line id="PV_L23[3]: v" quantity="PV_L23/3/CELL_PV/v" scale="1mV" color="#28c1ba" timeScale="1ms"/>
+            <Line id="PV_L23[4]: v" quantity="PV_L23/4/CELL_PV/v" scale="1mV" color="#485e80" timeScale="1ms"/>
+            <Line id="PV_L23[5]: v" quantity="PV_L23/5/CELL_PV/v" scale="1mV" color="#777047" timeScale="1ms"/>
+            <Line id="PV_L23[6]: v" quantity="PV_L23/6/CELL_PV/v" scale="1mV" color="#16d9ec" timeScale="1ms"/>
+            <Line id="PV_L23[7]: v" quantity="PV_L23/7/CELL_PV/v" scale="1mV" color="#475b8e" timeScale="1ms"/>
+            <Line id="PV_L23[8]: v" quantity="PV_L23/8/CELL_PV/v" scale="1mV" color="#0a1211" timeScale="1ms"/>
+            <Line id="PV_L23[9]: v" quantity="PV_L23/9/CELL_PV/v" scale="1mV" color="#125250" timeScale="1ms"/>
+            <Line id="PV_L23[10]: v" quantity="PV_L23/10/CELL_PV/v" scale="1mV" color="#49b436" timeScale="1ms"/>
+            <Line id="PV_L23[11]: v" quantity="PV_L23/11/CELL_PV/v" scale="1mV" color="#c188cc" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__SOM_L23" title="Membrane potentials of cells in SOM_L23" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="SOM_L23[0]: v" quantity="SOM_L23/0/CELL_SOM/v" scale="1mV" color="#d94799" timeScale="1ms"/>
+            <Line id="SOM_L23[1]: v" quantity="SOM_L23/1/CELL_SOM/v" scale="1mV" color="#d77926" timeScale="1ms"/>
+            <Line id="SOM_L23[2]: v" quantity="SOM_L23/2/CELL_SOM/v" scale="1mV" color="#0c9f22" timeScale="1ms"/>
+            <Line id="SOM_L23[3]: v" quantity="SOM_L23/3/CELL_SOM/v" scale="1mV" color="#58ab1b" timeScale="1ms"/>
+            <Line id="SOM_L23[4]: v" quantity="SOM_L23/4/CELL_SOM/v" scale="1mV" color="#4f0ee2" timeScale="1ms"/>
+            <Line id="SOM_L23[5]: v" quantity="SOM_L23/5/CELL_SOM/v" scale="1mV" color="#49dfff" timeScale="1ms"/>
+            <Line id="SOM_L23[6]: v" quantity="SOM_L23/6/CELL_SOM/v" scale="1mV" color="#fbdece" timeScale="1ms"/>
+            <Line id="SOM_L23[7]: v" quantity="SOM_L23/7/CELL_SOM/v" scale="1mV" color="#35a1a5" timeScale="1ms"/>
+            <Line id="SOM_L23[8]: v" quantity="SOM_L23/8/CELL_SOM/v" scale="1mV" color="#b67f61" timeScale="1ms"/>
+            <Line id="SOM_L23[9]: v" quantity="SOM_L23/9/CELL_SOM/v" scale="1mV" color="#265554" timeScale="1ms"/>
+            <Line id="SOM_L23[10]: v" quantity="SOM_L23/10/CELL_SOM/v" scale="1mV" color="#4fd968" timeScale="1ms"/>
+            <Line id="SOM_L23[11]: v" quantity="SOM_L23/11/CELL_SOM/v" scale="1mV" color="#0b7baa" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__PV_L5" title="Membrane potentials of cells in PV_L5" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PV_L5[0]: v" quantity="PV_L5/0/CELL_PV/v" scale="1mV" color="#24ca9f" timeScale="1ms"/>
+            <Line id="PV_L5[1]: v" quantity="PV_L5/1/CELL_PV/v" scale="1mV" color="#b56a7c" timeScale="1ms"/>
+            <Line id="PV_L5[2]: v" quantity="PV_L5/2/CELL_PV/v" scale="1mV" color="#43a862" timeScale="1ms"/>
+            <Line id="PV_L5[3]: v" quantity="PV_L5/3/CELL_PV/v" scale="1mV" color="#b8c1b2" timeScale="1ms"/>
+            <Line id="PV_L5[4]: v" quantity="PV_L5/4/CELL_PV/v" scale="1mV" color="#af2376" timeScale="1ms"/>
+            <Line id="PV_L5[5]: v" quantity="PV_L5/5/CELL_PV/v" scale="1mV" color="#6c7912" timeScale="1ms"/>
+            <Line id="PV_L5[6]: v" quantity="PV_L5/6/CELL_PV/v" scale="1mV" color="#96cdad" timeScale="1ms"/>
+            <Line id="PV_L5[7]: v" quantity="PV_L5/7/CELL_PV/v" scale="1mV" color="#6442e4" timeScale="1ms"/>
+            <Line id="PV_L5[8]: v" quantity="PV_L5/8/CELL_PV/v" scale="1mV" color="#a9bfe8" timeScale="1ms"/>
+            <Line id="PV_L5[9]: v" quantity="PV_L5/9/CELL_PV/v" scale="1mV" color="#cfc0d2" timeScale="1ms"/>
+            <Line id="PV_L5[10]: v" quantity="PV_L5/10/CELL_PV/v" scale="1mV" color="#243750" timeScale="1ms"/>
+            <Line id="PV_L5[11]: v" quantity="PV_L5/11/CELL_PV/v" scale="1mV" color="#a9c24e" timeScale="1ms"/>
+            <Line id="PV_L5[12]: v" quantity="PV_L5/12/CELL_PV/v" scale="1mV" color="#533365" timeScale="1ms"/>
+            <Line id="PV_L5[13]: v" quantity="PV_L5/13/CELL_PV/v" scale="1mV" color="#80a975" timeScale="1ms"/>
+            <Line id="PV_L5[14]: v" quantity="PV_L5/14/CELL_PV/v" scale="1mV" color="#f1ee32" timeScale="1ms"/>
+            <Line id="PV_L5[15]: v" quantity="PV_L5/15/CELL_PV/v" scale="1mV" color="#56d373" timeScale="1ms"/>
+            <Line id="PV_L5[16]: v" quantity="PV_L5/16/CELL_PV/v" scale="1mV" color="#4395f5" timeScale="1ms"/>
+            <Line id="PV_L5[17]: v" quantity="PV_L5/17/CELL_PV/v" scale="1mV" color="#c4f0da" timeScale="1ms"/>
+            <Line id="PV_L5[18]: v" quantity="PV_L5/18/CELL_PV/v" scale="1mV" color="#0c9997" timeScale="1ms"/>
+            <Line id="PV_L5[19]: v" quantity="PV_L5/19/CELL_PV/v" scale="1mV" color="#e380c8" timeScale="1ms"/>
+            <Line id="PV_L5[20]: v" quantity="PV_L5/20/CELL_PV/v" scale="1mV" color="#4b1f41" timeScale="1ms"/>
+            <Line id="PV_L5[21]: v" quantity="PV_L5/21/CELL_PV/v" scale="1mV" color="#83299d" timeScale="1ms"/>
+            <Line id="PV_L5[22]: v" quantity="PV_L5/22/CELL_PV/v" scale="1mV" color="#45ce94" timeScale="1ms"/>
+            <Line id="PV_L5[23]: v" quantity="PV_L5/23/CELL_PV/v" scale="1mV" color="#4f197e" timeScale="1ms"/>
+            <Line id="PV_L5[24]: v" quantity="PV_L5/24/CELL_PV/v" scale="1mV" color="#8176ad" timeScale="1ms"/>
+            <Line id="PV_L5[25]: v" quantity="PV_L5/25/CELL_PV/v" scale="1mV" color="#82e66e" timeScale="1ms"/>
+            <Line id="PV_L5[26]: v" quantity="PV_L5/26/CELL_PV/v" scale="1mV" color="#946254" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__SOM_L5" title="Membrane potentials of cells in SOM_L5" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="SOM_L5[0]: v" quantity="SOM_L5/0/CELL_SOM/v" scale="1mV" color="#012b6d" timeScale="1ms"/>
+            <Line id="SOM_L5[1]: v" quantity="SOM_L5/1/CELL_SOM/v" scale="1mV" color="#bcb112" timeScale="1ms"/>
+            <Line id="SOM_L5[2]: v" quantity="SOM_L5/2/CELL_SOM/v" scale="1mV" color="#cd5c70" timeScale="1ms"/>
+            <Line id="SOM_L5[3]: v" quantity="SOM_L5/3/CELL_SOM/v" scale="1mV" color="#679be9" timeScale="1ms"/>
+            <Line id="SOM_L5[4]: v" quantity="SOM_L5/4/CELL_SOM/v" scale="1mV" color="#c0e118" timeScale="1ms"/>
+            <Line id="SOM_L5[5]: v" quantity="SOM_L5/5/CELL_SOM/v" scale="1mV" color="#33a098" timeScale="1ms"/>
+            <Line id="SOM_L5[6]: v" quantity="SOM_L5/6/CELL_SOM/v" scale="1mV" color="#37cd07" timeScale="1ms"/>
+            <Line id="SOM_L5[7]: v" quantity="SOM_L5/7/CELL_SOM/v" scale="1mV" color="#56f693" timeScale="1ms"/>
+            <Line id="SOM_L5[8]: v" quantity="SOM_L5/8/CELL_SOM/v" scale="1mV" color="#ed8760" timeScale="1ms"/>
+            <Line id="SOM_L5[9]: v" quantity="SOM_L5/9/CELL_SOM/v" scale="1mV" color="#5e9459" timeScale="1ms"/>
+            <Line id="SOM_L5[10]: v" quantity="SOM_L5/10/CELL_SOM/v" scale="1mV" color="#26675e" timeScale="1ms"/>
+            <Line id="SOM_L5[11]: v" quantity="SOM_L5/11/CELL_SOM/v" scale="1mV" color="#37d79e" timeScale="1ms"/>
+            <Line id="SOM_L5[12]: v" quantity="SOM_L5/12/CELL_SOM/v" scale="1mV" color="#37312e" timeScale="1ms"/>
+            <Line id="SOM_L5[13]: v" quantity="SOM_L5/13/CELL_SOM/v" scale="1mV" color="#d31300" timeScale="1ms"/>
+            <Line id="SOM_L5[14]: v" quantity="SOM_L5/14/CELL_SOM/v" scale="1mV" color="#4ddd99" timeScale="1ms"/>
+            <Line id="SOM_L5[15]: v" quantity="SOM_L5/15/CELL_SOM/v" scale="1mV" color="#1743f1" timeScale="1ms"/>
+            <Line id="SOM_L5[16]: v" quantity="SOM_L5/16/CELL_SOM/v" scale="1mV" color="#e5fbae" timeScale="1ms"/>
+            <Line id="SOM_L5[17]: v" quantity="SOM_L5/17/CELL_SOM/v" scale="1mV" color="#3dfca0" timeScale="1ms"/>
+            <Line id="SOM_L5[18]: v" quantity="SOM_L5/18/CELL_SOM/v" scale="1mV" color="#ceefd4" timeScale="1ms"/>
+            <Line id="SOM_L5[19]: v" quantity="SOM_L5/19/CELL_SOM/v" scale="1mV" color="#8425fc" timeScale="1ms"/>
+            <Line id="SOM_L5[20]: v" quantity="SOM_L5/20/CELL_SOM/v" scale="1mV" color="#923b46" timeScale="1ms"/>
+            <Line id="SOM_L5[21]: v" quantity="SOM_L5/21/CELL_SOM/v" scale="1mV" color="#43c32a" timeScale="1ms"/>
+            <Line id="SOM_L5[22]: v" quantity="SOM_L5/22/CELL_SOM/v" scale="1mV" color="#7348e8" timeScale="1ms"/>
+            <Line id="SOM_L5[23]: v" quantity="SOM_L5/23/CELL_SOM/v" scale="1mV" color="#5a4693" timeScale="1ms"/>
+            <Line id="SOM_L5[24]: v" quantity="SOM_L5/24/CELL_SOM/v" scale="1mV" color="#32205c" timeScale="1ms"/>
+            <Line id="SOM_L5[25]: v" quantity="SOM_L5/25/CELL_SOM/v" scale="1mV" color="#da8c46" timeScale="1ms"/>
+            <Line id="SOM_L5[26]: v" quantity="SOM_L5/26/CELL_SOM/v" scale="1mV" color="#4b69cd" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__PV_L6" title="Membrane potentials of cells in PV_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="PV_L6[0]: v" quantity="PV_L6/0/CELL_PV/v" scale="1mV" color="#8e92de" timeScale="1ms"/>
+            <Line id="PV_L6[1]: v" quantity="PV_L6/1/CELL_PV/v" scale="1mV" color="#7ce36b" timeScale="1ms"/>
+            <Line id="PV_L6[2]: v" quantity="PV_L6/2/CELL_PV/v" scale="1mV" color="#3d4d63" timeScale="1ms"/>
+            <Line id="PV_L6[3]: v" quantity="PV_L6/3/CELL_PV/v" scale="1mV" color="#a0c814" timeScale="1ms"/>
+            <Line id="PV_L6[4]: v" quantity="PV_L6/4/CELL_PV/v" scale="1mV" color="#cace87" timeScale="1ms"/>
+            <Line id="PV_L6[5]: v" quantity="PV_L6/5/CELL_PV/v" scale="1mV" color="#86d406" timeScale="1ms"/>
+            <Line id="PV_L6[6]: v" quantity="PV_L6/6/CELL_PV/v" scale="1mV" color="#6d4f74" timeScale="1ms"/>
+            <Line id="PV_L6[7]: v" quantity="PV_L6/7/CELL_PV/v" scale="1mV" color="#bf40ae" timeScale="1ms"/>
+            <Line id="PV_L6[8]: v" quantity="PV_L6/8/CELL_PV/v" scale="1mV" color="#c7f0c2" timeScale="1ms"/>
+            <Line id="PV_L6[9]: v" quantity="PV_L6/9/CELL_PV/v" scale="1mV" color="#9e960f" timeScale="1ms"/>
+            <Line id="PV_L6[10]: v" quantity="PV_L6/10/CELL_PV/v" scale="1mV" color="#02aec0" timeScale="1ms"/>
+            <Line id="PV_L6[11]: v" quantity="PV_L6/11/CELL_PV/v" scale="1mV" color="#9555cf" timeScale="1ms"/>
+            <Line id="PV_L6[12]: v" quantity="PV_L6/12/CELL_PV/v" scale="1mV" color="#ddd6b4" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="DispPop__SOM_L6" title="Membrane potentials of cells in SOM_L6" timeScale="1ms" xmin="-100.0" xmax="1100.0" ymin="-90" ymax="50">
+            <Line id="SOM_L6[0]: v" quantity="SOM_L6/0/CELL_SOM/v" scale="1mV" color="#e6dd1b" timeScale="1ms"/>
+            <Line id="SOM_L6[1]: v" quantity="SOM_L6/1/CELL_SOM/v" scale="1mV" color="#d64149" timeScale="1ms"/>
+            <Line id="SOM_L6[2]: v" quantity="SOM_L6/2/CELL_SOM/v" scale="1mV" color="#f884a7" timeScale="1ms"/>
+            <Line id="SOM_L6[3]: v" quantity="SOM_L6/3/CELL_SOM/v" scale="1mV" color="#35d507" timeScale="1ms"/>
+            <Line id="SOM_L6[4]: v" quantity="SOM_L6/4/CELL_SOM/v" scale="1mV" color="#f2ea8f" timeScale="1ms"/>
+            <Line id="SOM_L6[5]: v" quantity="SOM_L6/5/CELL_SOM/v" scale="1mV" color="#f2f8b0" timeScale="1ms"/>
+            <Line id="SOM_L6[6]: v" quantity="SOM_L6/6/CELL_SOM/v" scale="1mV" color="#70b455" timeScale="1ms"/>
+            <Line id="SOM_L6[7]: v" quantity="SOM_L6/7/CELL_SOM/v" scale="1mV" color="#179227" timeScale="1ms"/>
+            <Line id="SOM_L6[8]: v" quantity="SOM_L6/8/CELL_SOM/v" scale="1mV" color="#b35690" timeScale="1ms"/>
+            <Line id="SOM_L6[9]: v" quantity="SOM_L6/9/CELL_SOM/v" scale="1mV" color="#596a7b" timeScale="1ms"/>
+            <Line id="SOM_L6[10]: v" quantity="SOM_L6/10/CELL_SOM/v" scale="1mV" color="#611c3e" timeScale="1ms"/>
+            <Line id="SOM_L6[11]: v" quantity="SOM_L6/11/CELL_SOM/v" scale="1mV" color="#700688" timeScale="1ms"/>
+            <Line id="SOM_L6[12]: v" quantity="SOM_L6/12/CELL_SOM/v" scale="1mV" color="#276f9f" timeScale="1ms"/>
+        </Display>
+        
+        <OutputFile id="Volts_file__IT_L23" fileName="Sim_M1_p_5percent.IT_L23.v.dat">
+            <OutputColumn id="v_IT_L23_0_CELL_IT_v" quantity="IT_L23/0/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_1_CELL_IT_v" quantity="IT_L23/1/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_2_CELL_IT_v" quantity="IT_L23/2/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_3_CELL_IT_v" quantity="IT_L23/3/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_4_CELL_IT_v" quantity="IT_L23/4/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_5_CELL_IT_v" quantity="IT_L23/5/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_6_CELL_IT_v" quantity="IT_L23/6/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_7_CELL_IT_v" quantity="IT_L23/7/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_8_CELL_IT_v" quantity="IT_L23/8/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_9_CELL_IT_v" quantity="IT_L23/9/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_10_CELL_IT_v" quantity="IT_L23/10/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_11_CELL_IT_v" quantity="IT_L23/11/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_12_CELL_IT_v" quantity="IT_L23/12/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_13_CELL_IT_v" quantity="IT_L23/13/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_14_CELL_IT_v" quantity="IT_L23/14/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_15_CELL_IT_v" quantity="IT_L23/15/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_16_CELL_IT_v" quantity="IT_L23/16/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_17_CELL_IT_v" quantity="IT_L23/17/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_18_CELL_IT_v" quantity="IT_L23/18/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_19_CELL_IT_v" quantity="IT_L23/19/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_20_CELL_IT_v" quantity="IT_L23/20/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_21_CELL_IT_v" quantity="IT_L23/21/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_22_CELL_IT_v" quantity="IT_L23/22/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_23_CELL_IT_v" quantity="IT_L23/23/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_24_CELL_IT_v" quantity="IT_L23/24/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_25_CELL_IT_v" quantity="IT_L23/25/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_26_CELL_IT_v" quantity="IT_L23/26/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_27_CELL_IT_v" quantity="IT_L23/27/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_28_CELL_IT_v" quantity="IT_L23/28/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_29_CELL_IT_v" quantity="IT_L23/29/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_30_CELL_IT_v" quantity="IT_L23/30/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_31_CELL_IT_v" quantity="IT_L23/31/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_32_CELL_IT_v" quantity="IT_L23/32/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_33_CELL_IT_v" quantity="IT_L23/33/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_34_CELL_IT_v" quantity="IT_L23/34/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_35_CELL_IT_v" quantity="IT_L23/35/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_36_CELL_IT_v" quantity="IT_L23/36/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_37_CELL_IT_v" quantity="IT_L23/37/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_38_CELL_IT_v" quantity="IT_L23/38/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_39_CELL_IT_v" quantity="IT_L23/39/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_40_CELL_IT_v" quantity="IT_L23/40/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_41_CELL_IT_v" quantity="IT_L23/41/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_42_CELL_IT_v" quantity="IT_L23/42/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_43_CELL_IT_v" quantity="IT_L23/43/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_44_CELL_IT_v" quantity="IT_L23/44/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_45_CELL_IT_v" quantity="IT_L23/45/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_46_CELL_IT_v" quantity="IT_L23/46/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_47_CELL_IT_v" quantity="IT_L23/47/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_48_CELL_IT_v" quantity="IT_L23/48/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_49_CELL_IT_v" quantity="IT_L23/49/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_50_CELL_IT_v" quantity="IT_L23/50/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_51_CELL_IT_v" quantity="IT_L23/51/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_52_CELL_IT_v" quantity="IT_L23/52/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_53_CELL_IT_v" quantity="IT_L23/53/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_54_CELL_IT_v" quantity="IT_L23/54/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_55_CELL_IT_v" quantity="IT_L23/55/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_56_CELL_IT_v" quantity="IT_L23/56/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_57_CELL_IT_v" quantity="IT_L23/57/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_58_CELL_IT_v" quantity="IT_L23/58/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_59_CELL_IT_v" quantity="IT_L23/59/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_60_CELL_IT_v" quantity="IT_L23/60/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_61_CELL_IT_v" quantity="IT_L23/61/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_62_CELL_IT_v" quantity="IT_L23/62/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_63_CELL_IT_v" quantity="IT_L23/63/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_64_CELL_IT_v" quantity="IT_L23/64/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_65_CELL_IT_v" quantity="IT_L23/65/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_66_CELL_IT_v" quantity="IT_L23/66/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_67_CELL_IT_v" quantity="IT_L23/67/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_68_CELL_IT_v" quantity="IT_L23/68/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_69_CELL_IT_v" quantity="IT_L23/69/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_70_CELL_IT_v" quantity="IT_L23/70/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_71_CELL_IT_v" quantity="IT_L23/71/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_72_CELL_IT_v" quantity="IT_L23/72/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_73_CELL_IT_v" quantity="IT_L23/73/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_74_CELL_IT_v" quantity="IT_L23/74/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_75_CELL_IT_v" quantity="IT_L23/75/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_76_CELL_IT_v" quantity="IT_L23/76/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_77_CELL_IT_v" quantity="IT_L23/77/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_78_CELL_IT_v" quantity="IT_L23/78/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_79_CELL_IT_v" quantity="IT_L23/79/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_80_CELL_IT_v" quantity="IT_L23/80/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_81_CELL_IT_v" quantity="IT_L23/81/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_82_CELL_IT_v" quantity="IT_L23/82/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_83_CELL_IT_v" quantity="IT_L23/83/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_84_CELL_IT_v" quantity="IT_L23/84/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_85_CELL_IT_v" quantity="IT_L23/85/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_86_CELL_IT_v" quantity="IT_L23/86/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_87_CELL_IT_v" quantity="IT_L23/87/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_88_CELL_IT_v" quantity="IT_L23/88/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_89_CELL_IT_v" quantity="IT_L23/89/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_90_CELL_IT_v" quantity="IT_L23/90/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L23_91_CELL_IT_v" quantity="IT_L23/91/CELL_IT/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_L4" fileName="Sim_M1_p_5percent.IT_L4.v.dat">
+            <OutputColumn id="v_IT_L4_0_CELL_IT_v" quantity="IT_L4/0/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_1_CELL_IT_v" quantity="IT_L4/1/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_2_CELL_IT_v" quantity="IT_L4/2/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_3_CELL_IT_v" quantity="IT_L4/3/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_4_CELL_IT_v" quantity="IT_L4/4/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_5_CELL_IT_v" quantity="IT_L4/5/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_6_CELL_IT_v" quantity="IT_L4/6/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_7_CELL_IT_v" quantity="IT_L4/7/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_8_CELL_IT_v" quantity="IT_L4/8/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_9_CELL_IT_v" quantity="IT_L4/9/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_10_CELL_IT_v" quantity="IT_L4/10/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_11_CELL_IT_v" quantity="IT_L4/11/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_12_CELL_IT_v" quantity="IT_L4/12/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_13_CELL_IT_v" quantity="IT_L4/13/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_14_CELL_IT_v" quantity="IT_L4/14/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_15_CELL_IT_v" quantity="IT_L4/15/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_16_CELL_IT_v" quantity="IT_L4/16/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_17_CELL_IT_v" quantity="IT_L4/17/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_18_CELL_IT_v" quantity="IT_L4/18/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_19_CELL_IT_v" quantity="IT_L4/19/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_20_CELL_IT_v" quantity="IT_L4/20/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_21_CELL_IT_v" quantity="IT_L4/21/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_22_CELL_IT_v" quantity="IT_L4/22/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_23_CELL_IT_v" quantity="IT_L4/23/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_24_CELL_IT_v" quantity="IT_L4/24/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_25_CELL_IT_v" quantity="IT_L4/25/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_26_CELL_IT_v" quantity="IT_L4/26/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_27_CELL_IT_v" quantity="IT_L4/27/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_28_CELL_IT_v" quantity="IT_L4/28/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_29_CELL_IT_v" quantity="IT_L4/29/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_30_CELL_IT_v" quantity="IT_L4/30/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_31_CELL_IT_v" quantity="IT_L4/31/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_32_CELL_IT_v" quantity="IT_L4/32/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_33_CELL_IT_v" quantity="IT_L4/33/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_34_CELL_IT_v" quantity="IT_L4/34/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_35_CELL_IT_v" quantity="IT_L4/35/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_36_CELL_IT_v" quantity="IT_L4/36/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_37_CELL_IT_v" quantity="IT_L4/37/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_38_CELL_IT_v" quantity="IT_L4/38/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_39_CELL_IT_v" quantity="IT_L4/39/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_40_CELL_IT_v" quantity="IT_L4/40/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_41_CELL_IT_v" quantity="IT_L4/41/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_42_CELL_IT_v" quantity="IT_L4/42/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_43_CELL_IT_v" quantity="IT_L4/43/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_44_CELL_IT_v" quantity="IT_L4/44/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_45_CELL_IT_v" quantity="IT_L4/45/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_46_CELL_IT_v" quantity="IT_L4/46/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L4_47_CELL_IT_v" quantity="IT_L4/47/CELL_IT/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_L5A" fileName="Sim_M1_p_5percent.IT_L5A.v.dat">
+            <OutputColumn id="v_IT_L5A_0_CELL_IT_v" quantity="IT_L5A/0/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_1_CELL_IT_v" quantity="IT_L5A/1/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_2_CELL_IT_v" quantity="IT_L5A/2/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_3_CELL_IT_v" quantity="IT_L5A/3/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_4_CELL_IT_v" quantity="IT_L5A/4/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_5_CELL_IT_v" quantity="IT_L5A/5/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_6_CELL_IT_v" quantity="IT_L5A/6/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_7_CELL_IT_v" quantity="IT_L5A/7/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_8_CELL_IT_v" quantity="IT_L5A/8/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_9_CELL_IT_v" quantity="IT_L5A/9/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_10_CELL_IT_v" quantity="IT_L5A/10/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_11_CELL_IT_v" quantity="IT_L5A/11/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_12_CELL_IT_v" quantity="IT_L5A/12/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_13_CELL_IT_v" quantity="IT_L5A/13/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_14_CELL_IT_v" quantity="IT_L5A/14/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_15_CELL_IT_v" quantity="IT_L5A/15/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_16_CELL_IT_v" quantity="IT_L5A/16/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_17_CELL_IT_v" quantity="IT_L5A/17/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_18_CELL_IT_v" quantity="IT_L5A/18/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_19_CELL_IT_v" quantity="IT_L5A/19/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_20_CELL_IT_v" quantity="IT_L5A/20/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_21_CELL_IT_v" quantity="IT_L5A/21/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_22_CELL_IT_v" quantity="IT_L5A/22/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_23_CELL_IT_v" quantity="IT_L5A/23/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_24_CELL_IT_v" quantity="IT_L5A/24/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_25_CELL_IT_v" quantity="IT_L5A/25/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_26_CELL_IT_v" quantity="IT_L5A/26/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_27_CELL_IT_v" quantity="IT_L5A/27/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_28_CELL_IT_v" quantity="IT_L5A/28/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_29_CELL_IT_v" quantity="IT_L5A/29/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_30_CELL_IT_v" quantity="IT_L5A/30/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_31_CELL_IT_v" quantity="IT_L5A/31/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_32_CELL_IT_v" quantity="IT_L5A/32/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_33_CELL_IT_v" quantity="IT_L5A/33/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_34_CELL_IT_v" quantity="IT_L5A/34/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_35_CELL_IT_v" quantity="IT_L5A/35/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_36_CELL_IT_v" quantity="IT_L5A/36/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_37_CELL_IT_v" quantity="IT_L5A/37/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_38_CELL_IT_v" quantity="IT_L5A/38/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_39_CELL_IT_v" quantity="IT_L5A/39/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_40_CELL_IT_v" quantity="IT_L5A/40/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_41_CELL_IT_v" quantity="IT_L5A/41/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_42_CELL_IT_v" quantity="IT_L5A/42/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_43_CELL_IT_v" quantity="IT_L5A/43/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_44_CELL_IT_v" quantity="IT_L5A/44/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_45_CELL_IT_v" quantity="IT_L5A/45/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_46_CELL_IT_v" quantity="IT_L5A/46/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_47_CELL_IT_v" quantity="IT_L5A/47/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_48_CELL_IT_v" quantity="IT_L5A/48/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_49_CELL_IT_v" quantity="IT_L5A/49/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_50_CELL_IT_v" quantity="IT_L5A/50/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_51_CELL_IT_v" quantity="IT_L5A/51/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5A_52_CELL_IT_v" quantity="IT_L5A/52/CELL_IT/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_L5B" fileName="Sim_M1_p_5percent.IT_L5B.v.dat">
+            <OutputColumn id="v_IT_L5B_0_CELL_IT_v" quantity="IT_L5B/0/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_1_CELL_IT_v" quantity="IT_L5B/1/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_2_CELL_IT_v" quantity="IT_L5B/2/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_3_CELL_IT_v" quantity="IT_L5B/3/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_4_CELL_IT_v" quantity="IT_L5B/4/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_5_CELL_IT_v" quantity="IT_L5B/5/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_6_CELL_IT_v" quantity="IT_L5B/6/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_7_CELL_IT_v" quantity="IT_L5B/7/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_8_CELL_IT_v" quantity="IT_L5B/8/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_9_CELL_IT_v" quantity="IT_L5B/9/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_10_CELL_IT_v" quantity="IT_L5B/10/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_11_CELL_IT_v" quantity="IT_L5B/11/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_12_CELL_IT_v" quantity="IT_L5B/12/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_13_CELL_IT_v" quantity="IT_L5B/13/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_14_CELL_IT_v" quantity="IT_L5B/14/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_15_CELL_IT_v" quantity="IT_L5B/15/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_16_CELL_IT_v" quantity="IT_L5B/16/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_17_CELL_IT_v" quantity="IT_L5B/17/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_18_CELL_IT_v" quantity="IT_L5B/18/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_19_CELL_IT_v" quantity="IT_L5B/19/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_20_CELL_IT_v" quantity="IT_L5B/20/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_21_CELL_IT_v" quantity="IT_L5B/21/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_22_CELL_IT_v" quantity="IT_L5B/22/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_23_CELL_IT_v" quantity="IT_L5B/23/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_24_CELL_IT_v" quantity="IT_L5B/24/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_25_CELL_IT_v" quantity="IT_L5B/25/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_26_CELL_IT_v" quantity="IT_L5B/26/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_27_CELL_IT_v" quantity="IT_L5B/27/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_28_CELL_IT_v" quantity="IT_L5B/28/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_29_CELL_IT_v" quantity="IT_L5B/29/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_30_CELL_IT_v" quantity="IT_L5B/30/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_31_CELL_IT_v" quantity="IT_L5B/31/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_32_CELL_IT_v" quantity="IT_L5B/32/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_33_CELL_IT_v" quantity="IT_L5B/33/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_34_CELL_IT_v" quantity="IT_L5B/34/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_35_CELL_IT_v" quantity="IT_L5B/35/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_36_CELL_IT_v" quantity="IT_L5B/36/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_37_CELL_IT_v" quantity="IT_L5B/37/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_38_CELL_IT_v" quantity="IT_L5B/38/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_39_CELL_IT_v" quantity="IT_L5B/39/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_40_CELL_IT_v" quantity="IT_L5B/40/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_41_CELL_IT_v" quantity="IT_L5B/41/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_42_CELL_IT_v" quantity="IT_L5B/42/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_43_CELL_IT_v" quantity="IT_L5B/43/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_44_CELL_IT_v" quantity="IT_L5B/44/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_45_CELL_IT_v" quantity="IT_L5B/45/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_46_CELL_IT_v" quantity="IT_L5B/46/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_47_CELL_IT_v" quantity="IT_L5B/47/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_48_CELL_IT_v" quantity="IT_L5B/48/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_49_CELL_IT_v" quantity="IT_L5B/49/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_50_CELL_IT_v" quantity="IT_L5B/50/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_51_CELL_IT_v" quantity="IT_L5B/51/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_52_CELL_IT_v" quantity="IT_L5B/52/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_53_CELL_IT_v" quantity="IT_L5B/53/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_54_CELL_IT_v" quantity="IT_L5B/54/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_55_CELL_IT_v" quantity="IT_L5B/55/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_56_CELL_IT_v" quantity="IT_L5B/56/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_57_CELL_IT_v" quantity="IT_L5B/57/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_58_CELL_IT_v" quantity="IT_L5B/58/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L5B_59_CELL_IT_v" quantity="IT_L5B/59/CELL_IT/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PT_L5B" fileName="Sim_M1_p_5percent.PT_L5B.v.dat">
+            <OutputColumn id="v_PT_L5B_0_CELL_PT_v" quantity="PT_L5B/0/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_1_CELL_PT_v" quantity="PT_L5B/1/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_2_CELL_PT_v" quantity="PT_L5B/2/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_3_CELL_PT_v" quantity="PT_L5B/3/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_4_CELL_PT_v" quantity="PT_L5B/4/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_5_CELL_PT_v" quantity="PT_L5B/5/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_6_CELL_PT_v" quantity="PT_L5B/6/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_7_CELL_PT_v" quantity="PT_L5B/7/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_8_CELL_PT_v" quantity="PT_L5B/8/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_9_CELL_PT_v" quantity="PT_L5B/9/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_10_CELL_PT_v" quantity="PT_L5B/10/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_11_CELL_PT_v" quantity="PT_L5B/11/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_12_CELL_PT_v" quantity="PT_L5B/12/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_13_CELL_PT_v" quantity="PT_L5B/13/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_14_CELL_PT_v" quantity="PT_L5B/14/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_15_CELL_PT_v" quantity="PT_L5B/15/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_16_CELL_PT_v" quantity="PT_L5B/16/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_17_CELL_PT_v" quantity="PT_L5B/17/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_18_CELL_PT_v" quantity="PT_L5B/18/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_19_CELL_PT_v" quantity="PT_L5B/19/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_20_CELL_PT_v" quantity="PT_L5B/20/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_21_CELL_PT_v" quantity="PT_L5B/21/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_22_CELL_PT_v" quantity="PT_L5B/22/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_23_CELL_PT_v" quantity="PT_L5B/23/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_24_CELL_PT_v" quantity="PT_L5B/24/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_25_CELL_PT_v" quantity="PT_L5B/25/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_26_CELL_PT_v" quantity="PT_L5B/26/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_27_CELL_PT_v" quantity="PT_L5B/27/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_28_CELL_PT_v" quantity="PT_L5B/28/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_29_CELL_PT_v" quantity="PT_L5B/29/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_30_CELL_PT_v" quantity="PT_L5B/30/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_31_CELL_PT_v" quantity="PT_L5B/31/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_32_CELL_PT_v" quantity="PT_L5B/32/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_33_CELL_PT_v" quantity="PT_L5B/33/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_34_CELL_PT_v" quantity="PT_L5B/34/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_35_CELL_PT_v" quantity="PT_L5B/35/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_36_CELL_PT_v" quantity="PT_L5B/36/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_37_CELL_PT_v" quantity="PT_L5B/37/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_38_CELL_PT_v" quantity="PT_L5B/38/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_39_CELL_PT_v" quantity="PT_L5B/39/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_40_CELL_PT_v" quantity="PT_L5B/40/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_41_CELL_PT_v" quantity="PT_L5B/41/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_42_CELL_PT_v" quantity="PT_L5B/42/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_43_CELL_PT_v" quantity="PT_L5B/43/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_44_CELL_PT_v" quantity="PT_L5B/44/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_45_CELL_PT_v" quantity="PT_L5B/45/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_46_CELL_PT_v" quantity="PT_L5B/46/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_47_CELL_PT_v" quantity="PT_L5B/47/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_48_CELL_PT_v" quantity="PT_L5B/48/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_49_CELL_PT_v" quantity="PT_L5B/49/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_50_CELL_PT_v" quantity="PT_L5B/50/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_51_CELL_PT_v" quantity="PT_L5B/51/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_52_CELL_PT_v" quantity="PT_L5B/52/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_53_CELL_PT_v" quantity="PT_L5B/53/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_54_CELL_PT_v" quantity="PT_L5B/54/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_55_CELL_PT_v" quantity="PT_L5B/55/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_56_CELL_PT_v" quantity="PT_L5B/56/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_57_CELL_PT_v" quantity="PT_L5B/57/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_58_CELL_PT_v" quantity="PT_L5B/58/CELL_PT/v"/> 
+            <OutputColumn id="v_PT_L5B_59_CELL_PT_v" quantity="PT_L5B/59/CELL_PT/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__IT_L6" fileName="Sim_M1_p_5percent.IT_L6.v.dat">
+            <OutputColumn id="v_IT_L6_0_CELL_IT_v" quantity="IT_L6/0/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_1_CELL_IT_v" quantity="IT_L6/1/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_2_CELL_IT_v" quantity="IT_L6/2/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_3_CELL_IT_v" quantity="IT_L6/3/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_4_CELL_IT_v" quantity="IT_L6/4/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_5_CELL_IT_v" quantity="IT_L6/5/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_6_CELL_IT_v" quantity="IT_L6/6/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_7_CELL_IT_v" quantity="IT_L6/7/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_8_CELL_IT_v" quantity="IT_L6/8/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_9_CELL_IT_v" quantity="IT_L6/9/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_10_CELL_IT_v" quantity="IT_L6/10/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_11_CELL_IT_v" quantity="IT_L6/11/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_12_CELL_IT_v" quantity="IT_L6/12/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_13_CELL_IT_v" quantity="IT_L6/13/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_14_CELL_IT_v" quantity="IT_L6/14/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_15_CELL_IT_v" quantity="IT_L6/15/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_16_CELL_IT_v" quantity="IT_L6/16/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_17_CELL_IT_v" quantity="IT_L6/17/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_18_CELL_IT_v" quantity="IT_L6/18/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_19_CELL_IT_v" quantity="IT_L6/19/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_20_CELL_IT_v" quantity="IT_L6/20/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_21_CELL_IT_v" quantity="IT_L6/21/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_22_CELL_IT_v" quantity="IT_L6/22/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_23_CELL_IT_v" quantity="IT_L6/23/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_24_CELL_IT_v" quantity="IT_L6/24/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_25_CELL_IT_v" quantity="IT_L6/25/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_26_CELL_IT_v" quantity="IT_L6/26/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_27_CELL_IT_v" quantity="IT_L6/27/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_28_CELL_IT_v" quantity="IT_L6/28/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_29_CELL_IT_v" quantity="IT_L6/29/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_30_CELL_IT_v" quantity="IT_L6/30/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_31_CELL_IT_v" quantity="IT_L6/31/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_32_CELL_IT_v" quantity="IT_L6/32/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_33_CELL_IT_v" quantity="IT_L6/33/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_34_CELL_IT_v" quantity="IT_L6/34/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_35_CELL_IT_v" quantity="IT_L6/35/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_36_CELL_IT_v" quantity="IT_L6/36/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_37_CELL_IT_v" quantity="IT_L6/37/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_38_CELL_IT_v" quantity="IT_L6/38/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_39_CELL_IT_v" quantity="IT_L6/39/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_40_CELL_IT_v" quantity="IT_L6/40/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_41_CELL_IT_v" quantity="IT_L6/41/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_42_CELL_IT_v" quantity="IT_L6/42/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_43_CELL_IT_v" quantity="IT_L6/43/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_44_CELL_IT_v" quantity="IT_L6/44/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_45_CELL_IT_v" quantity="IT_L6/45/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_46_CELL_IT_v" quantity="IT_L6/46/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_47_CELL_IT_v" quantity="IT_L6/47/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_48_CELL_IT_v" quantity="IT_L6/48/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_49_CELL_IT_v" quantity="IT_L6/49/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_50_CELL_IT_v" quantity="IT_L6/50/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_51_CELL_IT_v" quantity="IT_L6/51/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_52_CELL_IT_v" quantity="IT_L6/52/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_53_CELL_IT_v" quantity="IT_L6/53/CELL_IT/v"/> 
+            <OutputColumn id="v_IT_L6_54_CELL_IT_v" quantity="IT_L6/54/CELL_IT/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__CT_L6" fileName="Sim_M1_p_5percent.CT_L6.v.dat">
+            <OutputColumn id="v_CT_L6_0_CELL_CT_v" quantity="CT_L6/0/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_1_CELL_CT_v" quantity="CT_L6/1/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_2_CELL_CT_v" quantity="CT_L6/2/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_3_CELL_CT_v" quantity="CT_L6/3/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_4_CELL_CT_v" quantity="CT_L6/4/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_5_CELL_CT_v" quantity="CT_L6/5/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_6_CELL_CT_v" quantity="CT_L6/6/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_7_CELL_CT_v" quantity="CT_L6/7/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_8_CELL_CT_v" quantity="CT_L6/8/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_9_CELL_CT_v" quantity="CT_L6/9/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_10_CELL_CT_v" quantity="CT_L6/10/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_11_CELL_CT_v" quantity="CT_L6/11/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_12_CELL_CT_v" quantity="CT_L6/12/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_13_CELL_CT_v" quantity="CT_L6/13/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_14_CELL_CT_v" quantity="CT_L6/14/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_15_CELL_CT_v" quantity="CT_L6/15/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_16_CELL_CT_v" quantity="CT_L6/16/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_17_CELL_CT_v" quantity="CT_L6/17/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_18_CELL_CT_v" quantity="CT_L6/18/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_19_CELL_CT_v" quantity="CT_L6/19/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_20_CELL_CT_v" quantity="CT_L6/20/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_21_CELL_CT_v" quantity="CT_L6/21/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_22_CELL_CT_v" quantity="CT_L6/22/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_23_CELL_CT_v" quantity="CT_L6/23/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_24_CELL_CT_v" quantity="CT_L6/24/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_25_CELL_CT_v" quantity="CT_L6/25/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_26_CELL_CT_v" quantity="CT_L6/26/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_27_CELL_CT_v" quantity="CT_L6/27/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_28_CELL_CT_v" quantity="CT_L6/28/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_29_CELL_CT_v" quantity="CT_L6/29/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_30_CELL_CT_v" quantity="CT_L6/30/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_31_CELL_CT_v" quantity="CT_L6/31/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_32_CELL_CT_v" quantity="CT_L6/32/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_33_CELL_CT_v" quantity="CT_L6/33/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_34_CELL_CT_v" quantity="CT_L6/34/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_35_CELL_CT_v" quantity="CT_L6/35/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_36_CELL_CT_v" quantity="CT_L6/36/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_37_CELL_CT_v" quantity="CT_L6/37/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_38_CELL_CT_v" quantity="CT_L6/38/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_39_CELL_CT_v" quantity="CT_L6/39/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_40_CELL_CT_v" quantity="CT_L6/40/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_41_CELL_CT_v" quantity="CT_L6/41/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_42_CELL_CT_v" quantity="CT_L6/42/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_43_CELL_CT_v" quantity="CT_L6/43/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_44_CELL_CT_v" quantity="CT_L6/44/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_45_CELL_CT_v" quantity="CT_L6/45/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_46_CELL_CT_v" quantity="CT_L6/46/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_47_CELL_CT_v" quantity="CT_L6/47/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_48_CELL_CT_v" quantity="CT_L6/48/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_49_CELL_CT_v" quantity="CT_L6/49/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_50_CELL_CT_v" quantity="CT_L6/50/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_51_CELL_CT_v" quantity="CT_L6/51/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_52_CELL_CT_v" quantity="CT_L6/52/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_53_CELL_CT_v" quantity="CT_L6/53/CELL_CT/v"/> 
+            <OutputColumn id="v_CT_L6_54_CELL_CT_v" quantity="CT_L6/54/CELL_CT/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PV_L23" fileName="Sim_M1_p_5percent.PV_L23.v.dat">
+            <OutputColumn id="v_PV_L23_0_CELL_PV_v" quantity="PV_L23/0/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_1_CELL_PV_v" quantity="PV_L23/1/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_2_CELL_PV_v" quantity="PV_L23/2/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_3_CELL_PV_v" quantity="PV_L23/3/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_4_CELL_PV_v" quantity="PV_L23/4/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_5_CELL_PV_v" quantity="PV_L23/5/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_6_CELL_PV_v" quantity="PV_L23/6/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_7_CELL_PV_v" quantity="PV_L23/7/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_8_CELL_PV_v" quantity="PV_L23/8/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_9_CELL_PV_v" quantity="PV_L23/9/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_10_CELL_PV_v" quantity="PV_L23/10/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L23_11_CELL_PV_v" quantity="PV_L23/11/CELL_PV/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__SOM_L23" fileName="Sim_M1_p_5percent.SOM_L23.v.dat">
+            <OutputColumn id="v_SOM_L23_0_CELL_SOM_v" quantity="SOM_L23/0/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_1_CELL_SOM_v" quantity="SOM_L23/1/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_2_CELL_SOM_v" quantity="SOM_L23/2/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_3_CELL_SOM_v" quantity="SOM_L23/3/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_4_CELL_SOM_v" quantity="SOM_L23/4/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_5_CELL_SOM_v" quantity="SOM_L23/5/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_6_CELL_SOM_v" quantity="SOM_L23/6/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_7_CELL_SOM_v" quantity="SOM_L23/7/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_8_CELL_SOM_v" quantity="SOM_L23/8/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_9_CELL_SOM_v" quantity="SOM_L23/9/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_10_CELL_SOM_v" quantity="SOM_L23/10/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L23_11_CELL_SOM_v" quantity="SOM_L23/11/CELL_SOM/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PV_L5" fileName="Sim_M1_p_5percent.PV_L5.v.dat">
+            <OutputColumn id="v_PV_L5_0_CELL_PV_v" quantity="PV_L5/0/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_1_CELL_PV_v" quantity="PV_L5/1/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_2_CELL_PV_v" quantity="PV_L5/2/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_3_CELL_PV_v" quantity="PV_L5/3/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_4_CELL_PV_v" quantity="PV_L5/4/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_5_CELL_PV_v" quantity="PV_L5/5/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_6_CELL_PV_v" quantity="PV_L5/6/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_7_CELL_PV_v" quantity="PV_L5/7/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_8_CELL_PV_v" quantity="PV_L5/8/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_9_CELL_PV_v" quantity="PV_L5/9/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_10_CELL_PV_v" quantity="PV_L5/10/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_11_CELL_PV_v" quantity="PV_L5/11/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_12_CELL_PV_v" quantity="PV_L5/12/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_13_CELL_PV_v" quantity="PV_L5/13/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_14_CELL_PV_v" quantity="PV_L5/14/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_15_CELL_PV_v" quantity="PV_L5/15/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_16_CELL_PV_v" quantity="PV_L5/16/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_17_CELL_PV_v" quantity="PV_L5/17/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_18_CELL_PV_v" quantity="PV_L5/18/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_19_CELL_PV_v" quantity="PV_L5/19/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_20_CELL_PV_v" quantity="PV_L5/20/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_21_CELL_PV_v" quantity="PV_L5/21/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_22_CELL_PV_v" quantity="PV_L5/22/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_23_CELL_PV_v" quantity="PV_L5/23/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_24_CELL_PV_v" quantity="PV_L5/24/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_25_CELL_PV_v" quantity="PV_L5/25/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L5_26_CELL_PV_v" quantity="PV_L5/26/CELL_PV/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__SOM_L5" fileName="Sim_M1_p_5percent.SOM_L5.v.dat">
+            <OutputColumn id="v_SOM_L5_0_CELL_SOM_v" quantity="SOM_L5/0/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_1_CELL_SOM_v" quantity="SOM_L5/1/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_2_CELL_SOM_v" quantity="SOM_L5/2/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_3_CELL_SOM_v" quantity="SOM_L5/3/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_4_CELL_SOM_v" quantity="SOM_L5/4/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_5_CELL_SOM_v" quantity="SOM_L5/5/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_6_CELL_SOM_v" quantity="SOM_L5/6/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_7_CELL_SOM_v" quantity="SOM_L5/7/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_8_CELL_SOM_v" quantity="SOM_L5/8/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_9_CELL_SOM_v" quantity="SOM_L5/9/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_10_CELL_SOM_v" quantity="SOM_L5/10/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_11_CELL_SOM_v" quantity="SOM_L5/11/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_12_CELL_SOM_v" quantity="SOM_L5/12/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_13_CELL_SOM_v" quantity="SOM_L5/13/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_14_CELL_SOM_v" quantity="SOM_L5/14/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_15_CELL_SOM_v" quantity="SOM_L5/15/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_16_CELL_SOM_v" quantity="SOM_L5/16/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_17_CELL_SOM_v" quantity="SOM_L5/17/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_18_CELL_SOM_v" quantity="SOM_L5/18/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_19_CELL_SOM_v" quantity="SOM_L5/19/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_20_CELL_SOM_v" quantity="SOM_L5/20/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_21_CELL_SOM_v" quantity="SOM_L5/21/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_22_CELL_SOM_v" quantity="SOM_L5/22/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_23_CELL_SOM_v" quantity="SOM_L5/23/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_24_CELL_SOM_v" quantity="SOM_L5/24/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_25_CELL_SOM_v" quantity="SOM_L5/25/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L5_26_CELL_SOM_v" quantity="SOM_L5/26/CELL_SOM/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__PV_L6" fileName="Sim_M1_p_5percent.PV_L6.v.dat">
+            <OutputColumn id="v_PV_L6_0_CELL_PV_v" quantity="PV_L6/0/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_1_CELL_PV_v" quantity="PV_L6/1/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_2_CELL_PV_v" quantity="PV_L6/2/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_3_CELL_PV_v" quantity="PV_L6/3/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_4_CELL_PV_v" quantity="PV_L6/4/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_5_CELL_PV_v" quantity="PV_L6/5/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_6_CELL_PV_v" quantity="PV_L6/6/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_7_CELL_PV_v" quantity="PV_L6/7/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_8_CELL_PV_v" quantity="PV_L6/8/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_9_CELL_PV_v" quantity="PV_L6/9/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_10_CELL_PV_v" quantity="PV_L6/10/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_11_CELL_PV_v" quantity="PV_L6/11/CELL_PV/v"/> 
+            <OutputColumn id="v_PV_L6_12_CELL_PV_v" quantity="PV_L6/12/CELL_PV/v"/> 
+        </OutputFile>
+        
+        <OutputFile id="Volts_file__SOM_L6" fileName="Sim_M1_p_5percent.SOM_L6.v.dat">
+            <OutputColumn id="v_SOM_L6_0_CELL_SOM_v" quantity="SOM_L6/0/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_1_CELL_SOM_v" quantity="SOM_L6/1/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_2_CELL_SOM_v" quantity="SOM_L6/2/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_3_CELL_SOM_v" quantity="SOM_L6/3/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_4_CELL_SOM_v" quantity="SOM_L6/4/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_5_CELL_SOM_v" quantity="SOM_L6/5/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_6_CELL_SOM_v" quantity="SOM_L6/6/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_7_CELL_SOM_v" quantity="SOM_L6/7/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_8_CELL_SOM_v" quantity="SOM_L6/8/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_9_CELL_SOM_v" quantity="SOM_L6/9/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_10_CELL_SOM_v" quantity="SOM_L6/10/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_11_CELL_SOM_v" quantity="SOM_L6/11/CELL_SOM/v"/> 
+            <OutputColumn id="v_SOM_L6_12_CELL_SOM_v" quantity="SOM_L6/12/CELL_SOM/v"/> 
+        </OutputFile>
+        
+    </Simulation>
+
+</Lems>
