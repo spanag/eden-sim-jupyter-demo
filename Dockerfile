@@ -1,4 +1,4 @@
-FROM spanagiotou/eden-sim-jupyter-demo:latest
+FROM spanagiotou/eden-sim-jupyter-demo:3cdab83e
 MAINTAINER Sotirios Panagiotou <spanagiotou@erasmusmc.nl>
 
 WORKDIR $WORK_HOME
